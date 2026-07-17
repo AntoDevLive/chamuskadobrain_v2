@@ -1,0 +1,75 @@
+<main data-aos="fade-up" class="py-20">
+
+  <!-- TÍTULO -->
+  <div class="relative w-full flex items-center justify-center">
+    <div class="absolute left-1/2 h-0.5 w-40 -translate-x-1/2 bg-stone-800 sm:w-64 lg:w-180"></div>
+
+    <h2
+      class="absolute -top-6 left-1/2 -translate-x-1/2 bg-page px-4 text-3xl font-black text-stone-900 sm:text-4xl">
+      Nuestros Servicios
+    </h2>
+  </div>
+
+  <!-- GRID RESPONSIVE -->
+  <section class="mx-auto max-w-7xl px-6 py-16">
+
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+      @for (servicio of servicios.slice(0, 4); track servicio.id) {
+
+      <!-- CARD -->
+      <div
+        class="flex h-90 flex-col overflow-hidden rounded-xl bg-white text-stone-900 hover:shadow-lg shadow-md shadow-neutral-600/60 transition duration-300 hover:-translate-y-1">
+
+        <!-- IMAGE -->
+        <div class="h-44 w-full overflow-hidden">
+          <img class="h-full w-full object-cover transition duration-500 hover:scale-110" [src]="servicio.image" alt="">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="flex flex-1 flex-col gap-3 px-4 py-4">
+
+          <h3 class="text-xl font-bold leading-tight">
+            {{ servicio.title }}
+          </h3>
+
+          <p class="line-clamp-4 text-md text-stone-800">
+            {{ servicio.description }}
+          </p>
+
+          <!-- BUTTON -->
+          <button
+            class="cursor-pointer mt-auto self-start rounded-full bg-amarillo px-4 py-1 text-sm font-semibold transition hover:bg-amarillo/90 duration-200 text-stone-950">
+            Saber más
+          </button>
+
+        </div>
+
+      </div>
+
+      }
+
+    </div>
+
+    <!-- BOTÓN FINAL -->
+    <div class="mt-16 flex justify-center">
+
+      <a href="#"
+        class="shadow-md shadow-black/80 group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-purple-950 px-10 py-4 text-lg font-bold text-white hover:shadow-lg hover:shadow-black/80 transition-all duration-300 hover:bg-purple-950/90 hover:-translate-y-1">
+
+        <!-- brillo -->
+        <span
+          class="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/40 to-transparent transition-transform duration-700 group-hover:translate-x-full">
+        </span>
+
+        <span class="relative">
+          Ver todos los Servicios
+        </span>
+
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
