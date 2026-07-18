@@ -1,0 +1,23 @@
+<div class="flex items-center justify-center gap-6 p-6">
+
+  <!-- Flecha izquierda -->
+
+  <button mat-icon-button (click)="showFront()" [disabled]="!showingBack()">
+
+    <mat-icon>chevron_left</mat-icon>
+
+  </button>
+
+  <!-- Imagen -->
+
+  <img [src]="currentImage()" [alt]="data.title" class="max-h-[80vh] rounded-xl shadow-2xl">
+
+  <!-- Flecha derecha -->
+
+  <button mat-icon-button (click)="showBack()" [disabled]="showingBack()">
+
+    <mat-icon>chevron_right</mat-icon>
+
+  </button>
+
+</div>

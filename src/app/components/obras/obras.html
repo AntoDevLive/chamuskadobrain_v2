@@ -28,8 +28,11 @@
       <div class="absolute h-72 w-52 rounded-3xl bg-purple-950/10 blur-xl">
       </div>
 
-      <img [src]="obra.image" [alt]="obra.title"
-        class="relative w-72 rounded-2xl shadow-2xl shadow-black/30 transition duration-300 hover:scale-[1.03]">
+      <img 
+        [src]="obra.images.front" 
+        [alt]="obra.title" 
+        (click)="openImages(obra)"
+        class="relative w-72 cursor-pointer rounded-2xl shadow-2xl shadow-black/30 transition duration-300 hover:scale-[1.03]">
 
     </div>
 

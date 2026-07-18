@@ -1,6 +1,9 @@
 export interface IObra {
   id: number;
-  image: string;
+  images: {
+    front: string,
+    back?: string
+  },
   title: string;
   synopsis: string;
   amazonUrl: string;

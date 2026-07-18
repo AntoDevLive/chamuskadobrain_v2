@@ -1,18 +1,36 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { IObra } from '../../interfaces/obra';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { ObraImageDialog } from '../ui/obra-image-dialog/obra-image-dialog';
 
 @Component({
   selector: 'app-obras',
-  imports: [],
+  imports: [MatDialogModule],
   templateUrl: './obras.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Obras {
 
+  private readonly dialog = inject(MatDialog);
+
+  openImages(obra: IObra): void {
+
+    this.dialog.open(ObraImageDialog, {
+      data: obra,
+      maxWidth: '90vw',
+      maxHeight: '90vh'
+    });
+
+  }
+
   obras: IObra[] = [
     {
       id: 1,
-      image: '/img/cartas-a-bruno.jpg',
+      images: {
+        front: '/img/cartas-a-bruno.jpg',
+        back: '/img/cartas-a-bruno-back.jpg',
+      },
       title: 'Cartas a Bruno',
       synopsis: `Una huida.
 Un viaje.
@@ -40,7 +58,10 @@ Un final que ya estaba escrito.
     },
     {
       id: 2,
-      image: '/img/malababa.jpg',
+      images: {
+        front: '/img/malababa.jpg',
+        back: '/img/malababa-back.jpg',
+      },
       title: 'Malababa',
       synopsis: `Un prestigioso notario y un policía han sido invitados y caminan bajo la lumbre cuidadosamente por la finca de Doña Amelia de Blasco. Un pie dudoso tras otro hacia la imponente mansión, sin imaginar la velada que van a presenciar.
 
