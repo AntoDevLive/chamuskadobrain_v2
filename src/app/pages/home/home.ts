@@ -12,6 +12,6 @@ import { Nosotros } from "../../components/nosotros/nosotros";
   templateUrl: './home.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class Home {
+export class Home {
 
 }
