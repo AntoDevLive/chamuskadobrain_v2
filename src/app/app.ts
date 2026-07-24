@@ -1,12 +1,38 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs';
+import AOS from 'aos';
+import { Navbar } from './components/shared/navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
   protected readonly title = signal('chamuskadobrain');
+
+  constructor(private router: Router) {
+
+    // Inicializar una sola vez
+    AOS.init({
+      duration: 1200,
+      once: true,
+      startEvent: 'load'
+    });
+
+    // Refrescar tras cada navegación
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+
+        requestAnimationFrame(() => {
+          AOS.refreshHard();
+        });
+
+      });
+
+  }
 }

@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import AOS from 'aos';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -7,13 +6,6 @@ import AOS from 'aos';
   templateUrl: './hero.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Hero implements OnInit {
-
-  ngOnInit(): void {
-    AOS.init({
-      duration: 1300,
-      once: true,
-    });
-  }
+export class Hero {
 
 }

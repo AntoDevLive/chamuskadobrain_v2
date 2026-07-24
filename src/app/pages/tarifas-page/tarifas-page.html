@@ -1,1 +1,166 @@
-<p>tarifas-page works!</p>,
+<main>
+
+  <!-- HERO -->
+  <section class="bg-purple-950 pt-10">
+
+    <div class="mx-auto max-w-7xl px-6 py-16" data-aos="fade-right">
+
+      <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
+        TARIFAS
+      </span>
+
+      <h1 class="mt-6 max-w-4xl text-4xl font-black text-white lg:text-5xl">
+        Tarifas claras para autores independientes.
+      </h1>
+
+      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-white/80">
+        Consulta nuestros precios orientativos. Si tu proyecto requiere un tratamiento especial,
+        prepararemos un presupuesto personalizado sin compromiso.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- GRID -->
+
+  <section class="mx-auto max-w-7xl px-6 py-16" data-aos="fade-up">
+
+    <div class="mb-10 rounded-xl border border-amber-200 bg-amber-50 p-5">
+
+      <p class="text-center text-stone-700">
+        💡 Todos los precios son orientativos y no incluyen IVA.
+      </p>
+
+    </div>
+
+    <div class="columns-1 gap-8 lg:columns-2">
+
+      @for(tarifa of tarifas; track tarifa.id){
+
+      <article
+        class="mb-8 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow-md shadow-neutral-500/30 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+        <!-- CABECERA -->
+
+        <div class="border-b border-stone-200 p-6">
+
+          <div class="flex items-start justify-between gap-4">
+
+            <div>
+
+              <h2 class="text-2xl font-black text-purple-950">
+
+                {{ tarifa.servicio }}
+
+              </h2>
+
+              <p class="mt-2 text-sm leading-6 text-stone-600">
+
+                {{ tarifa.slogan }}
+
+              </p>
+
+            </div>
+
+            <div class="rounded-full bg-purple-100 px-3 py-1 text-xs font-bold text-purple-950">
+
+              {{ tarifa.tarifas.length }}
+              {{ tarifa.tarifas.length === 1 ? 'precio' : 'precios' }}
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TARIFAS -->
+
+        <div class="p-6">
+
+          <div class="space-y-3">
+
+            @for(precio of tarifa.tarifas; track $index){
+
+            <div class="flex items-center justify-between rounded-lg bg-stone-50 px-4 py-3">
+
+              <span class="text-sm text-stone-700">
+
+                {{ precio.concepto }}
+
+              </span>
+
+              <span class="rounded-full bg-amarillo px-3 py-1 text-sm font-bold text-stone-900">
+
+                {{ precio.precio }}
+
+              </span>
+
+            </div>
+
+            }
+
+          </div>
+
+          @if(tarifa.observaciones){
+
+          <div class="mt-5 rounded-lg bg-purple-50 p-4">
+
+            <p class="text-sm italic text-stone-700">
+
+              {{ tarifa.observaciones[0] }}
+
+            </p>
+
+          </div>
+
+          }
+
+          <button
+            class="mt-6 w-full cursor-pointer rounded-xl border-2 border-purple-950 py-3 font-semibold text-purple-950 transition hover:bg-purple-950 hover:text-white">
+
+            Solicitar presupuesto
+
+          </button>
+
+        </div>
+
+      </article>
+
+      }
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="pb-20 px-6">
+
+    <div class="mx-auto max-w-6xl rounded-3xl bg-purple-950 px-10 py-14 text-center">
+
+      <h2 class="text-4xl font-black text-white">
+
+        ¿Necesitas un presupuesto personalizado?
+
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-3xl text-lg text-white/80">
+
+        Cuéntanos tu proyecto y prepararemos una propuesta adaptada a tus necesidades,
+        sin compromiso.
+
+      </p>
+
+      <a routerLink="/presupuesto"
+        class="mt-8 inline-flex rounded-xl bg-amarillo px-8 py-4 text-lg font-bold text-stone-900 transition hover:-translate-y-1">
+
+        Solicitar presupuesto
+
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
