@@ -51,6 +51,11 @@ export const routes: Routes = [
       import('./pages/presupuesto-page/presupuesto-page').then(m => m.PresupuestoPage),
   },
   {
+    path: 'servicio/:slug',
+    loadComponent: () =>
+      import('./pages/servicio-page/servicio-page').then(m => m.ServicioPage),
+  },
+  {
     path: '**',
     title: 'Página no encontrada',
     loadComponent: () =>

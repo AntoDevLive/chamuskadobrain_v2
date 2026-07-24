@@ -1,0 +1,250 @@
+<main>
+
+  <!-- HERO -->
+
+  <section class="relative overflow-hidden bg-purple-950 py-10">
+
+    <img [src]="servicio.image" [alt]="servicio.title" class="absolute inset-0 h-full w-full object-cover opacity-15">
+
+    <div class="relative mx-auto max-w-7xl px-6 py-20" data-aos="fade-right">
+
+      <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
+
+        Servicio editorial
+
+      </span>
+
+      <h1 class="mt-6 max-w-4xl text-5xl font-black text-white">
+
+        {{ servicio.title }}
+
+      </h1>
+
+      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-white/80">
+
+        {{ tarifa.slogan }}
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- DESCRIPCIÓN -->
+
+  <section class="mx-auto max-w-7xl px-6 py-16" data-aos="fade-up">
+
+    <div class="grid gap-10 lg:grid-cols-3">
+
+      <!-- Texto -->
+
+      <div class="lg:col-span-2">
+
+        <h2 class="text-3xl font-black text-stone-900">
+
+          ¿En qué consiste?
+
+        </h2>
+
+        <p class="mt-6 text-lg leading-8 text-stone-700">
+
+          {{ tarifa.descripcion }}
+
+        </p>
+
+      </div>
+
+      <!-- Imagen -->
+
+      <div>
+
+        <img [src]="servicio.image" [alt]="servicio.title" class="rounded-2xl shadow-lg">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- INCLUYE -->
+
+  <section class="bg-white py-16" data-aos="fade-up">
+
+    <div class="mx-auto max-w-7xl px-6">
+
+      <h2 class="mb-10 text-3xl font-black text-stone-900">
+
+        ¿Qué incluye?
+
+      </h2>
+
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+
+        @for(item of tarifa.incluye; track $index){
+
+        <div class="flex items-start gap-3 rounded-xl bg-stone-50 p-4">
+
+          <div class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-amarillo font-bold text-stone-900">
+
+            ✓
+
+          </div>
+
+          <p class="text-stone-700">
+
+            {{ item }}
+
+          </p>
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TARIFAS -->
+
+  <section class="py-16" data-aos="fade-up">
+
+    <div class="mx-auto max-w-5xl px-6">
+
+      <div class="overflow-hidden rounded-2xl bg-purple-950 shadow-xl">
+
+        <div class="p-8 text-white">
+
+          <h2 class="text-3xl font-black">
+
+            Tarifas
+
+          </h2>
+
+        </div>
+
+        <div class="space-y-3 bg-white p-8">
+
+          @for(precio of tarifa.tarifas; track $index){
+
+          <div class="flex items-center justify-between rounded-xl bg-stone-50 p-4">
+
+            <span>
+
+              {{ precio.concepto }}
+
+            </span>
+
+            <span class="rounded-full bg-amarillo px-4 py-2 font-bold">
+
+              {{ precio.precio }}
+
+            </span>
+
+          </div>
+
+          }
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NO INCLUYE -->
+
+  @if(tarifa.noIncluye){
+
+  <section class="py-10" data-aos="fade-up">
+
+    <div class="mx-auto max-w-7xl px-6">
+
+      <h2 class="mb-8 text-3xl font-black text-stone-900">
+
+        Este servicio no incluye
+
+      </h2>
+
+      <div class="grid gap-4 md:grid-cols-2">
+
+        @for(item of tarifa.noIncluye; track $index){
+
+        <div class="rounded-xl border border-red-100 bg-red-50 p-4">
+
+          {{ item }}
+
+        </div>
+
+        }
+
+      </div>
+
+    </div>
+
+  </section>
+
+  }
+
+  <!-- OBSERVACIONES -->
+
+  @if(tarifa.observaciones){
+
+  <section class="py-10" data-aos="fade-up">
+
+    <div class="mx-auto max-w-5xl rounded-2xl bg-amber-50 p-8">
+
+      <h2 class="mb-4 text-2xl font-black">
+
+        Observaciones
+
+      </h2>
+
+      @for(obs of tarifa.observaciones; track $index){
+
+      <p class="leading-8 text-stone-700">
+
+        • {{ obs }}
+
+      </p>
+
+      }
+
+    </div>
+
+  </section>
+
+  }
+
+  <!-- CTA -->
+
+  <section class="px-6 py-20" data-aos="fade-up">
+
+    <div class="mx-auto max-w-6xl rounded-3xl bg-purple-950 px-10 py-14 text-center">
+
+      <h2 class="text-4xl font-black text-white">
+
+        ¿Quieres contratar este servicio?
+
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-3xl text-lg text-white/80">
+
+        Estaremos encantados de ayudarte con tu proyecto editorial y resolver cualquier duda antes de empezar.
+
+      </p>
+
+      <a routerLink="/presupuesto"
+        class="mt-8 inline-flex rounded-xl bg-amarillo px-8 py-4 text-lg font-bold text-stone-900 transition hover:-translate-y-1">
+
+        Solicitar presupuesto
+
+      </a>
+
+    </div>
+
+  </section>
+
+</main>

@@ -1,1 +1,151 @@
-<p>servicios-page works!</p>,
+<main>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-purple-950 pt-10">
+
+    <!-- decoración -->
+    <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-amarillo/20 blur-3xl"></div>
+    <div class="absolute right-0 bottom-0 h-60 w-60 rounded-full bg-amber-300/10 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 py-16" data-aos="fade-right">
+
+      <div class="max-w-3xl">
+
+        <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
+
+          SERVICIOS EDITORIALES
+
+        </span>
+
+        <h1 class="mt-6 text-4xl font-black leading-tight text-white lg:text-5xl">
+
+          Todo lo que tu libro necesita para convertirse en una obra profesional.
+
+        </h1>
+
+        <p class="mt-5 text-lg leading-relaxed text-white/80">
+
+          Desde la corrección hasta la publicación en Amazon. Elige el servicio
+          que necesitas o combina varios para crear un proyecto editorial a tu
+          medida.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICIOS -->
+
+  <section class="mx-auto max-w-7xl px-6 py-20" data-aos="fade-up">
+
+    <div class="mb-12 text-center">
+
+      <h2 class="text-4xl font-black text-stone-900">
+        Nuestros servicios
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-3xl text-lg text-stone-600">
+        Soluciones profesionales para autores independientes en cualquier fase de
+        su proyecto editorial.
+      </p>
+
+    </div>
+
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+      @for(servicio of servicios; track servicio.id){
+
+      <article
+        class="group overflow-hidden rounded-2xl bg-white shadow-md shadow-neutral-500/40 transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+        <!-- imagen -->
+
+        <div class="relative h-56 overflow-hidden">
+
+          <img [src]="servicio.image" [alt]="servicio.title"
+            class="h-full w-full object-cover transition duration-700 group-hover:scale-110">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
+          </div>
+
+        </div>
+
+
+        <!-- contenido -->
+
+        <div class="flex min-h-72 flex-col p-6">
+
+          <h3 class="text-2xl font-black text-stone-900">
+
+            {{ servicio.title }}
+
+          </h3>
+
+          <p class="mt-4 flex-1 leading-relaxed text-stone-700 line-clamp-4">
+
+            {{ servicio.description }}
+
+          </p>
+
+          <a
+            [routerLink]="['/servicio', servicio.slug]"
+            class="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-amarillo px-5 py-2 font-semibold text-stone-900 transition duration-300 hover:bg-amber-300">
+
+            Saber más
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition group-hover:translate-x-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+
+            </svg>
+
+          </a>
+
+        </div>
+
+      </article>
+
+      }
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="px-6 pb-20">
+
+    <div class="mx-auto max-w-7xl rounded-3xl bg-purple-950 px-10 py-14 text-center">
+
+      <h2 class="text-4xl font-black text-white">
+
+        ¿No sabes qué servicio necesita tu libro?
+
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-3xl text-lg text-white/80">
+
+        Cuéntanos tu proyecto y prepararemos un presupuesto personalizado sin
+        compromiso para ayudarte a dar el siguiente paso como autor.
+
+      </p>
+
+      <a routerLink="/presupuesto"
+        class="mt-8 inline-block rounded-xl bg-amarillo px-8 py-4 text-lg font-bold text-stone-900 transition hover:-translate-y-1 hover:shadow-lg">
+
+        Solicitar presupuesto
+
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
