@@ -1,0 +1,59 @@
+@keyframes mobileMenuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobileMenuOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}
+
+.mobile-menu-in {
+  animation: mobileMenuIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.mobile-menu-out {
+  animation: mobileMenuOut 0.2s ease-in both;
+}
+
+@keyframes overlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.overlay-in {
+  animation: overlayIn 0.25s ease-out both;
+}
+
+.overlay-out {
+  animation: overlayOut 0.2s ease-in both;
+}
