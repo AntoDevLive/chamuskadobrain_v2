@@ -1,1 +1,170 @@
-<p>footer works!</p>,
+<footer class="relative overflow-hidden bg-[#19002a] text-white">
+
+  <!-- Decoración -->
+  <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-amarillo/10 blur-3xl"></div>
+  <div class="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-amber-300/10 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-7xl px-6 pb-10 pt-20">
+
+    <!-- Bloque superior -->
+    <div class="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+
+      <!-- Marca -->
+      <div>
+
+        <a routerLink="/" class="inline-flex items-center gap-2">
+          <img
+            src="/img/logo.png"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-amarillo text-lg font-black text-stone-900">
+          <span class="text-2xl font-black tracking-wider">Chamuskadobrain</span>
+        </a>
+
+        <p class="mt-5 max-w-sm leading-7 text-white/70">
+          Acompañamos a autores independientes en cada etapa de su libro: corrección, maquetación, diseño de
+          portada y publicación.
+        </p>
+
+        <div class="mt-6 flex gap-3">
+
+          <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-lg transition
+          hover:-translate-y-1 hover:bg-amarillo hover:text-stone-900">
+          📷
+          </a>
+
+          <a
+          href="https://x.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X / Twitter"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-lg transition
+          hover:-translate-y-1 hover:bg-amarillo hover:text-stone-900">
+          🐦
+          </a>
+
+          <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-lg transition
+          hover:-translate-y-1 hover:bg-amarillo hover:text-stone-900">
+          💼
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- servicios -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-amarillo">Servicios</h3>
+        <ul class="mt-5 space-y-3">
+          <li>
+            <a routerLink="/servicios/correccion"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Corrección
+            </a>
+          </li>
+          <li>
+            <a routerLink="/servicios/maquetacion"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Maquetación
+            </a>
+          </li>
+          <li>
+            <a routerLink="/servicios/portada"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Diseño de portada
+            </a>
+          </li>
+          <li>
+            <a routerLink="/servicios/publicacion"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Publicación
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Enlaces -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-amarillo">Enlaces</h3>
+        <ul class="mt-5 space-y-3">
+          <li>
+            <a routerLink="/sobre-nosotros"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Sobre nosotros
+            </a>
+          </li>
+          <li>
+            <a routerLink="/contacto"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Contacto
+            </a>
+          </li>
+          <li>
+            <a routerLink="/presupuesto"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Solicitar presupuesto
+            </a>
+          </li>
+          <li>
+            <a routerLink="/faq"
+              class="text-white/70 transition hover:text-white hover:underline hover:underline-offset-4">
+              Preguntas frecuentes
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-amarillo">Contacto</h3>
+        <ul class="mt-5 space-y-4 text-white/70">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">✉️</span>
+            <a href="mailto:hola@tueditorial.com" class="transition hover:text-white">hola@tueditorial.com</a>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">📞</span>
+            <a href="tel:+34900000000" class="transition hover:text-white">+34 900 000 000</a>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5">📍</span>
+            <span>Madrid, España</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Separador -->
+    <div class="my-10 h-px w-full bg-white/10"></div>
+
+    <!-- Bloque inferior -->
+    <div class="flex flex-col items-center justify-between gap-4 text-sm text-white/60 md:flex-row">
+
+      <p>&copy; 2026 Tu Editorial. Todos los derechos reservados.</p>
+
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+        <a routerLink="/legal/aviso-legal" class="transition hover:text-white hover:underline hover:underline-offset-4">
+          Aviso legal
+        </a>
+        <a routerLink="/legal/privacidad" class="transition hover:text-white hover:underline hover:underline-offset-4">
+          Política de privacidad
+        </a>
+        <a routerLink="/legal/cookies" class="transition hover:text-white hover:underline hover:underline-offset-4">
+          Política de cookies
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
