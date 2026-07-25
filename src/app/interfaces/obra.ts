@@ -1,3 +1,5 @@
+import { IValoracion } from "./valoracion";
+
 export interface IObra {
   id: number;
   images: {
@@ -7,6 +9,7 @@ export interface IObra {
   title: string;
   synopsis: string;
   amazonUrl: string;
+  valoraciones: IValoracion[];
   features: {
     label: string;
     value: string;
