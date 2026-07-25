@@ -1,1 +1,112 @@
-<p>preguntas-page works!</p>,
+<!-- HERO -->
+<section class="relative overflow-hidden pt-10">
+
+  <!-- Imagen de fondo -->
+  <div class="absolute inset-0 bg-[url('/img/card7.png')] bg-cover bg-center">
+  </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-purple-950/85">
+  </div>
+
+  <!-- Decoración -->
+  <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-amarillo/20 blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 h-60 w-60 rounded-full bg-amber-300/10 blur-3xl"></div>
+
+  <!-- Contenido -->
+  <div class="relative mx-auto max-w-7xl px-6 py-16" data-aos="fade-right">
+
+    <div class="max-w-3xl">
+
+      <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
+
+        PREGUNTAS FRECUENTES
+
+      </span>
+
+      <h1 class="mt-6 text-4xl font-black leading-tight text-white lg:text-5xl">
+
+        Resolvemos las dudas más habituales de los autores.
+
+      </h1>
+
+      <p class="mt-5 text-lg leading-relaxed text-white/80">
+
+        Sabemos que publicar un libro genera muchas preguntas. Aquí encontrarás respuesta a las consultas más frecuentes
+        sobre nuestros servicios, el proceso de trabajo y cómo podemos ayudarte a convertir tu manuscrito en una obra
+        profesional.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FAQ -->
+<section class="mx-auto my-20 max-w-6xl px-6" data-aos="fade-up">
+
+  <div class="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-xl shadow-stone-300/20">
+
+    @for (faq of faqs; track faq.question; let i = $index; let last = $last) {
+
+    <article class="transition-all duration-300" [class.bg-stone-50]="openedQuestion === i">
+
+      <button type="button" (click)="toggleQuestion(i)"
+        class="group flex w-full items-center gap-6 px-8 py-7 text-left cursor-pointer hover:bg-gray-200/60 transition duration-200">
+
+        <!-- Icono -->
+
+        <div
+          class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-purple-950 text-2xl font-light text-white transition-all duration-300 group-hover:scale-105"
+          [class.rotate-180]="openedQuestion === i">
+
+          {{ openedQuestion === i ? '−' : '+' }}
+
+        </div>
+
+        <!-- Pregunta -->
+
+        <h3 class="flex-1 text-lg font-bold transition-colors duration-300 lg:text-xl"
+          [class.text-purple-950]="openedQuestion === i" [class.text-stone-900]="openedQuestion !== i">
+
+          {{ faq.question }}
+
+        </h3>
+
+      </button>
+
+      <!-- Respuesta -->
+
+      <div class="overflow-hidden transition-all duration-500 ease-in-out" [class.max-h-0]="openedQuestion !== i"
+        [class.max-h-96]="openedQuestion === i">
+
+        <div class="px-25 pb-8 pr-8">
+
+          <div class="mb-6 h-px bg-stone-200"></div>
+
+          <p class="leading-8 text-stone-700">
+
+            {{ faq.answer }}
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    @if(!last){
+
+    <div class="mx-8 h-px bg-stone-200 transition-opacity duration-300" [class.opacity-0]="openedQuestion === i">
+    </div>
+
+    }
+
+    }
+
+  </div>
+
+</section>

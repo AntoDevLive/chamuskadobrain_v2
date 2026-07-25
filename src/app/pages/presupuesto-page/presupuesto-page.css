@@ -1,0 +1,94 @@
+/* Alerta de campo (aparece/desaparece con leve deslizamiento) */
+@keyframes fieldErrorIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fieldErrorOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+.field-error-in {
+  animation: fieldErrorIn 0.25s ease-out both;
+}
+
+.field-error-out {
+  animation: fieldErrorOut 0.2s ease-in both;
+}
+
+/* Toast de éxito/error */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.97);
+  }
+}
+
+.toast-in {
+  animation: toastIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.toast-out {
+  animation: toastOut 0.25s ease-in both;
+}
+
+/* Sacudida en campos inválidos al enviar */
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translateX(-1px);
+  }
+
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.4s cubic-bezier(.36, .07, .19, .97) both;
+}

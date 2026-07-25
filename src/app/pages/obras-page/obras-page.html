@@ -1,8 +1,15 @@
 <!-- HERO -->
-<section class="relative overflow-hidden bg-purple-950 pt-10">
+<section class="relative overflow-hidden pt-10">
+
+  <!-- Imagen de fondo -->
+  <div class="absolute inset-0 bg-[url('/img/card1.png')] bg-cover bg-center">
+  </div>
+
+  <!-- Overlay morado -->
+  <div class="absolute inset-0 bg-purple-950/90">
+  </div>
 
   <!-- Decoración -->
-
   <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-amarillo/20 blur-3xl"></div>
   <div class="absolute bottom-0 right-0 h-60 w-60 rounded-full bg-amber-300/10 blur-3xl"></div>
 
@@ -13,20 +20,19 @@
     </span>
 
     <h1 class="mt-6 max-w-4xl text-4xl font-black leading-tight text-white lg:text-6xl">
-      Dos historias. Dos mundos.<br>
-      Un mismo propósito:
-      <span class="text-amarillo">hacerte dudar hasta la última página.</span>
+      Historias y Mundos que te sumergen
+      <span class="text-amarillo">hasta la última página.</span>
     </h1>
 
     <p class="mt-6 max-w-3xl text-lg leading-relaxed text-white/80">
-      Descubre las novelas publicadas por Paloma Castizo. Thrillers psicológicos cargados de misterio,
+      Descubre nuestras ilustraciones, maquetaciones, booktrailers y Thrillers psicológicos cargados de misterio,
       tensión y personajes que permanecerán contigo mucho después de terminar la lectura.
     </p>
 
     <div class="mt-10 flex flex-wrap gap-4">
 
       <a href="https://www.amazon.es/s?k=Paloma+Castizo" target="_blank"
-        class="rounded-xl border-2 border-white px-8 py-3 font-bold text-white transition-all duration-300 hover:bg-white hover:text-purple-950">
+        class="rounded-xl px-8 py-3 font-bold transition-all duration-300 hover:shadow-md hover:shadow-white/60 bg-white text-purple-950">
 
         Ver autora en Amazon
 
@@ -38,7 +44,7 @@
 
 </section>
 
-<section class="mx-auto my-20 max-w-7xl px-4 sm:px-6">
+<section class="mx-auto my-20 max-w-7xl px-4 sm:px-6" data-aos="fade-up">
 
   <!-- Título -->
 
@@ -65,7 +71,7 @@
 
         <!-- Imagen -->
 
-        <div class="relative flex justify-center" [class.lg:order-2]="even">
+        <div class="relative flex justify-center">
 
           <div class="absolute h-72 w-52 rounded-3xl bg-purple-950/10 blur-xl">
           </div>
@@ -301,8 +307,10 @@
 
 <div class="mt-12">
 
+  <div class="mx-auto my-14 h-px w-2/3 bg-stone-300"></div>
+
   <h4 class="mb-8 text-center text-2xl font-black text-purple-950">
-    Opiniones de lectores
+    ¿Qué opinan nuestros lectores sobre {{ obra.title }}?
   </h4>
 
   <div class="relative">
@@ -322,7 +330,7 @@
 
     <!-- Swiper -->
 
-    <swiper-container #reviewsSwiper class="reviews-swiper block w-full" [attr.id]="'reviews-' + obra.id"
+    <swiper-container [className]="'cursor-grab active:cursor-grabbing'" #reviewsSwiper class="reviews-swiper block w-full" [attr.id]="'reviews-' + obra.id"
       slides-per-view="1" space-between="24" breakpoints='{
         "768": {
           "slidesPerView": 2

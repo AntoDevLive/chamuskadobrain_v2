@@ -1,1 +1,285 @@
-<p>contacto-page works!</p>,
+<!-- HERO -->
+<section class="relative overflow-hidden pt-10">
+
+  <!-- Fondo -->
+  <div class="absolute inset-0 bg-[url('/img/card8.png')] bg-cover bg-center"></div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-purple-950/85"></div>
+
+  <!-- Decoración -->
+  <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-amarillo/20 blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 h-60 w-60 rounded-full bg-amber-300/10 blur-3xl"></div>
+
+  <!-- Contenido -->
+  <div class="relative mx-auto max-w-7xl px-6 py-16" data-aos="fade-right">
+
+    <div class="max-w-3xl">
+
+      <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
+        CONTACTO
+      </span>
+
+      <h1 class="mt-6 text-4xl font-black leading-tight text-white lg:text-5xl">
+        Cuéntanos tu proyecto y te prepararemos un presupuesto personalizado.
+      </h1>
+
+      <p class="mt-5 text-lg leading-relaxed text-white/80">
+        Cada libro es diferente. Completa el formulario y estudiaremos tu caso para ofrecerte la solución editorial que
+        mejor se adapte a tu obra.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="mx-auto my-20 max-w-7xl px-6" data-aos="fade-up">
+
+  <div class="grid overflow-hidden rounded-[36px] bg-white shadow-2xl shadow-stone-300/20 lg:grid-cols-[380px_1fr]">
+
+    <!-- Panel izquierdo -->
+
+    <aside class="bg-purple-950 p-10 text-white">
+
+      <h2 class="text-3xl font-black">
+
+        Hablemos de tu libro.
+
+      </h2>
+
+      <p class="mt-6 leading-8 text-white/80">
+
+        Rellena el formulario con la mayor información posible.
+        Cuantos más detalles conozcamos sobre tu obra, más ajustado será el presupuesto que podremos ofrecerte.
+
+      </p>
+
+      <div class="mt-12 space-y-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amarillo text-xl">
+
+            ✉️
+
+          </div>
+
+          <div>
+
+            <h3 class="font-bold">
+
+              Respuesta rápida
+
+            </h3>
+
+            <p class="text-white/70">
+
+              Respondemos normalmente en 24-48 horas.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amarillo text-xl">
+
+            📚
+
+          </div>
+
+          <div>
+
+            <h3 class="font-bold">
+
+              Presupuesto personalizado
+
+            </h3>
+
+            <p class="text-white/70">
+
+              Adaptado a las necesidades reales de tu obra.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amarillo text-xl">
+
+            🤝
+
+          </div>
+
+          <div>
+
+            <h3 class="font-bold">
+
+              Sin compromiso
+
+            </h3>
+
+            <p class="text-white/70">
+
+              Resolveremos tus dudas antes de comenzar.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+    <!-- Formulario -->
+
+        <!-- Formulario -->
+        <div class="relative p-8 lg:p-12">
+        
+          <!-- Toast de éxito -->
+          @if (successMessage) {
+          <div
+            class="absolute inset-x-8 top-4 z-20 flex items-center gap-3 rounded-xl border border-green-200 bg-green-50 px-5 py-4 text-green-800 shadow-lg"
+            animate.enter="toast-in" animate.leave="toast-out">
+            <span class="text-xl">✅</span>
+            <p class="font-semibold">Tu consulta se ha enviado correctamente. Te responderemos pronto.</p>
+          </div>
+          }
+        
+          <!-- Toast de error general -->
+          @if (errorMessage) {
+          <div
+            class="absolute inset-x-8 top-4 z-20 flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-800 shadow-lg"
+            animate.enter="toast-in" animate.leave="toast-out">
+            <span class="text-xl">⚠️</span>
+            <p class="font-semibold">Ha ocurrido un error al enviar el formulario. Inténtalo de nuevo.</p>
+          </div>
+          }
+        
+          <form [formGroup]="form" (ngSubmit)="submit()" class="space-y-7" novalidate>
+        
+            <!-- Nombre -->
+            <div>
+              <label class="mb-2 block font-semibold text-stone-800" for="nombre">Nombre *</label>
+              <input id="nombre" type="text" formControlName="nombre" [class.border-red-400]="hasError('nombre')"
+                [class.ring-4]="hasError('nombre')" [class.ring-red-100]="hasError('nombre')"
+                [class.animate-shake]="hasError('nombre')"
+                class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
+              @if (hasError('nombre')) {
+              <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
+                animate.leave="field-error-out">
+                <span>⚠️</span> {{ getError('nombre') }}
+              </p>
+              }
+            </div>
+        
+            <!-- Email -->
+            <div>
+              <label class="mb-2 block font-semibold text-stone-800" for="email">Correo electrónico *</label>
+              <input id="email" type="email" formControlName="email" [class.border-red-400]="hasError('email')"
+                [class.ring-4]="hasError('email')" [class.ring-red-100]="hasError('email')"
+                [class.animate-shake]="hasError('email')"
+                class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
+              @if (hasError('email')) {
+              <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
+                animate.leave="field-error-out">
+                <span>⚠️</span> {{ getError('email') }}
+              </p>
+              }
+            </div>
+        
+            <!-- Servicio + Género -->
+            <div class="grid gap-6 md:grid-cols-2">
+              <div>
+                <label class="mb-2 block font-semibold text-stone-800" for="servicio">Servicio solicitado</label>
+                <select id="servicio" formControlName="servicio" [class.border-red-400]="hasError('servicio')"
+                  [class.ring-4]="hasError('servicio')" [class.ring-red-100]="hasError('servicio')"
+                  class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
+                  <option value="" disabled>Selecciona una opción</option>
+                  <option>Corrección</option>
+                  <option>Maquetación</option>
+                  <option>Portada</option>
+                  <option>Publicación</option>
+                  <option>Varios servicios</option>
+                </select>
+                @if (hasError('servicio')) {
+                <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
+                  animate.leave="field-error-out">
+                  <span>⚠️</span> {{ getError('servicio') }}
+                </p>
+                }
+              </div>
+        
+              <div>
+                <label class="mb-2 block font-semibold text-stone-800" for="genero">Género literario</label>
+                <input id="genero" type="text" placeholder="Thriller, fantasía..." formControlName="genero"
+                  [class.border-red-400]="hasError('genero')" [class.ring-4]="hasError('genero')"
+                  [class.ring-red-100]="hasError('genero')"
+                  class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
+                @if (hasError('genero')) {
+                <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
+                  animate.leave="field-error-out">
+                  <span>⚠️</span> {{ getError('genero') }}
+                </p>
+                }
+              </div>
+            </div>
+        
+            <!-- Palabras -->
+            <div>
+              <label class="mb-2 block font-semibold text-stone-800" for="palabras">Número aproximado de palabras</label>
+              <input id="palabras" type="number" placeholder="Ej. 85000" formControlName="palabras"
+                [class.border-red-400]="hasError('palabras')" [class.ring-4]="hasError('palabras')"
+                [class.ring-red-100]="hasError('palabras')" [class.animate-shake]="hasError('palabras')"
+                class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
+              @if (hasError('palabras')) {
+              <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
+                animate.leave="field-error-out">
+                <span>⚠️</span> {{ getError('palabras') }}
+              </p>
+              }
+            </div>
+        
+            <!-- Mensaje -->
+            <div>
+              <label class="mb-2 block font-semibold text-stone-800" for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" rows="7" placeholder="Cuéntanos en qué punto se encuentra tu obra..."
+                formControlName="mensaje" [class.border-red-400]="hasError('mensaje')" [class.ring-4]="hasError('mensaje')"
+                [class.ring-red-100]="hasError('mensaje')" [class.animate-shake]="hasError('mensaje')"
+                class="w-full resize-none rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10"></textarea>
+              @if (hasError('mensaje')) {
+              <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
+                animate.leave="field-error-out">
+                <span>⚠️</span> {{ getError('mensaje') }}
+              </p>
+              }
+            </div>
+        
+            <!-- Botón -->
+            <button type="submit" [disabled]="sending"
+              class="w-full rounded-xl bg-purple-950 px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-purple-900 hover:shadow-xl hover:shadow-purple-900/30 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0">
+              @if (sending) {
+              <span class="inline-flex items-center gap-2">
+                <span class="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white"></span>
+                ENVIANDO...
+              </span>
+              } @else {
+              ENVIAR CONSULTA
+              }
+            </button>
+        
+          </form>
+        </div>
+
+  </div>
+
+</section>

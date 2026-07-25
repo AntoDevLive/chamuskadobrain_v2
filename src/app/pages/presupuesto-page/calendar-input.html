@@ -1,0 +1,71 @@
+<div class="relative">
+
+  <!-- Input visual -->
+  <button
+    type="button"
+    (click)="toggle()"
+    [disabled]="disabled()"
+    class="flex w-full items-center justify-between rounded-xl border border-stone-300 px-5 py-4 text-left transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10 disabled:cursor-not-allowed disabled:bg-stone-100">
+    <span [class.text-stone-400]="!displayValue()" [class.text-stone-800]="displayValue()">
+      {{ displayValue() || 'Selecciona una fecha' }}
+    </span>
+    <span class="text-lg">📅</span>
+  </button>
+
+  <!-- Panel del calendario -->
+  @if (open()) {
+    <div
+      animate.enter="calendar-in"
+      animate.leave="calendar-out"
+      class="absolute left-0 top-[calc(100%+8px)] z-30 w-80 rounded-2xl border border-stone-200 bg-white p-5 shadow-2xl shadow-purple-950/20">
+
+      <!-- Cabecera: mes + navegación -->
+      <div class="mb-4 flex items-center justify-between">
+
+        <button
+          type="button"
+          (click)="prevMonth()"
+          class="flex h-9 w-9 items-center justify-center rounded-full text-purple-950 transition hover:bg-purple-950/10">
+          ‹
+        </button>
+
+        <p class="font-bold capitalize text-stone-800">{{ monthLabel() }}</p>
+
+        <button
+          type="button"
+          (click)="nextMonth()"
+          class="flex h-9 w-9 items-center justify-center rounded-full text-purple-950 transition hover:bg-purple-950/10">
+          ›
+        </button>
+
+      </div>
+
+      <!-- Días de la semana -->
+      <div class="mb-2 grid grid-cols-7 gap-1 text-center text-xs font-bold text-stone-400">
+        @for (day of weekDays; track day) {
+          <span>{{ day }}</span>
+        }
+      </div>
+
+      <!-- Días del mes -->
+      <div class="grid grid-cols-7 gap-1">
+        @for (day of calendarDays(); track day.date.getTime()) {
+          <button
+            type="button"
+            (click)="selectDay(day)"
+            [disabled]="day.disabled"
+            [class]="dayClass(day)">
+            {{ day.label }}
+          </button>
+        }
+      </div>
+
+      <!-- Leyenda -->
+      <p class="mt-4 text-center text-xs text-stone-400">
+        Hoy y los días anteriores no están disponibles.
+      </p>
+
+    </div>
+  }
+
+</div>
