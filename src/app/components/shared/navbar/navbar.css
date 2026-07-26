@@ -57,3 +57,63 @@
 .overlay-out {
   animation: overlayOut 0.2s ease-in both;
 }
+
+@keyframes lang-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes lang-menu-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.96);
+  }
+}
+
+.lang-menu-in {
+  animation: lang-menu-in 0.2s ease-out both;
+}
+
+.lang-menu-out {
+  animation: lang-menu-out 0.15s ease-in both;
+}
+
+@keyframes lang-overlay-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lang-overlay-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.lang-overlay-in {
+  animation: lang-overlay-in 0.15s ease-out both;
+}
+
+.lang-overlay-out {
+  animation: lang-overlay-out 0.15s ease-in both;
+}

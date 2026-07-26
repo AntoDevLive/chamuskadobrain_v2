@@ -3,6 +3,7 @@ import { ITarifa } from "../interfaces/tarifa";
 export const tarifasJson: ITarifa[] = [
   {
     id: 1,
+    slug: 'publicacion-en-amazon',
     servicio: 'Publicación en Amazon',
     slogan: 'Publica tu libro sin complicaciones. Nosotros nos encargamos de TODO el proceso técnico.',
     descripcion:
@@ -40,6 +41,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 2,
+    slug: 'correccion-profesional',
     servicio: 'Corrección profesional',
     slogan: 'Tu historia merece estar escrita para brillar.',
     descripcion:
@@ -75,6 +77,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 3,
+    slug: 'informe-de-lectura',
     servicio: 'Informe de lectura',
     slogan: 'Descubre el verdadero potencial de tu manuscrito.',
     descripcion:
@@ -116,6 +119,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 4,
+    slug: 'ilustracion-profesional',
     servicio: 'Ilustración profesional',
     slogan: 'Dale imagen a tu imaginación.',
     descripcion:
@@ -143,6 +147,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 5,
+    slug: 'diseno-de-portada',
     servicio: 'Diseño de portada',
     slogan:
       'Los lectores juzgan un libro por su portada. Haz que la tuya destaque.',
@@ -179,6 +184,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 6,
+    slug: 'maquetacion-profesional',
     servicio: 'Maquetación profesional',
     slogan:
       'La diferencia entre un manuscrito y un libro profesional listo para ver la luz.',
@@ -210,6 +216,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 7,
+    slug: 'booktrailer',
     servicio: 'Booktrailer',
     slogan: 'Haz que tu historia cobre vida antes de ser leída.',
     descripcion:
@@ -236,6 +243,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 8,
+    slug: 'dossier-editorial',
     servicio: 'Dossier editorial',
     slogan:
       'Presenta tu obra como lo haría un profesional del sector.',
@@ -262,6 +270,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 9,
+    slug: 'optimizacion-amazon-y-asesorias',
     servicio: 'Optimización Amazon y asesorías',
     slogan: 'Publicar es solo el primer paso.',
     descripcion:
@@ -295,6 +304,7 @@ export const tarifasJson: ITarifa[] = [
 
   {
     id: 10,
+    slug: 'marca-personal-para-autores',
     servicio: 'Diseño de marca personal para autores',
     slogan: 'Tu nombre también es tu sello.',
     descripcion:

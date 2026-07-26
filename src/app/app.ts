@@ -4,10 +4,11 @@ import { filter } from 'rxjs';
 import AOS from 'aos';
 import { Navbar } from './components/shared/navbar/navbar';
 import { Footer } from "./components/shared/footer/footer";
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer],
+  imports: [RouterOutlet, Navbar, Footer, TranslocoPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

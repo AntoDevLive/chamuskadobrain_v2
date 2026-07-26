@@ -1,0 +1,368 @@
+{
+  "navbar": {
+    "home": "Inizio",
+    "services": "Servizi",
+    "pricing": "Prezzi",
+    "works": "Lavori",
+    "about": "Chi siamo",
+    "faq": "Domande frequenti",
+    "contact": "Contatti",
+    "quote": "Richiedi un preventivo"
+  },
+  "home": {
+    "hero": {
+      "kicker": "CASA EDITRICE PER AUTORI INDIPENDENTI",
+      "tagline": "Lo realizziamo per te.",
+      "description1": "Correzione, illustrazione, impaginazione e pubblicazione professionale <br class=\"hidden lg:block\">per autori indipendenti.",
+      "description2": "Non siamo una casa editrice tradizionale e non acquisiamo i diritti sulle opere dei nostri autori. <br class=\"hidden lg:block\"> Il nostro obiettivo è offrire strumenti professionali affinché ogni autore <br class=\"hidden lg:block\"> possa pubblicare e promuovere la propria opera mantenendone il pieno controllo.",
+      "ctaBudget": "RICHIEDI UN PREVENTIVO",
+      "ctaServices": "VEDI SERVIZI",
+      "feature1": "Assistenza <br>personalizzata",
+      "feature2": "Qualità professionale <br>garantita",
+      "feature3": "Trasformiamo la tua storia <br>in un libro indimenticabile",
+      "quote": "Fai prendere vita alla tua storia <br>prima ancora che venga letta."
+    },
+    "services": {
+      "sectionTitle": "I nostri servizi",
+      "cardCta": "Scopri di più",
+      "finalCta": "Vedi tutti i servizi",
+      "items": {
+        "publicacion-en-amazon": {
+          "title": "Pubblicazione su Amazon",
+          "description": "Servizio completo di autopubblicazione su Amazon KDP. Ci occupiamo della preparazione, dell'impaginazione, della configurazione e della pubblicazione del tuo libro affinché tu possa pubblicare senza complicazioni."
+        },
+        "correccion-profesional": {
+          "title": "Correzione professionale",
+          "description": "Correzione ortotipografica e stilistica per migliorare ortografia, grammatica, fluidità e leggibilità della tua opera senza alterare la tua voce come autore."
+        },
+        "informe-de-lectura": {
+          "title": "Scheda di lettura",
+          "description": "Analisi editoriale professionale del tuo manoscritto con valutazione, struttura, personaggi, ritmo, punti di forza e suggerimenti per valorizzarne la qualità."
+        },
+        "ilustracion-profesional": {
+          "title": "Illustrazione professionale",
+          "description": "Illustrazioni personalizzate, copertine, personaggi, ambientazioni, mappe e concept art adattati allo stile della tua storia."
+        },
+        "diseno-de-portada": {
+          "title": "Progettazione della copertina",
+          "description": "Realizzazione professionale di copertine per ebook e libri cartacei, adattate ad Amazon KDP e progettate per attirare l'attenzione dei lettori."
+        },
+        "maquetacion-profesional": {
+          "title": "Impaginazione professionale",
+          "description": "Impaginazione per libri cartacei e digitali con conversione, ottimizzazione per Kindle e file pronti per la pubblicazione."
+        },
+        "booktrailer": {
+          "title": "Booktrailer",
+          "description": "Video promozionali per presentare il tuo libro sui social network con montaggio professionale, musica ed effetti visivi."
+        },
+        "dossier-editorial": {
+          "title": "Dossier editoriale",
+          "description": "Prepariamo un dossier professionale con sinossi, lettera di presentazione e documentazione pronta da inviare alle case editrici tradizionali."
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Ottimizzazione Amazon e consulenze",
+          "description": "Ottimizzazione delle schede Amazon KDP e consulenze personalizzate su autopubblicazione, lancio e marketing per scrittori."
+        },
+        "marca-personal-para-autores": {
+          "title": "Personal branding per autori",
+          "description": "Progettiamo la tua identità come autore attraverso logo, immagine coordinata e risorse per rafforzare la tua presenza professionale."
+        }
+      }
+    },
+    "tarifas": {
+      "sectionTitle": "Tariffe",
+      "finalCta": "Vedi tutte le tariffe",
+      "items": {
+        "publicacion-en-amazon": {
+          "badge": "PIÙ RICHIESTO",
+          "title": "Pubblicazione su Amazon",
+          "description": "Servizio completo di autopubblicazione su Amazon KDP. Ci occupiamo di tutto il processo tecnico affinché tu debba pensare solo a scrivere.",
+          "cta": "Richiedi un preventivo",
+          "tarifas": {
+            "0": {
+              "concepto": "Fino a 50 pagine",
+              "precio": "280 € + IVA"
+            },
+            "1": {
+              "concepto": "Da 51 a 100 pagine",
+              "precio": "320 € + IVA"
+            },
+            "2": {
+              "concepto": "Da 101 a 200 pagine",
+              "precio": "340 € + IVA"
+            },
+            "3": {
+              "concepto": "Da 201 a 300 pagine",
+              "precio": "400 € + IVA"
+            },
+            "4": {
+              "concepto": "Da 301 a 400 pagine",
+              "precio": "440 € + IVA"
+            },
+            "5": {
+              "concepto": "Da 401 a 500 pagine",
+              "precio": "480 € + IVA"
+            },
+            "6": {
+              "concepto": "Da 501 a 600 pagine",
+              "precio": "520 € + IVA"
+            },
+            "7": {
+              "concepto": "Oltre 600 pagine",
+              "precio": "Preventivo personalizzato"
+            }
+          }
+        },
+        "correccion-profesional": {
+          "title": "Correzione professionale",
+          "tarifas": {
+            "0": {
+              "concepto": "Opere superiori a 4.000 parole",
+              "precio": "0,015 €/parola + IVA"
+            },
+            "1": {
+              "concepto": "Opere inferiori a 4.000 parole",
+              "precio": "0,025 €/parola + IVA"
+            }
+          }
+        },
+        "informe-de-lectura": {
+          "title": "Scheda di lettura",
+          "tarifas": {
+            "0": {
+              "concepto": "Fino a 20.000 parole",
+              "precio": "140 € + IVA"
+            },
+            "1": {
+              "concepto": "Da 20.000 a 50.000 parole",
+              "precio": "220 € + IVA"
+            },
+            "2": {
+              "concepto": "Da 50.000 a 80.000 parole",
+              "precio": "290 € + IVA"
+            },
+            "3": {
+              "concepto": "Oltre 80.000 parole",
+              "precio": "370 € + IVA"
+            }
+          }
+        },
+        "ilustracion-profesional": {
+          "title": "Illustrazione professionale",
+          "tarifas": {
+            "0": {
+              "concepto": "Progetto personalizzato",
+              "precio": "Preventivo personalizzato"
+            }
+          }
+        },
+        "diseno-de-portada": {
+          "title": "Progettazione della copertina",
+          "tarifas": {
+            "0": {
+              "concepto": "Copertina ebook",
+              "precio": "55 € + IVA"
+            },
+            "1": {
+              "concepto": "Copertina cartacea",
+              "precio": "75 € + IVA"
+            },
+            "2": {
+              "concepto": "Copertina illustrata",
+              "precio": "Preventivo personalizzato"
+            },
+            "3": {
+              "concepto": "Versione ebook con copertina cartacea",
+              "precio": "40 € + IVA"
+            }
+          }
+        },
+        "maquetacion-profesional": {
+          "title": "Impaginazione professionale",
+          "tarifas": {
+            "0": {
+              "concepto": "Cartaceo",
+              "precio": "0,80 €/pagina + IVA"
+            },
+            "1": {
+              "concepto": "Ebook",
+              "precio": "0,60 €/pagina + IVA"
+            },
+            "2": {
+              "concepto": "Ebook insieme al cartaceo",
+              "precio": "0,45 €/pagina + IVA"
+            }
+          }
+        },
+        "booktrailer": {
+          "title": "Booktrailer",
+          "tarifas": {
+            "0": {
+              "concepto": "Booktrailer",
+              "precio": "85 € + IVA"
+            },
+            "1": {
+              "concepto": "Booktrailer con il pacchetto Amazon",
+              "precio": "65 € + IVA"
+            }
+          }
+        },
+        "dossier-editorial": {
+          "title": "Dossier editoriale",
+          "tarifas": {
+            "0": {
+              "concepto": "Dossier editoriale",
+              "precio": "70 € + IVA"
+            }
+          }
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Ottimizzazione Amazon e consulenze",
+          "tarifas": {
+            "0": {
+              "concepto": "Audit della scheda Amazon",
+              "precio": "40 € + IVA"
+            },
+            "1": {
+              "concepto": "Ottimizzazione della scheda Amazon",
+              "precio": "50 € + IVA"
+            },
+            "2": {
+              "concepto": "Consulenza personalizzata",
+              "precio": "40 €/ora + IVA"
+            }
+          }
+        },
+        "marca-personal-para-autores": {
+          "title": "Personal branding per autori",
+          "tarifas": {
+            "0": {
+              "concepto": "Personal branding per autori",
+              "precio": "60 € + IVA"
+            }
+          }
+        }
+      }
+    },
+    "obras": {
+      "sectionTitle": "Opere pubblicate",
+      "availableAmazon": "Disponibile su Amazon",
+      "viewDetails": "Visualizza scheda completa",
+      "viewAmazon": "Visualizza su Amazon",
+      "items": {
+        "malababa": {
+          "title": "Malababa",
+          "synopsis": "Un prestigioso notaio e un poliziotto sono stati invitati e avanzano con cautela, alla luce fioca, nella tenuta di Doña Amelia de Blasco. Un passo incerto dopo l'altro verso l'imponente dimora, senza immaginare la serata a cui assisteranno. Quella donna, odiata e temuta in tutta la provincia, arrogante, irrispettosa ed egoista, annuncia che proprio quella sera rivelerà, durante la cena da lei preparata, chi saranno i suoi futuri eredi. Familiari, amici e domestici hanno la possibilità di cambiare la propria vita se verranno scelti. E faranno qualsiasi cosa per riuscirci. Ma zia Amelia ha un brutto presentimento. Questo provocherà un cambiamento dell'ultimo minuto nei suoi piani? Chi è il vero meritevole dell'eredità? Che il grammofono inizi a suonare.",
+          "features": {
+            "0": {
+              "label": "Editore",
+              "value": "Chamuskado Brain"
+            },
+            "1": {
+              "label": "Data di pubblicazione",
+              "value": "27 gennaio 2025"
+            },
+            "2": {
+              "label": "Lingua",
+              "value": "Spagnolo"
+            },
+            "3": {
+              "label": "Pagine",
+              "value": "386"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409672952"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409672950"
+            },
+            "6": {
+              "label": "Età consigliata",
+              "value": "Da 14 a 18 anni"
+            },
+            "7": {
+              "label": "Peso",
+              "value": "572 g"
+            },
+            "8": {
+              "label": "Dimensioni",
+              "value": "13.97 × 2.95 × 21.59 cm"
+            },
+            "9": {
+              "label": "Classifica Amazon",
+              "value": "n. 708.119 nella categoria Libri"
+            },
+            "10": {
+              "label": "Narrativa noir",
+              "value": "n. 986"
+            },
+            "11": {
+              "label": "Thriller psicologici",
+              "value": "n. 6.313"
+            },
+            "12": {
+              "label": "Misteri",
+              "value": "n. 32.511"
+            },
+            "13": {
+              "label": "Valutazione",
+              "value": "5,0/5 ⭐ (5 recensioni)"
+            }
+          }
+        },
+        "cartas-a-bruno": {
+          "title": "Lettere a Bruno",
+          "synopsis": "Una fuga. Un viaggio. Un motivo dimenticato che l'ha condotta nel remoto villaggio di Portrush, nel nord dell'Irlanda. Una serie di misteriose lettere e di eventi inquietanti sconvolgeranno la sua realtà, costringendola a cercare una via di fuga. Un finale che era già stato scritto. Che cosa è successo alla signorina Lain?",
+          "features": {
+            "0": {
+              "label": "Editore",
+              "value": "Paloma Castizo - Indipendente"
+            },
+            "1": {
+              "label": "Data di pubblicazione",
+              "value": "27 dicembre 2019"
+            },
+            "2": {
+              "label": "Lingua",
+              "value": "Spagnolo"
+            },
+            "3": {
+              "label": "Pagine",
+              "value": "196"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409176149"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409176144"
+            },
+            "6": {
+              "label": "Peso",
+              "value": "354 g"
+            },
+            "7": {
+              "label": "Dimensioni",
+              "value": "15.24 × 1.24 × 22.86 cm"
+            },
+            "8": {
+              "label": "Classifica Amazon",
+              "value": "n. 635.573 nella categoria Libri"
+            },
+            "9": {
+              "label": "Categoria",
+              "value": "n. 146.972 nella narrativa di genere"
+            },
+            "10": {
+              "label": "Valutazione",
+              "value": "5,0/5 ⭐ (10 recensioni)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

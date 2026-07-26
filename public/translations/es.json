@@ -1,0 +1,368 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "pricing": "Tarifas",
+    "works": "Obras",
+    "about": "Sobre Nosotros",
+    "faq": "Preguntas",
+    "contact": "Contacto",
+    "quote": "Solicitar Presupuesto"
+  },
+  "home": {
+    "hero": {
+      "kicker": "EDITORIAL PARA AUTORES INDEPENDIENTES",
+      "tagline": "Lo creamos por ti.",
+      "description1": "Corrección, ilustración, maquetación y publicación profesional <br class=\"hidden lg:block\">para autores independientes.",
+      "description2": "No somos una editorial tradicional ni adquirimos derechos sobre las obras <br class=\"hidden lg:block\"> de nuestros autores. <br class=\"hidden lg:block\"> Nuestro objetivo es ofrecer herramientas profesionales para que cada autor <br class=\"hidden lg:block\"> pueda publicar y promocionar su obra manteniendo el control absoluto sobre ella.",
+      "ctaBudget": "SOLICITAR PRESUPUESTO",
+      "ctaServices": "VER SERVICIOS",
+      "feature1": "Acompañamiento <br>personalizado",
+      "feature2": "Calidad profesional <br>garantizada",
+      "feature3": "Convertimos tu historia <br>en un libro inolvidable",
+      "quote": "Haz que tu historia cobre vida <br>antes de ser leída."
+    },
+    "services": {
+      "sectionTitle": "Nuestros Servicios",
+      "cardCta": "Saber más",
+      "finalCta": "Ver todos los Servicios",
+      "items": {
+        "publicacion-en-amazon": {
+          "title": "Publicación en Amazon",
+          "description": "Servicio completo de autopublicación en Amazon KDP. Nos encargamos de la preparación, maquetación, configuración y publicación de tu libro para que publiques sin complicaciones."
+        },
+        "correccion-profesional": {
+          "title": "Corrección profesional",
+          "description": "Corrección ortotipográfica y de estilo para mejorar la ortografía, gramática, fluidez y legibilidad de tu obra sin alterar tu voz como autor."
+        },
+        "informe-de-lectura": {
+          "title": "Informe de lectura",
+          "description": "Análisis editorial profesional de tu manuscrito con valoración, estructura, personajes, ritmo, fortalezas y recomendaciones para potenciar su calidad."
+        },
+        "ilustracion-profesional": {
+          "title": "Ilustración profesional",
+          "description": "Ilustraciones personalizadas, portadas, personajes, escenarios, mapas y arte conceptual adaptados al estilo de tu historia."
+        },
+        "diseno-de-portada": {
+          "title": "Diseño de portada",
+          "description": "Diseño profesional de portadas para ebook y papel, adaptadas a Amazon KDP y creadas para captar la atención de los lectores."
+        },
+        "maquetacion-profesional": {
+          "title": "Maquetación profesional",
+          "description": "Maquetación para libros impresos y digitales con conversión, optimización para Kindle y formatos preparados para su publicación."
+        },
+        "booktrailer": {
+          "title": "Booktrailer",
+          "description": "Vídeos promocionales para presentar tu libro en redes sociales con edición profesional, música y efectos visuales."
+        },
+        "dossier-editorial": {
+          "title": "Dossier editorial",
+          "description": "Preparamos un dossier profesional con sinopsis, carta de presentación y documentación lista para enviar a editoriales tradicionales."
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Optimización Amazon y asesorías",
+          "description": "Optimización de fichas de Amazon KDP y asesorías personalizadas sobre autopublicación, lanzamiento y marketing para escritores."
+        },
+        "marca-personal-para-autores": {
+          "title": "Marca personal para autores",
+          "description": "Diseñamos tu identidad como autor mediante logotipo, imagen corporativa y recursos para potenciar tu presencia profesional."
+        }
+      }
+    },
+    "tarifas": {
+      "sectionTitle": "Tarifas",
+      "finalCta": "Ver todas las tarifas",
+      "items": {
+        "publicacion-en-amazon": {
+          "badge": "MÁS SOLICITADO",
+          "title": "Publicación en Amazon",
+          "description": "Servicio completo de autopublicación en Amazon KDP. Nosotros nos ocupamos de todo el proceso técnico para que tú solo tengas que preocuparte por escribir.",
+          "cta": "Solicitar presupuesto",
+          "tarifas": {
+            "0": {
+              "concepto": "Hasta 50 páginas",
+              "precio": "280 € + IVA"
+            },
+            "1": {
+              "concepto": "51 - 100 páginas",
+              "precio": "320 € + IVA"
+            },
+            "2": {
+              "concepto": "101 - 200 páginas",
+              "precio": "340 € + IVA"
+            },
+            "3": {
+              "concepto": "201 - 300 páginas",
+              "precio": "400 € + IVA"
+            },
+            "4": {
+              "concepto": "301 - 400 páginas",
+              "precio": "440 € + IVA"
+            },
+            "5": {
+              "concepto": "401 - 500 páginas",
+              "precio": "480 € + IVA"
+            },
+            "6": {
+              "concepto": "501 - 600 páginas",
+              "precio": "520 € + IVA"
+            },
+            "7": {
+              "concepto": "Más de 600 páginas",
+              "precio": "Presupuesto personalizado"
+            }
+          }
+        },
+        "correccion-profesional": {
+          "title": "Corrección profesional",
+          "tarifas": {
+            "0": {
+              "concepto": "Obras superiores a 4.000 palabras",
+              "precio": "0,015 €/palabra + IVA"
+            },
+            "1": {
+              "concepto": "Obras inferiores a 4.000 palabras",
+              "precio": "0,025 €/palabra + IVA"
+            }
+          }
+        },
+        "informe-de-lectura": {
+          "title": "Informe de lectura",
+          "tarifas": {
+            "0": {
+              "concepto": "Hasta 20.000 palabras",
+              "precio": "140 € + IVA"
+            },
+            "1": {
+              "concepto": "20.000 - 50.000 palabras",
+              "precio": "220 € + IVA"
+            },
+            "2": {
+              "concepto": "50.000 - 80.000 palabras",
+              "precio": "290 € + IVA"
+            },
+            "3": {
+              "concepto": "Más de 80.000 palabras",
+              "precio": "370 € + IVA"
+            }
+          }
+        },
+        "ilustracion-profesional": {
+          "title": "Ilustración profesional",
+          "tarifas": {
+            "0": {
+              "concepto": "Proyecto personalizado",
+              "precio": "Presupuesto personalizado"
+            }
+          }
+        },
+        "diseno-de-portada": {
+          "title": "Diseño de portada",
+          "tarifas": {
+            "0": {
+              "concepto": "Portada Ebook",
+              "precio": "55 € + IVA"
+            },
+            "1": {
+              "concepto": "Portada Papel",
+              "precio": "75 € + IVA"
+            },
+            "2": {
+              "concepto": "Portada ilustrada",
+              "precio": "Presupuesto personalizado"
+            },
+            "3": {
+              "concepto": "Versión ebook al contratar portada papel",
+              "precio": "40 € + IVA"
+            }
+          }
+        },
+        "maquetacion-profesional": {
+          "title": "Maquetación profesional",
+          "tarifas": {
+            "0": {
+              "concepto": "Papel",
+              "precio": "0,80 €/página + IVA"
+            },
+            "1": {
+              "concepto": "Ebook",
+              "precio": "0,60 €/página + IVA"
+            },
+            "2": {
+              "concepto": "Ebook junto con papel",
+              "precio": "0,45 €/página + IVA"
+            }
+          }
+        },
+        "booktrailer": {
+          "title": "Booktrailer",
+          "tarifas": {
+            "0": {
+              "concepto": "Booktrailer",
+              "precio": "85 € + IVA"
+            },
+            "1": {
+              "concepto": "Booktrailer contratando el pack Amazon",
+              "precio": "65 € + IVA"
+            }
+          }
+        },
+        "dossier-editorial": {
+          "title": "Dossier editorial",
+          "tarifas": {
+            "0": {
+              "concepto": "Dossier editorial",
+              "precio": "70 € + IVA"
+            }
+          }
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Optimización Amazon y asesorías",
+          "tarifas": {
+            "0": {
+              "concepto": "Auditoría de ficha Amazon",
+              "precio": "40 € + IVA"
+            },
+            "1": {
+              "concepto": "Optimización de ficha Amazon",
+              "precio": "50 € + IVA"
+            },
+            "2": {
+              "concepto": "Asesoría personalizada",
+              "precio": "40 €/hora + IVA"
+            }
+          }
+        },
+        "marca-personal-para-autores": {
+          "title": "Marca personal para autores",
+          "tarifas": {
+            "0": {
+              "concepto": "Marca personal para autores",
+              "precio": "60 € + IVA"
+            }
+          }
+        }
+      }
+    },
+    "obras": {
+      "sectionTitle": "Obras publicadas",
+      "availableAmazon": "Disponible en Amazon",
+      "viewDetails": "Ver ficha completa",
+      "viewAmazon": "Ver en Amazon",
+      "items": {
+        "malababa": {
+          "title": "Malababa",
+          "synopsis": "Un prestigioso notario y un policía han sido invitados y caminan bajo la lumbre cuidadosamente por la finca de Doña Amelia de Blasco. Un pie dudoso tras otro hacia la imponente mansión, sin imaginar la velada que van a presenciar. Esa mujer, odiada y temida por toda la provincia, arrogante, irrespetuosa y egoísta, declara que esa misma noche desvelará, durante la cena que ha preparado, quiénes serán sus futuros herederos. Los familiares, amigos y el servicio tienen la posibilidad de cambiar sus vidas si son los elegidos. Y harán cualquier cosa por conseguirlo. Pero la tía Amelia tiene un mal presentimiento. ¿Provocará esto algún cambio de última hora en sus planes? ¿Quién es el verdadero merecedor de la herencia? Que el gramófono empiece a sonar.",
+          "features": {
+            "0": {
+              "label": "Editorial",
+              "value": "Chamuskado Brain"
+            },
+            "1": {
+              "label": "Fecha de publicación",
+              "value": "27 enero 2025"
+            },
+            "2": {
+              "label": "Idioma",
+              "value": "Español"
+            },
+            "3": {
+              "label": "Páginas",
+              "value": "386"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409672952"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409672950"
+            },
+            "6": {
+              "label": "Edad recomendada",
+              "value": "De 14 a 18 años"
+            },
+            "7": {
+              "label": "Peso",
+              "value": "572 g"
+            },
+            "8": {
+              "label": "Dimensiones",
+              "value": "13.97 × 2.95 × 21.59 cm"
+            },
+            "9": {
+              "label": "Ranking Amazon",
+              "value": "nº 708.119 en Libros"
+            },
+            "10": {
+              "label": "Ficción negra",
+              "value": "nº 986"
+            },
+            "11": {
+              "label": "Thrillers psicológicos",
+              "value": "nº 6.313"
+            },
+            "12": {
+              "label": "Misterios",
+              "value": "nº 32.511"
+            },
+            "13": {
+              "label": "Valoración",
+              "value": "5,0/5 ⭐ (5 opiniones)"
+            }
+          }
+        },
+        "cartas-a-bruno": {
+          "title": "Cartas a Bruno",
+          "synopsis": "Una huida. Un viaje. Un motivo olvidado que la ha llevado hasta el recóndito pueblecito de Portrush, al norte de Irlanda. Una cadena de misteriosas cartas y sucesos siniestros tambalearán su realidad, obligándola a buscar una escapatoria. Un final que ya estaba escrito. ¿Qué ha ocurrido con la Señorita Lain?",
+          "features": {
+            "0": {
+              "label": "Editorial",
+              "value": "Paloma Castizo - Independiente"
+            },
+            "1": {
+              "label": "Fecha de publicación",
+              "value": "27 diciembre 2019"
+            },
+            "2": {
+              "label": "Idioma",
+              "value": "Español"
+            },
+            "3": {
+              "label": "Páginas",
+              "value": "196"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409176149"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409176144"
+            },
+            "6": {
+              "label": "Peso",
+              "value": "354 g"
+            },
+            "7": {
+              "label": "Dimensiones",
+              "value": "15.24 × 1.24 × 22.86 cm"
+            },
+            "8": {
+              "label": "Ranking Amazon",
+              "value": "nº 635.573 en Libros"
+            },
+            "9": {
+              "label": "Categoría",
+              "value": "nº 146.972 en Ficción por género"
+            },
+            "10": {
+              "label": "Valoración",
+              "value": "5,0/5 ⭐ (10 opiniones)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

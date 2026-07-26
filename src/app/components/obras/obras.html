@@ -1,5 +1,4 @@
-<section data-aos="fade-up"
-  class="mx-auto my-20 max-w-7xl rounded-[40px] px-6">
+<section data-aos="fade-up" class="mx-auto my-20 max-w-7xl rounded-[40px] px-6">
 
   <!-- TÍTULO -->
 
@@ -7,9 +6,8 @@
 
     <div class="absolute left-1/2 h-0.5 w-40 -translate-x-1/2 bg-stone-800 sm:w-64 lg:w-180"></div>
 
-    <h2
-      class="absolute -top-6 left-1/2 -translate-x-1/2 bg-page px-4 text-3xl font-black text-stone-900 sm:text-4xl">
-      Obras publicadas
+    <h2 class="absolute -top-6 left-1/2 -translate-x-1/2 bg-page px-4 text-3xl font-black text-stone-900 sm:text-4xl">
+      {{ 'home.obras.sectionTitle' | transloco }}
     </h2>
 
   </div>
@@ -23,14 +21,9 @@
 
     <div class="relative flex justify-center">
 
-      <!-- Fondo decorativo -->
+      <div class="absolute h-72 w-52 rounded-3xl bg-purple-950/10 blur-xl"></div>
 
-      <div class="absolute h-72 w-52 rounded-3xl bg-purple-950/10 blur-xl">
-      </div>
-
-      <img 
-        [src]="obra.images.front" 
-        [alt]="obra.title" 
+      <img [src]="obra.images.front" [alt]="'home.obras.items.' + obra.slug + '.title' | transloco"
         (click)="openImages(obra)"
         class="relative w-72 cursor-pointer rounded-2xl shadow-2xl shadow-black/30 transition duration-300 hover:scale-[1.03]">
 
@@ -40,23 +33,24 @@
 
     <div [class.lg:order-1]="even">
 
-      <span class="rounded-full bg-amarillo [box-shadow:0_0_8px_rgba(230,176,74,0.5)] px-4 py-1 text-sm font-bold text-charcoal">
-        Disponible en amazon
+      <span
+        class="rounded-full bg-amarillo [box-shadow:0_0_8px_rgba(230,176,74,0.5)] px-4 py-1 text-sm font-bold text-charcoal">
+        {{ 'home.obras.availableAmazon' | transloco }}
       </span>
 
       <h3 class="mt-5 text-4xl font-black text-stone-900">
-        {{ obra.title }}
+        {{ 'home.obras.items.' + obra.slug + '.title' | transloco }}
       </h3>
 
       <p class="mt-6 line-clamp-6 leading-8 text-stone-700">
-        {{ obra.synopsis }}
+        {{ 'home.obras.items.' + obra.slug + '.synopsis' | transloco }}
       </p>
 
       <!-- DATOS DESTACADOS -->
 
       <div class="mt-8 flex flex-wrap gap-4">
 
-        @for (feature of obra.features; track feature.label) {
+        @for (feature of obra.features; track $index) {
 
         @if (
         feature.label === 'Valoración' ||
@@ -67,11 +61,11 @@
         <div class="rounded-xl border border-stone-200 bg-stone-50 px-5 py-3 shadow-sm">
 
           <div class="text-xs font-semibold uppercase tracking-wide text-stone-500">
-            {{ feature.label }}
+            {{ 'home.obras.items.' + obra.slug + '.features.' + $index + '.label' | transloco }}
           </div>
 
           <div class="mt-1 font-bold text-purple-950">
-            {{ feature.value }}
+            {{ 'home.obras.items.' + obra.slug + '.features.' + $index + '.value' | transloco }}
           </div>
 
         </div>
@@ -89,14 +83,14 @@
         <a href="#"
           class="rounded-xl bg-purple-950 px-8 py-3 font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-purple-900 hover:shadow-lg hover:shadow-purple-900/30">
 
-          Ver ficha completa
+          {{ 'home.obras.viewDetails' | transloco }}
 
         </a>
 
         <a [href]="obra.amazonUrl" target="_blank"
           class="rounded-xl border-2 border-purple-950 px-8 py-3 font-bold text-purple-950 transition-all duration-300 hover:bg-purple-950 hover:text-white">
 
-          Ver en Amazon
+          {{ 'home.obras.viewAmazon' | transloco }}
 
         </a>
 

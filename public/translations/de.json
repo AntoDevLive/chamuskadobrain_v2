@@ -1,0 +1,369 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "pricing": "Preise",
+    "works": "Projekte",
+    "about": "Über uns",
+    "faq": "Häufige Fragen",
+    "contact": "Kontakt",
+    "quote": "Angebot anfordern"
+  },
+  "home": {
+    "welcome": "Willkommen",
+    "hero": {
+      "kicker": "VERLAG FÜR UNABHÄNGIGE AUTOREN",
+      "tagline": "Wir erschaffen es für Sie.",
+      "description1": "Lektorat, Illustration, Layout und professionelle Veröffentlichung <br class=\"hidden lg:block\">für unabhängige Autoren.",
+      "description2": "Wir sind kein traditioneller Verlag und erwerben keine Rechte an den Werken <br class=\"hidden lg:block\"> unserer Autoren. <br class=\"hidden lg:block\"> Unser Ziel ist es, professionelle Werkzeuge bereitzustellen, damit jeder Autor <br class=\"hidden lg:block\"> sein Werk veröffentlichen und bewerben kann und dabei die volle Kontrolle darüber behält.",
+      "ctaBudget": "ANGEBOT ANFRAGEN",
+      "ctaServices": "LEISTUNGEN ANSEHEN",
+      "feature1": "Persönliche <br>Begleitung",
+      "feature2": "Garantierte <br>professionelle Qualität",
+      "feature3": "Wir verwandeln Ihre Geschichte <br>in ein unvergessliches Buch",
+      "quote": "Lassen Sie Ihre Geschichte lebendig werden <br>bevor sie gelesen wird."
+    },
+    "services": {
+      "sectionTitle": "Unsere Dienstleistungen",
+      "cardCta": "Mehr erfahren",
+      "finalCta": "Alle Dienstleistungen ansehen",
+      "items": {
+        "publicacion-en-amazon": {
+          "title": "Veröffentlichung auf Amazon",
+          "description": "Kompletter Self-Publishing-Service auf Amazon KDP. Wir übernehmen Vorbereitung, Layout, Einrichtung und Veröffentlichung Ihres Buches, damit Sie problemlos publizieren können."
+        },
+        "correccion-profesional": {
+          "title": "Professionelles Lektorat",
+          "description": "Orthotypografisches und stilistisches Lektorat zur Verbesserung von Rechtschreibung, Grammatik, Lesefluss und Lesbarkeit Ihres Werks, ohne Ihre Stimme als Autor zu verändern."
+        },
+        "informe-de-lectura": {
+          "title": "Leseauswertung",
+          "description": "Professionelle redaktionelle Analyse Ihres Manuskripts mit Bewertung von Handlung, Struktur, Charakteren, Erzähltempo, Stärken und Empfehlungen zur Qualitätssteigerung."
+        },
+        "ilustracion-profesional": {
+          "title": "Professionelle Illustration",
+          "description": "Individuelle Illustrationen, Cover, Charaktere, Schauplätze, Karten und Konzeptkunst, angepasst an den Stil Ihrer Geschichte."
+        },
+        "diseno-de-portada": {
+          "title": "Cover-Design",
+          "description": "Professionelles Cover-Design für E-Book und Print, angepasst an Amazon KDP und gestaltet, um die Aufmerksamkeit der Leser zu gewinnen."
+        },
+        "maquetacion-profesional": {
+          "title": "Professionelles Layout",
+          "description": "Layout für gedruckte und digitale Bücher mit Konvertierung, Kindle-Optimierung und veröffentlichungsfertigen Formaten."
+        },
+        "booktrailer": {
+          "title": "Buchtrailer",
+          "description": "Werbevideos zur Präsentation Ihres Buches in sozialen Netzwerken mit professionellem Schnitt, Musik und visuellen Effekten."
+        },
+        "dossier-editorial": {
+          "title": "Verlagsdossier",
+          "description": "Wir erstellen ein professionelles Dossier mit Zusammenfassung, Anschreiben und Unterlagen, die versandfertig an traditionelle Verlage sind."
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Amazon-Optimierung und Beratung",
+          "description": "Optimierung von Amazon-KDP-Produktseiten und individuelle Beratung zu Self-Publishing, Buchstart und Marketing für Autoren."
+        },
+        "marca-personal-para-autores": {
+          "title": "Persönliche Marke für Autoren",
+          "description": "Wir gestalten Ihre Identität als Autor mit Logo, Corporate Design und Ressourcen, um Ihre professionelle Präsenz zu stärken."
+        }
+      }
+    },
+    "tarifas": {
+      "sectionTitle": "Preise",
+      "finalCta": "Alle Preise anzeigen",
+      "items": {
+        "publicacion-en-amazon": {
+          "badge": "AM HÄUFIGSTEN ANGEFRAGT",
+          "title": "Veröffentlichung auf Amazon",
+          "description": "Kompletter Self-Publishing-Service für Amazon KDP. Wir übernehmen den gesamten technischen Prozess, damit Sie sich ganz auf das Schreiben konzentrieren können.",
+          "cta": "Angebot anfordern",
+          "tarifas": {
+            "0": {
+              "concepto": "Bis zu 50 Seiten",
+              "precio": "280 € + MwSt."
+            },
+            "1": {
+              "concepto": "51 bis 100 Seiten",
+              "precio": "320 € + MwSt."
+            },
+            "2": {
+              "concepto": "101 bis 200 Seiten",
+              "precio": "340 € + MwSt."
+            },
+            "3": {
+              "concepto": "201 bis 300 Seiten",
+              "precio": "400 € + MwSt."
+            },
+            "4": {
+              "concepto": "301 bis 400 Seiten",
+              "precio": "440 € + MwSt."
+            },
+            "5": {
+              "concepto": "401 bis 500 Seiten",
+              "precio": "480 € + MwSt."
+            },
+            "6": {
+              "concepto": "501 bis 600 Seiten",
+              "precio": "520 € + MwSt."
+            },
+            "7": {
+              "concepto": "Mehr als 600 Seiten",
+              "precio": "Individuelles Angebot"
+            }
+          }
+        },
+        "correccion-profesional": {
+          "title": "Professionelles Lektorat",
+          "tarifas": {
+            "0": {
+              "concepto": "Werke mit mehr als 4.000 Wörtern",
+              "precio": "0,015 €/Wort + MwSt."
+            },
+            "1": {
+              "concepto": "Werke mit weniger als 4.000 Wörtern",
+              "precio": "0,025 €/Wort + MwSt."
+            }
+          }
+        },
+        "informe-de-lectura": {
+          "title": "Manuskriptgutachten",
+          "tarifas": {
+            "0": {
+              "concepto": "Bis zu 20.000 Wörter",
+              "precio": "140 € + MwSt."
+            },
+            "1": {
+              "concepto": "20.000 bis 50.000 Wörter",
+              "precio": "220 € + MwSt."
+            },
+            "2": {
+              "concepto": "50.000 bis 80.000 Wörter",
+              "precio": "290 € + MwSt."
+            },
+            "3": {
+              "concepto": "Mehr als 80.000 Wörter",
+              "precio": "370 € + MwSt."
+            }
+          }
+        },
+        "ilustracion-profesional": {
+          "title": "Professionelle Illustration",
+          "tarifas": {
+            "0": {
+              "concepto": "Individuelles Projekt",
+              "precio": "Individuelles Angebot"
+            }
+          }
+        },
+        "diseno-de-portada": {
+          "title": "Coverdesign",
+          "tarifas": {
+            "0": {
+              "concepto": "E-Book-Cover",
+              "precio": "55 € + MwSt."
+            },
+            "1": {
+              "concepto": "Taschenbuch-Cover",
+              "precio": "75 € + MwSt."
+            },
+            "2": {
+              "concepto": "Illustriertes Cover",
+              "precio": "Individuelles Angebot"
+            },
+            "3": {
+              "concepto": "E-Book-Version bei Buchung eines Print-Covers",
+              "precio": "40 € + MwSt."
+            }
+          }
+        },
+        "maquetacion-profesional": {
+          "title": "Professioneller Buchsatz",
+          "tarifas": {
+            "0": {
+              "concepto": "Printausgabe",
+              "precio": "0,80 €/Seite + MwSt."
+            },
+            "1": {
+              "concepto": "E-Book",
+              "precio": "0,60 €/Seite + MwSt."
+            },
+            "2": {
+              "concepto": "E-Book zusammen mit Printausgabe",
+              "precio": "0,45 €/Seite + MwSt."
+            }
+          }
+        },
+        "booktrailer": {
+          "title": "Booktrailer",
+          "tarifas": {
+            "0": {
+              "concepto": "Booktrailer",
+              "precio": "85 € + MwSt."
+            },
+            "1": {
+              "concepto": "Booktrailer mit Amazon-Paket",
+              "precio": "65 € + MwSt."
+            }
+          }
+        },
+        "dossier-editorial": {
+          "title": "Verlagsdossier",
+          "tarifas": {
+            "0": {
+              "concepto": "Verlagsdossier",
+              "precio": "70 € + MwSt."
+            }
+          }
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Amazon-Optimierung und Beratung",
+          "tarifas": {
+            "0": {
+              "concepto": "Amazon-Listing-Audit",
+              "precio": "40 € + MwSt."
+            },
+            "1": {
+              "concepto": "Amazon-Listing-Optimierung",
+              "precio": "50 € + MwSt."
+            },
+            "2": {
+              "concepto": "Persönliche Beratung",
+              "precio": "40 €/Stunde + MwSt."
+            }
+          }
+        },
+        "marca-personal-para-autores": {
+          "title": "Personal Branding für Autoren",
+          "tarifas": {
+            "0": {
+              "concepto": "Personal Branding für Autoren",
+              "precio": "60 € + MwSt."
+            }
+          }
+        }
+      }
+    },
+    "obras": {
+      "sectionTitle": "Veröffentlichte Werke",
+      "availableAmazon": "Bei Amazon erhältlich",
+      "viewDetails": "Vollständige Details ansehen",
+      "viewAmazon": "Bei Amazon ansehen",
+      "items": {
+        "malababa": {
+          "title": "Malababa",
+          "synopsis": "Ein angesehener Notar und ein Polizist wurden eingeladen und gehen vorsichtig im schwachen Licht über das Anwesen von Doña Amelia de Blasco. Schritt für Schritt nähern sie sich der imposanten Villa, ohne zu ahnen, welcher Abend sie erwartet. Diese Frau, in der gesamten Provinz gefürchtet und gehasst, arrogant, respektlos und egoistisch, verkündet, dass sie während des von ihr vorbereiteten Abendessens offenbaren wird, wer ihre zukünftigen Erben sein werden. Familie, Freunde und Bedienstete haben die Möglichkeit, ihr Leben zu verändern, wenn sie ausgewählt werden, und sie werden alles dafür tun. Doch Tante Amelia hat eine düstere Vorahnung. Wird dies ihre Pläne in letzter Minute ändern? Wer verdient das Erbe wirklich? Möge das Grammophon zu spielen beginnen.",
+          "features": {
+            "0": {
+              "label": "Verlag",
+              "value": "Chamuskado Brain"
+            },
+            "1": {
+              "label": "Erscheinungsdatum",
+              "value": "27. Januar 2025"
+            },
+            "2": {
+              "label": "Sprache",
+              "value": "Spanisch"
+            },
+            "3": {
+              "label": "Seiten",
+              "value": "386"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409672952"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409672950"
+            },
+            "6": {
+              "label": "Empfohlenes Alter",
+              "value": "14 bis 18 Jahre"
+            },
+            "7": {
+              "label": "Gewicht",
+              "value": "572 g"
+            },
+            "8": {
+              "label": "Abmessungen",
+              "value": "13.97 × 2.95 × 21.59 cm"
+            },
+            "9": {
+              "label": "Amazon-Rang",
+              "value": "Nr. 708.119 in Bücher"
+            },
+            "10": {
+              "label": "Kriminalromane",
+              "value": "Nr. 986"
+            },
+            "11": {
+              "label": "Psychologische Thriller",
+              "value": "Nr. 6.313"
+            },
+            "12": {
+              "label": "Mystery",
+              "value": "Nr. 32.511"
+            },
+            "13": {
+              "label": "Bewertung",
+              "value": "5,0/5 ⭐ (5 Bewertungen)"
+            }
+          }
+        },
+        "cartas-a-bruno": {
+          "title": "Briefe an Bruno",
+          "synopsis": "Eine Flucht. Eine Reise. Ein vergessener Grund hat sie in das abgelegene Dorf Portrush im Norden Irlands geführt. Eine Reihe geheimnisvoller Briefe und unheimlicher Ereignisse erschüttert ihre Realität und zwingt sie, einen Ausweg zu suchen. Ein Ende, das bereits geschrieben war. Was ist mit Miss Lain geschehen?",
+          "features": {
+            "0": {
+              "label": "Verlag",
+              "value": "Paloma Castizo – Unabhängig"
+            },
+            "1": {
+              "label": "Erscheinungsdatum",
+              "value": "27. Dezember 2019"
+            },
+            "2": {
+              "label": "Sprache",
+              "value": "Spanisch"
+            },
+            "3": {
+              "label": "Seiten",
+              "value": "196"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409176149"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409176144"
+            },
+            "6": {
+              "label": "Gewicht",
+              "value": "354 g"
+            },
+            "7": {
+              "label": "Abmessungen",
+              "value": "15.24 × 1.24 × 22.86 cm"
+            },
+            "8": {
+              "label": "Amazon-Rang",
+              "value": "Nr. 635.573 in Bücher"
+            },
+            "9": {
+              "label": "Kategorie",
+              "value": "Nr. 146.972 in Belletristik nach Genre"
+            },
+            "10": {
+              "label": "Bewertung",
+              "value": "5,0/5 ⭐ (10 Bewertungen)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

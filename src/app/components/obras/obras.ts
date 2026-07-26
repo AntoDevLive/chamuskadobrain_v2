@@ -4,10 +4,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { ObraImageDialog } from '../ui/obra-image-dialog/obra-image-dialog';
 import { obrasJson } from '../../json/obras';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-obras',
-  imports: [MatDialogModule],
+  imports: [MatDialogModule, TranslocoPipe],
   templateUrl: './obras.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

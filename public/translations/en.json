@@ -1,0 +1,369 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "works": "Projects",
+    "about": "About Us",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "quote": "Request a Quote"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "hero": {
+      "kicker": "PUBLISHING FOR INDEPENDENT AUTHORS",
+      "tagline": "We create it for you.",
+      "description1": "Editing, illustration, layout and professional publishing <br class=\"hidden lg:block\">for independent authors.",
+      "description2": "We are not a traditional publishing house, nor do we acquire the rights to our authors' <br class=\"hidden lg:block\"> works. <br class=\"hidden lg:block\"> Our goal is to provide professional tools so every author <br class=\"hidden lg:block\"> can publish and promote their work while keeping full control over it.",
+      "ctaBudget": "REQUEST A QUOTE",
+      "ctaServices": "VIEW SERVICES",
+      "feature1": "Personalized <br>guidance",
+      "feature2": "Professional quality <br>guaranteed",
+      "feature3": "We turn your story <br>into an unforgettable book",
+      "quote": "Bring your story to life <br>before it's read."
+    },
+    "services": {
+      "sectionTitle": "Our Services",
+      "cardCta": "Learn more",
+      "finalCta": "View All Services",
+      "items": {
+        "publicacion-en-amazon": {
+          "title": "Amazon Publishing",
+          "description": "Full self-publishing service on Amazon KDP. We take care of the preparation, formatting, setup and publishing of your book so you can publish without complications."
+        },
+        "correccion-profesional": {
+          "title": "Professional Proofreading",
+          "description": "Proofreading and copyediting to improve the spelling, grammar, flow and readability of your work without altering your voice as an author."
+        },
+        "informe-de-lectura": {
+          "title": "Reading Report",
+          "description": "Professional editorial analysis of your manuscript with assessment of plot, structure, characters, pacing, strengths and recommendations to enhance its quality."
+        },
+        "ilustracion-profesional": {
+          "title": "Professional Illustration",
+          "description": "Custom illustrations, covers, characters, settings, maps and concept art tailored to the style of your story."
+        },
+        "diseno-de-portada": {
+          "title": "Cover Design",
+          "description": "Professional cover design for ebook and print, adapted to Amazon KDP and created to capture readers' attention."
+        },
+        "maquetacion-profesional": {
+          "title": "Professional Formatting",
+          "description": "Formatting for printed and digital books with conversion, Kindle optimization and formats ready for publication."
+        },
+        "booktrailer": {
+          "title": "Book Trailer",
+          "description": "Promotional videos to present your book on social media with professional editing, music and visual effects."
+        },
+        "dossier-editorial": {
+          "title": "Editorial Dossier",
+          "description": "We prepare a professional dossier with synopsis, cover letter and documentation ready to send to traditional publishers."
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Amazon Optimization & Consulting",
+          "description": "Optimization of Amazon KDP listings and personalized consulting on self-publishing, launch and marketing for writers."
+        },
+        "marca-personal-para-autores": {
+          "title": "Personal Branding for Authors",
+          "description": "We design your identity as an author through a logo, corporate image and resources to strengthen your professional presence."
+        }
+      }
+    },
+    "tarifas": {
+      "sectionTitle": "Pricing",
+      "finalCta": "View all pricing",
+      "items": {
+        "publicacion-en-amazon": {
+          "badge": "MOST REQUESTED",
+          "title": "Amazon Publishing",
+          "description": "Complete Amazon KDP self-publishing service. We take care of the entire technical process so you can focus solely on writing.",
+          "cta": "Request a quote",
+          "tarifas": {
+            "0": {
+              "concepto": "Up to 50 pages",
+              "precio": "€280 + VAT"
+            },
+            "1": {
+              "concepto": "51 - 100 pages",
+              "precio": "€320 + VAT"
+            },
+            "2": {
+              "concepto": "101 - 200 pages",
+              "precio": "€340 + VAT"
+            },
+            "3": {
+              "concepto": "201 - 300 pages",
+              "precio": "€400 + VAT"
+            },
+            "4": {
+              "concepto": "301 - 400 pages",
+              "precio": "€440 + VAT"
+            },
+            "5": {
+              "concepto": "401 - 500 pages",
+              "precio": "€480 + VAT"
+            },
+            "6": {
+              "concepto": "501 - 600 pages",
+              "precio": "€520 + VAT"
+            },
+            "7": {
+              "concepto": "More than 600 pages",
+              "precio": "Custom quote"
+            }
+          }
+        },
+        "correccion-profesional": {
+          "title": "Professional Proofreading",
+          "tarifas": {
+            "0": {
+              "concepto": "Works over 4,000 words",
+              "precio": "€0.015/word + VAT"
+            },
+            "1": {
+              "concepto": "Works under 4,000 words",
+              "precio": "€0.025/word + VAT"
+            }
+          }
+        },
+        "informe-de-lectura": {
+          "title": "Manuscript Evaluation",
+          "tarifas": {
+            "0": {
+              "concepto": "Up to 20,000 words",
+              "precio": "€140 + VAT"
+            },
+            "1": {
+              "concepto": "20,000 - 50,000 words",
+              "precio": "€220 + VAT"
+            },
+            "2": {
+              "concepto": "50,000 - 80,000 words",
+              "precio": "€290 + VAT"
+            },
+            "3": {
+              "concepto": "More than 80,000 words",
+              "precio": "€370 + VAT"
+            }
+          }
+        },
+        "ilustracion-profesional": {
+          "title": "Professional Illustration",
+          "tarifas": {
+            "0": {
+              "concepto": "Custom project",
+              "precio": "Custom quote"
+            }
+          }
+        },
+        "diseno-de-portada": {
+          "title": "Cover Design",
+          "tarifas": {
+            "0": {
+              "concepto": "eBook Cover",
+              "precio": "€55 + VAT"
+            },
+            "1": {
+              "concepto": "Paperback Cover",
+              "precio": "€75 + VAT"
+            },
+            "2": {
+              "concepto": "Illustrated Cover",
+              "precio": "Custom quote"
+            },
+            "3": {
+              "concepto": "eBook version when ordering a paperback cover",
+              "precio": "€40 + VAT"
+            }
+          }
+        },
+        "maquetacion-profesional": {
+          "title": "Professional Book Formatting",
+          "tarifas": {
+            "0": {
+              "concepto": "Print edition",
+              "precio": "€0.80/page + VAT"
+            },
+            "1": {
+              "concepto": "eBook",
+              "precio": "€0.60/page + VAT"
+            },
+            "2": {
+              "concepto": "eBook with print edition",
+              "precio": "€0.45/page + VAT"
+            }
+          }
+        },
+        "booktrailer": {
+          "title": "Book Trailer",
+          "tarifas": {
+            "0": {
+              "concepto": "Book Trailer",
+              "precio": "€85 + VAT"
+            },
+            "1": {
+              "concepto": "Book Trailer with Amazon Publishing package",
+              "precio": "€65 + VAT"
+            }
+          }
+        },
+        "dossier-editorial": {
+          "title": "Publishing Submission Package",
+          "tarifas": {
+            "0": {
+              "concepto": "Publishing Submission Package",
+              "precio": "€70 + VAT"
+            }
+          }
+        },
+        "optimizacion-amazon-y-asesorias": {
+          "title": "Amazon Optimization & Consulting",
+          "tarifas": {
+            "0": {
+              "concepto": "Amazon listing audit",
+              "precio": "€40 + VAT"
+            },
+            "1": {
+              "concepto": "Amazon listing optimization",
+              "precio": "€50 + VAT"
+            },
+            "2": {
+              "concepto": "Personal consulting",
+              "precio": "€40/hour + VAT"
+            }
+          }
+        },
+        "marca-personal-para-autores": {
+          "title": "Author Branding",
+          "tarifas": {
+            "0": {
+              "concepto": "Author branding",
+              "precio": "€60 + VAT"
+            }
+          }
+        }
+      }
+    },
+    "obras": {
+      "sectionTitle": "Published Works",
+      "availableAmazon": "Available on Amazon",
+      "viewDetails": "View full details",
+      "viewAmazon": "View on Amazon",
+      "items": {
+        "malababa": {
+          "title": "Malababa",
+          "synopsis": "A prestigious notary and a police officer have been invited and carefully walk through Doña Amelia de Blasco's estate under the dim light. Step by hesitant step, they approach the imposing mansion, unaware of the evening that awaits them. That woman, hated and feared throughout the province, arrogant, disrespectful and selfish, announces that during the dinner she has prepared she will reveal who her future heirs will be. Family members, friends and servants all have the chance to change their lives if they are chosen, and they will do anything to achieve it. But Aunt Amelia has a bad feeling. Will it change her plans at the last minute? Who truly deserves the inheritance? Let the gramophone begin to play.",
+          "features": {
+            "0": {
+              "label": "Publisher",
+              "value": "Chamuskado Brain"
+            },
+            "1": {
+              "label": "Publication date",
+              "value": "January 27, 2025"
+            },
+            "2": {
+              "label": "Language",
+              "value": "Spanish"
+            },
+            "3": {
+              "label": "Pages",
+              "value": "386"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409672952"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409672950"
+            },
+            "6": {
+              "label": "Recommended age",
+              "value": "14 to 18 years"
+            },
+            "7": {
+              "label": "Weight",
+              "value": "572 g"
+            },
+            "8": {
+              "label": "Dimensions",
+              "value": "13.97 × 2.95 × 21.59 cm"
+            },
+            "9": {
+              "label": "Amazon ranking",
+              "value": "#708,119 in Books"
+            },
+            "10": {
+              "label": "Crime Fiction",
+              "value": "#986"
+            },
+            "11": {
+              "label": "Psychological Thrillers",
+              "value": "#6,313"
+            },
+            "12": {
+              "label": "Mystery",
+              "value": "#32,511"
+            },
+            "13": {
+              "label": "Rating",
+              "value": "5.0/5 ⭐ (5 reviews)"
+            }
+          }
+        },
+        "cartas-a-bruno": {
+          "title": "Letters to Bruno",
+          "synopsis": "An escape. A journey. A forgotten reason has brought her to the remote village of Portrush in Northern Ireland. A chain of mysterious letters and sinister events will shake her reality, forcing her to seek a way out. An ending that had already been written. What happened to Miss Lain?",
+          "features": {
+            "0": {
+              "label": "Publisher",
+              "value": "Paloma Castizo - Independent"
+            },
+            "1": {
+              "label": "Publication date",
+              "value": "December 27, 2019"
+            },
+            "2": {
+              "label": "Language",
+              "value": "Spanish"
+            },
+            "3": {
+              "label": "Pages",
+              "value": "196"
+            },
+            "4": {
+              "label": "ISBN-10",
+              "value": "8409176149"
+            },
+            "5": {
+              "label": "ISBN-13",
+              "value": "978-8409176144"
+            },
+            "6": {
+              "label": "Weight",
+              "value": "354 g"
+            },
+            "7": {
+              "label": "Dimensions",
+              "value": "15.24 × 1.24 × 22.86 cm"
+            },
+            "8": {
+              "label": "Amazon ranking",
+              "value": "#635,573 in Books"
+            },
+            "9": {
+              "label": "Category",
+              "value": "#146,972 in Genre Fiction"
+            },
+            "10": {
+              "label": "Rating",
+              "value": "5.0/5 ⭐ (10 reviews)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

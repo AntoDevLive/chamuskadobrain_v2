@@ -1,19 +1,20 @@
-import { IObra } from "../interfaces/obra"
+import { IObra } from "../interfaces/obra";
 import { valoracionesCartasABruno, valoracionesMalababa } from "./valoracion";
 
 export const obrasJson: IObra[] = [
   {
     id: 1,
+    slug: 'malababa',
     images: {
       front: '/img/malababa.jpg',
       back: '/img/malababa-back.jpg',
     },
     title: 'Malababa',
-    synopsis: `Un prestigioso notario y un policía han sido invitados y caminan bajo la lumbre cuidadosamente por la finca de Doña Amelia de Blasco. Un pie dudoso tras otro hacia la imponente mansión, sin imaginar la velada que van a presenciar. 
+    synopsis: `Un prestigioso notario y un policía han sido invitados y caminan bajo la lumbre cuidadosamente por la finca de Doña Amelia de Blasco. Un pie dudoso tras otro hacia la imponente mansión, sin imaginar la velada que van a presenciar.
     Esa mujer, odiada y temida por toda la provincia, arrogante, irrespetuosa y egoísta, declara que esa misma noche desvelará, durante la cena que ha preparado, quiénes serán sus futuros herederos.
     Los familiares, amigos y el servicio tienen la posibilidad de cambiar sus vidas si son los elegidos. Y harán cualquier cosa por conseguirlo.
     Pero la tía Amelia tiene un mal presentimiento.
-    ¿Provocará esto algún cambio de última hora en sus planes?¿Quién es el verdadero merecedor de la herencia?
+    ¿Provocará esto algún cambio de última hora en sus planes? ¿Quién es el verdadero merecedor de la herencia?
     Que el gramófono empiece a sonar.`,
     amazonUrl: 'https://www.amazon.es/Malababa-Paloma-Castizo/dp/8409672952/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=85OIL1WK9TS0&dib=eyJ2IjoiMSJ9.y3PJoP9KSis31T3tMmw5pg.nxOpzpLYhDTX6pBteVcLzPprKj1JJWPemC_izEWuszE&dib_tag=se&keywords=malababa+paloma+castizo&qid=1784132927&sprefix=malababa+paloma+castizo%2Caps%2C69&sr=8-1',
     valoraciones: valoracionesMalababa,
@@ -34,8 +35,10 @@ export const obrasJson: IObra[] = [
       { label: 'Valoración', value: '5,0/5 ⭐ (5 opiniones)' }
     ]
   },
+
   {
     id: 2,
+    slug: 'cartas-a-bruno',
     images: {
       front: '/img/cartas-a-bruno.jpg',
       back: '/img/cartas-a-bruno-back.jpg',

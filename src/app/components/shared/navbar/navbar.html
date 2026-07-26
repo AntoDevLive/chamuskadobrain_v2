@@ -29,7 +29,7 @@
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0
           after:transition-all hover:after:w-full">
-          Inicio
+          {{ 'navbar.home' | transloco }}
         </a>
       </li>
 
@@ -39,7 +39,7 @@
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0
           after:transition-all hover:after:w-full">
-          Servicios
+          {{ 'navbar.services' | transloco }}
         </a>
       </li>
 
@@ -49,7 +49,7 @@ after:bg-yellow-300
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0
           after:transition-all hover:after:w-full">
-          Tarifas
+          {{ 'navbar.pricing' | transloco }}
         </a>
       </li>
 
@@ -59,7 +59,7 @@ after:bg-yellow-300
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0
           after:transition-all hover:after:w-full">
-          Obras
+          {{ 'navbar.works' | transloco }}
         </a>
       </li>
 
@@ -69,7 +69,7 @@ after:bg-yellow-300
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0
           after:transition-all hover:after:w-full">
-          Sobre Nosotros
+          {{ 'navbar.about' | transloco }}
         </a>
       </li>
 
@@ -79,7 +79,7 @@ after:bg-yellow-300
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0
           after:transition-all hover:after:w-full">
-          Preguntas
+          {{ 'navbar.faq' | transloco }}
         </a>
       </li>
 
@@ -88,7 +88,7 @@ after:bg-yellow-300
           after:absolute after:-bottom-1 after:left-0
           after:h-[2px] after:w-0 after:bg-yellow-300
           after:transition-all hover:after:w-full">
-          Contacto
+          {{ 'navbar.contact' | transloco }}
         </a>
       </li>
 
@@ -97,8 +97,29 @@ after:bg-yellow-300
           px-5 py-2 font-medium tracking-wider
           shadow-lg shadow-yellow-700/40
           transition-all hover:scale-105 hover:shadow-yellow-500/60 duration-200">
-          Solicitar Presupuesto
+          {{ 'navbar.quote' | transloco }}
         </a>
+      </li>
+
+      <!-- Selector de idioma (desktop) -->
+      <li>
+        <button type="button" #langTriggerDesktop (click)="toggleLangMenu($event, 'end')"
+          [attr.aria-expanded]="langMenuOpen()" aria-label="Seleccionar idioma" class="flex items-center justify-center gap-2 rounded-full
+                 border border-white/10
+                 bg-white/5
+                 px-3 py-2
+                 transition
+                 hover:bg-white/10 cursor-pointer">
+
+          <span class="text-xl leading-none">{{ language.getFlag(language.currentLang) }}</span>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            class="h-4 w-4 text-white/70 transition-transform duration-300 ease-in-out"
+            [class.rotate-180]="langMenuOpen()">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
       </li>
 
     </ul>
@@ -184,6 +205,24 @@ after:bg-yellow-300
         </a>
       </li>
 
+      <!-- Selector de idioma (mobile) -->
+      <li class="pt-4 flex justify-center">
+        <button type="button" #langTriggerMobile (click)="toggleLangMenu($event, 'center')"
+          [attr.aria-expanded]="langMenuOpen()"
+          class="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-2 transition hover:bg-white/10">
+
+          <span class="text-xl leading-none">{{ language.getFlag(language.currentLang) }}</span>
+          <span class="text-sm">{{ language.getLabel(language.currentLang) }}</span>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            class="h-4 w-4 text-white/70 transition-transform duration-300 ease-in-out"
+            [class.rotate-180]="langMenuOpen()">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+      </li>
+
     </ul>
 
   </div>
@@ -195,4 +234,37 @@ after:bg-yellow-300
 <div animate.enter="overlay-in" animate.leave="overlay-out" (click)="closeMenu()"
   class="fixed inset-0 z-40 bg-[#10021C]/80 backdrop-blur-sm lg:hidden">
 </div>
+}
+
+<!-- Submenu de idioma: fuera del navbar para que no lo recorte el overflow-hidden / backdrop-blur -->
+@if (langMenuOpen()) {
+<div animate.enter="lang-overlay-in" animate.leave="lang-overlay-out" (click)="closeLangMenu()"
+  class="fixed inset-0 z-[998] bg-transparent">
+</div>
+
+<ul animate.enter="lang-menu-in" animate.leave="lang-menu-out" [style.top.px]="langMenuPos().top"
+  [style.left.px]="langMenuPos().left" class="fixed z-[999] w-44 overflow-hidden rounded-2xl
+         border border-white/10
+         bg-gradient-to-br from-[#1B0930]/95 via-[#10021C]/95 to-[#18062B]/95
+         backdrop-blur-md
+         shadow-[0_10px_30px_rgba(16,2,28,.55)]
+       text-white">
+
+  @for (lang of language.languages; track lang.code; let last = $last) {
+  <li class="border-white/10" [class.border-b]="!last">
+    <button type="button" (click)="selectLang(lang.code)"
+      class="cursor-pointer flex w-full items-center gap-3 px-4 py-2 text-left text-sm transition hover:bg-white/10"
+      [class.text-yellow-200]="language.currentLang === lang.code">
+      <span class="flex items-center justify-center gap-2 rounded-full
+                 border border-white/10
+                 bg-white/5
+                 px-3 py-2
+                 transition
+                 hover:bg-white/10">{{ lang.flag }}</span>
+      <span>{{ lang.label }}</span>
+    </button>
+  </li>
+  }
+
+</ul>
 }

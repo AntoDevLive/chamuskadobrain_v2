@@ -2,6 +2,7 @@ import { IValoracion } from "./valoracion";
 
 export interface IObra {
   id: number;
+  slug: string;
   images: {
     front: string,
     back?: string

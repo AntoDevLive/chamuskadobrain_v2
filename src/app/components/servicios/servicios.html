@@ -4,9 +4,8 @@
   <div class="relative w-full flex items-center justify-center">
     <div class="absolute left-1/2 h-0.5 w-40 -translate-x-1/2 bg-stone-800 sm:w-64 lg:w-180"></div>
 
-    <h2
-      class="absolute -top-6 left-1/2 -translate-x-1/2 bg-page px-4 text-3xl font-black text-stone-900 sm:text-4xl">
-      Nuestros Servicios
+    <h2 class="absolute -top-6 left-1/2 -translate-x-1/2 bg-page px-4 text-3xl font-black text-stone-900 sm:text-4xl">
+      {{ 'home.services.sectionTitle' | transloco }}
     </h2>
   </div>
 
@@ -30,17 +29,17 @@
         <div class="flex flex-1 flex-col gap-3 px-4 py-4">
 
           <h3 class="text-xl font-bold leading-tight">
-            {{ servicio.title }}
+            {{ 'home.services.items.' + servicio.slug + '.title' | transloco }}
           </h3>
 
           <p class="line-clamp-4 text-md text-stone-800">
-            {{ servicio.description }}
+            {{ 'home.services.items.' + servicio.slug + '.description' | transloco }}
           </p>
 
           <!-- BUTTON -->
           <button
             class="cursor-pointer mt-auto self-start rounded-full bg-amarillo px-4 py-1 text-sm font-semibold transition hover:bg-amarillo/90 duration-200 text-stone-950">
-            Saber más
+            {{ 'home.services.cardCta' | transloco }}
           </button>
 
         </div>
@@ -63,7 +62,7 @@
         </span>
 
         <span class="relative">
-          Ver todos los Servicios
+          {{ 'home.services.finalCta' | transloco }}
         </span>
 
       </a>

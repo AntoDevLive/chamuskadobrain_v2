@@ -1,5 +1,6 @@
 export interface ITarifa {
   id: number;
+  slug: string;
   servicio: string;
   slogan: string;
   descripcion: string;
