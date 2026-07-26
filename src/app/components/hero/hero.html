@@ -1,42 +1,52 @@
 <section
-  class="relative min-h-screen bg-[url(/img/hero.png)] bg-no-repeat bg-cover bg-center text-white overflow-hidden flex items-center">
+  class="relative min-h-screen bg-[url(/img/hero.png)] bg-no-repeat bg-cover bg-center text-white overflow-hidden flex items-center py-28 lg:py-0">
 
 
   <!-- Contenedor -->
-  <div class="mx-auto w-full h-full px-20 pl-30 flex justify-between items-center">
+  <div
+    class="mx-auto w-full h-full px-6 flex flex-col justify-center items-center gap-16 lg:px-20 lg:pl-30 lg:flex-row lg:justify-between lg:items-center lg:gap-0">
 
-    <div data-aos="fade-up" class="flex justify-start items-start flex-col gap-4">
+    <div data-aos="fade-up"
+      class="flex justify-start items-center flex-col gap-4 text-center lg:items-start lg:text-left">
 
       <!-- pluma -->
-      <div class="flex justify-center items-center">
-        <img src="/img/pluma.png" class="w-30 h-30">
-        <p class="tracking-widest text-amarillo text-shadow-xs/30">EDITORIAL PARA AUTORES INDEPENDIENTES</p>
-        <div class="w-25 h-[0.5px] bg-[#502634] ml-5"></div>
+      <div class="flex flex-wrap justify-center items-center gap-2 lg:flex-nowrap lg:justify-center lg:gap-0">
+        <img src="/img/pluma.png" class="w-16 h-16 lg:w-30 lg:h-30">
+        <p class="text-sm tracking-widest text-amarillo text-shadow-xs/30 lg:text-base">EDITORIAL PARA AUTORES
+          INDEPENDIENTES</p>
+        <div class="hidden lg:block w-25 h-[0.5px] bg-[#502634] ml-5"></div>
       </div>
 
       <!-- titulo -->
       <h1
-        class="flex justify-start items-start flex-col text-8xl font-serif tracking-wide [text-shadow:0_0_6px_rgba(255,255,255,0.5)]">
+        class="flex justify-start items-start flex-col text-4xl font-serif tracking-wide [text-shadow:0_0_6px_rgba(255,255,255,0.5)] sm:text-5xl lg:items-start lg:text-8xl">
         Chamuskadobrain
-        <span class="text-7xl text-amarillo [text-shadow:0_0_6px_rgba(255,255,255,0.2)]">Lo creamos por ti.</span>
+        <span class="text-3xl text-amarillo [text-shadow:0_0_6px_rgba(255,255,255,0.2)] sm:text-4xl lg:text-7xl">Lo
+          creamos por ti.</span>
       </h1>
 
       <!-- presentacion -->
-      <div class="flex justify-start items-start flex-col gap-6 text-xl leading-8 font-light tracking-wider py-4">
-        <p>Corrección, ilustración, maquetación y publicación profesional <br>para autores independientes.</p>
-        <p>No somos una editorial tradicional ni adquirimos derechos sobre las obras <br> de nuestros
-        autores. <br>
-        Nuestro objetivo es ofrecer herramientas profesionales para que cada autor <br> pueda publicar
-        y promocionar su obra manteniendo el control absoluto sobre ella.
+      <div
+        class="flex justify-start items-start flex-col gap-6 text-st leading-7 font-light tracking-wider py-4 sm:text-lg lg:items-start lg:text-xl lg:leading-8">
+        <p>Corrección, ilustración, maquetación y publicación profesional <br class="hidden lg:block">para autores
+          independientes.</p>
+        <p>No somos una editorial tradicional ni adquirimos derechos sobre las obras <br class="hidden lg:block"> de
+          nuestros
+          autores. <br class="hidden lg:block">
+          Nuestro objetivo es ofrecer herramientas profesionales para que cada autor <br class="hidden lg:block"> pueda
+          publicar
+          y promocionar su obra manteniendo el control absoluto sobre ella.
         </p>
       </div>
 
       <!-- botones -->
-      <div class="flex justify-start items-start text-xl gap-8">
-        <button class="flex justify-center items-center gap-4 rounded-lg bg-amarillo py-4 px-8 text-slate-900 cursor-pointer transition duration-300 hover:-translate-y-1 hover:[box-shadow:0_0_12px_rgba(230,176,74,0.4)] [box-shadow:0_0_4px_rgba(230,176,74,0.8)]">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-pencil-line-icon lucide-pencil-line">
+      <div
+        class="flex flex-col justify-start items-stretch w-full text-base gap-4 sm:text-lg lg:flex-row lg:items-start lg:w-auto lg:text-xl lg:gap-8">
+        <button
+          class="flex justify-center items-center gap-4 rounded-lg bg-amarillo py-3 px-6 text-slate-900 cursor-pointer transition duration-300 hover:-translate-y-1 hover:[box-shadow:0_0_12px_rgba(230,176,74,0.4)] [box-shadow:0_0_4px_rgba(230,176,74,0.8)] lg:py-4 lg:px-8">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-pencil-line-icon lucide-pencil-line shrink-0">
             <path d="M13 21h8" />
             <path d="m15 5 4 4" />
             <path
@@ -44,12 +54,13 @@
           </svg>
           SOLICITAR PRESUPUESTO
         </button>
-        <button class="group flex items-center gap-4 rounded-lg border py-4 px-8 cursor-pointer transition duration-300 hover:[box-shadow:0_0_12px_rgba(255,255,255,0.4)] hover:bg-white/3">
+        <button
+          class="group flex justify-center items-center gap-4 rounded-lg border py-3 px-6 cursor-pointer transition duration-300 hover:[box-shadow:0_0_12px_rgba(255,255,255,0.4)] hover:bg-white/3 lg:justify-start lg:py-4 lg:px-8">
           VER SERVICIOS
-        
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-            class="transition-transform duration-300 ease-out group-hover:translate-x-2">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+            class="shrink-0 transition-transform duration-300 ease-out group-hover:translate-x-2">
             <path d="M18 8L22 12L18 16" />
             <path d="M2 12H22" />
           </svg>
@@ -57,63 +68,69 @@
       </div>
 
       <!-- iconos -->
-      <div class="flex justify-center items-center gap-12 pt-8">
-        <div class="flex justify-start items-center gap-3">
-          <div class="bg-[#4E1C59] p-2 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-star-icon lucide-star">
-              <path
-                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
-            </svg>
-          </div>
-          <span>Acompañamiento <br>personalizado</span>
-        </div>
-        <div class="flex justify-start items-center gap-3">
-          <div class="bg-[#4E1C59] p-2 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-shield-check-icon lucide-shield-check">
-              <path
-                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-              <path d="m9 12 2 2 4-4" />
-            </svg>
-          </div>
-          <span>Calidad profesional <br>garantizada</span>
-        </div>
-        <div class="flex justify-start items-center gap-3">
-          <div class="bg-[#4E1C59] p-2 rounded-full">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-book-open-text-icon lucide-book-open-text">
-              <path d="M12 7v14" />
-              <path d="M16 12h2" />
-              <path d="M16 8h2" />
-              <path
-                d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
-              <path d="M6 12h2" />
-              <path d="M6 8h2" />
-            </svg>
-          </div>
-          <span>Convertimos tu historia <br>en un libro inolvidable</span>
-        </div>
-      </div>
+<div
+  class="flex flex-col justify-center items-start gap-6 pt-8 sm:flex-row sm:flex-wrap lg:flex-nowrap lg:justify-center lg:items-center lg:gap-12">
+
+  <div class="flex justify-center items-center gap-3 text-center sm:flex-row sm:justify-start sm:text-left">
+    <div class="bg-[#4E1C59] p-2 rounded-full shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-star-icon lucide-star">
+        <path
+          d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+      </svg>
+    </div>
+    <span class="text-left sm:text-left">Acompañamiento <br>personalizado</span>
+  </div>
+
+  <div class="flex justify-center items-start gap-3 text-center sm:flex-row sm:justify-start sm:text-left">
+    <div class="bg-[#4E1C59] p-2 rounded-full shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-shield-check-icon lucide-shield-check">
+        <path
+          d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+        <path d="m9 12 2 2 4-4" />
+      </svg>
+    </div>
+    <span class="text-left sm:text-left">Calidad profesional <br>garantizada</span>
+  </div>
+
+  <div class="flex justify-center items-start gap-3 text-center sm:flex-row sm:justify-start sm:text-left">
+    <div class="bg-[#4E1C59] p-2 rounded-full shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-book-open-text-icon lucide-book-open-text">
+        <path d="M12 7v14" />
+        <path d="M16 12h2" />
+        <path d="M16 8h2" />
+        <path
+          d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+        <path d="M6 12h2" />
+        <path d="M6 8h2" />
+      </svg>
+    </div>
+    <span class="text-left sm:text-left">Convertimos tu historia <br>en un libro inolvidable</span>
+  </div>
+
+</div>
 
     </div>
 
     <!-- glass -->
-    <div
-      data-aos="fade-left"
-      class="rounded-3xl border border-[#37102F] bg-linear-to-br  from-[#58194D]/10  via-[#37102F]/20 to-transparent  backdrop-blur-sm  shadow-[#461837] shadow-lg flex justify-center items-start flex-col relative px-8 gap-4 self-end mt-120">
+    <div data-aos="fade-left"
+      class="w-full rounded-3xl border border-[#37102F] bg-linear-to-br  from-[#58194D]/10  via-[#37102F]/20 to-transparent  backdrop-blur-sm  shadow-[#461837] shadow-lg flex justify-center items-center flex-col relative px-8 gap-4 lg:w-auto lg:self-end lg:mt-120 lg:items-start">
 
-      <div class="flex justify-center items-start flex-col gap-8 relative pb-10 py-20">
+      <div
+        class="flex justify-center items-center flex-col gap-8 relative pb-10 py-16 text-center lg:items-start lg:py-20 lg:text-left">
 
-        <div class="font-['Cormorant_Garamond'] absolute top-4 text-8xl leading-none text-[#E6B04A]
-                  [text-shadow:0_0_6px_rgba(230,176,74,0.5)]">
+        <div class="font-['Cormorant_Garamond'] absolute top-4 text-6xl leading-none text-[#E6B04A]
+                  [text-shadow:0_0_6px_rgba(230,176,74,0.5)] lg:text-8xl">
           &ldquo;
         </div>
 
-        <blockquote class="font-['Cormorant_Garamond'] italic text-2xl leading-[1.4] text-[#E6B04A] [text-shadow:0_0_4px_rgba(230,176,74,0.4)] tracking-wide">
+        <blockquote
+          class="font-['Cormorant_Garamond'] italic text-xl leading-[1.4] text-[#E6B04A] [text-shadow:0_0_4px_rgba(230,176,74,0.4)] tracking-wide lg:text-2xl">
           Haz que tu historia cobre vida <br>
           antes de ser leída.
         </blockquote>
