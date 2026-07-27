@@ -1,1 +1,105 @@
-<p>nosotros works!</p>,
+<section data-aos="fade-up" class="mx-auto my-20 max-w-7xl rounded-[40px] px-6">
+
+  <!-- TÍTULO -->
+
+  <div class="relative flex w-full items-center justify-center pb-12">
+
+    <div class="absolute left-1/2 h-0.5 w-40 -translate-x-1/2 bg-stone-800 sm:w-64 lg:w-180"></div>
+
+    <h2 class="absolute -top-6 left-1/2 -translate-x-1/2 bg-page px-4 text-3xl font-black text-stone-900 sm:text-4xl">
+      {{ 'home.nosotros.sectionTitle' | transloco }}
+    </h2>
+
+  </div>
+
+  <article
+    class="grid items-center gap-14 rounded-3xl bg-white p-10 shadow-lg shadow-stone-300/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl lg:grid-cols-2">
+
+    <!-- IMAGEN -->
+
+    <div class="relative flex justify-center">
+    
+      <div class="absolute h-96 w-72 rounded-3xl bg-purple-950/10 blur-xl"></div>
+    
+      <img src="/img/card14.png" [alt]="'home.nosotros.imageAlt' | transloco"
+        class="relative w-full max-w-md rounded-2xl shadow-2xl shadow-black/30 transition duration-300 hover:scale-[1.03]">
+    
+    </div>
+
+    <!-- INFORMACIÓN -->
+
+    <div>
+
+      <span
+        class="rounded-full bg-amarillo [box-shadow:0_0_8px_rgba(230,176,74,0.5)] px-4 py-1 text-sm font-bold text-charcoal">
+        {{ 'home.nosotros.badge' | transloco }}
+      </span>
+
+      <h3 class="mt-5 text-4xl font-black text-stone-900">
+        {{ 'home.nosotros.title' | transloco }}
+      </h3>
+
+      <p class="mt-6 leading-8 text-stone-700">
+        {{ 'home.nosotros.description' | transloco }}
+      </p>
+
+      <!-- DATOS DESTACADOS -->
+
+      <div class="mt-8 flex flex-wrap gap-4">
+
+        <div class="rounded-xl border border-stone-200 bg-stone-50 px-5 py-3 shadow-sm">
+
+          <div class="text-xs font-semibold uppercase tracking-wide text-stone-500">
+            {{ 'home.nosotros.features.founders.label' | transloco }}
+          </div>
+
+          <div class="mt-1 font-bold text-purple-950">
+            {{ 'home.nosotros.features.founders.value' | transloco }}
+          </div>
+
+        </div>
+
+        <div class="rounded-xl border border-stone-200 bg-stone-50 px-5 py-3 shadow-sm">
+
+          <div class="text-xs font-semibold uppercase tracking-wide text-stone-500">
+            {{ 'home.nosotros.features.disciplines.label' | transloco }}
+          </div>
+
+          <div class="mt-1 font-bold text-purple-950">
+            {{ 'home.nosotros.features.disciplines.value' | transloco }}
+          </div>
+
+        </div>
+
+        <div class="rounded-xl border border-stone-200 bg-stone-50 px-5 py-3 shadow-sm">
+
+          <div class="text-xs font-semibold uppercase tracking-wide text-stone-500">
+            {{ 'home.nosotros.features.approach.label' | transloco }}
+          </div>
+
+          <div class="mt-1 font-bold text-purple-950">
+            {{ 'home.nosotros.features.approach.value' | transloco }}
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BOTÓN -->
+
+      <div class="mt-10 flex flex-wrap gap-4">
+
+        <a routerLink="/sobre-nosotros"
+          class="rounded-xl bg-purple-950 px-8 py-3 font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-purple-900 hover:shadow-lg hover:shadow-purple-900/30 cursor-pointer">
+
+          {{ 'home.nosotros.cta' | transloco }}
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</section>

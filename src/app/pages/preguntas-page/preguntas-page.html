@@ -20,21 +20,19 @@
 
       <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
 
-        PREGUNTAS FRECUENTES
+        {{ 'faqPage.hero.badge' | transloco }}
 
       </span>
 
       <h1 class="mt-6 text-4xl font-black leading-tight text-white lg:text-5xl">
 
-        Resolvemos las dudas más habituales de los autores.
+        {{ 'faqPage.hero.title' | transloco }}
 
       </h1>
 
       <p class="mt-5 text-lg leading-relaxed text-white/80">
 
-        Sabemos que publicar un libro genera muchas preguntas. Aquí encontrarás respuesta a las consultas más frecuentes
-        sobre nuestros servicios, el proceso de trabajo y cómo podemos ayudarte a convertir tu manuscrito en una obra
-        profesional.
+        {{ 'faqPage.hero.description' | transloco }}
 
       </p>
 
@@ -54,7 +52,7 @@
     <article class="transition-all duration-300" [class.bg-stone-50]="openedQuestion === i">
 
       <button type="button" (click)="toggleQuestion(i)"
-        class="group flex w-full items-center gap-6 px-8 py-7 text-left cursor-pointer hover:bg-gray-200/60 transition duration-200">
+        class="group flex w-full cursor-pointer items-center gap-6 px-8 py-7 text-left transition duration-200 hover:bg-gray-200/60">
 
         <!-- Icono -->
 

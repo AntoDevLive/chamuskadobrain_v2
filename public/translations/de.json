@@ -364,6 +364,28 @@
           }
         }
       }
+    },
+    "nosotros": {
+      "sectionTitle": "Über uns",
+      "imageAlt": "Chamuskado Brain Team",
+      "badge": "Lernen Sie uns kennen",
+      "title": "Wir veröffentlichen keine Bücher. Wir begleiten die Menschen, die sie schreiben.",
+      "description": "Wir sind nur zu zweit. Zwei kreative Fachleute, die ihre Kompetenzen bündeln, um Autorinnen und Autoren dabei zu helfen, ihre Manuskripte in Bücher zu verwandeln, auf die sie stolz sein können.",
+      "features": {
+        "founders": {
+          "label": "Team",
+          "value": "2 Gründer"
+        },
+        "disciplines": {
+          "label": "Fachgebiete",
+          "value": "Lektorat und Illustration"
+        },
+        "approach": {
+          "label": "Ansatz",
+          "value": "100 % persönliche Betreuung"
+        }
+      },
+      "cta": "Lernen Sie uns kennen"
     }
   },
   "serviciosPage": {
@@ -381,5 +403,66 @@
       "description": "Erzählen Sie uns von Ihrem Projekt, und wir erstellen Ihnen ein unverbindliches, individuelles Angebot, damit Sie den nächsten Schritt als Autorin oder Autor gehen können.",
       "button": "Angebot anfordern"
     }
+  },
+  "tarifasPage": {
+    "hero": {
+      "badge": "PREISE",
+      "title": "Klare Preise für unabhängige Autorinnen und Autoren.",
+      "description": "Sehen Sie sich unsere Richtpreise an. Wenn Ihr Projekt eine besondere Betreuung erfordert, erstellen wir Ihnen ein individuelles und unverbindliches Angebot."
+    },
+    "pricing": {
+      "price": "Preis",
+      "prices": "Preise"
+    },
+    "cta": {
+      "button": "Angebot anfordern",
+      "title": "Benötigen Sie ein individuelles Angebot?",
+      "description": "Erzählen Sie uns von Ihrem Projekt und wir erstellen Ihnen ein auf Ihre Bedürfnisse zugeschnittenes, unverbindliches Angebot."
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "badge": "HÄUFIG GESTELLTE FRAGEN",
+      "title": "Wir beantworten die häufigsten Fragen von Autorinnen und Autoren.",
+      "description": "Wir wissen, dass die Veröffentlichung eines Buches viele Fragen aufwirft. Hier finden Sie Antworten auf die häufigsten Fragen zu unseren Dienstleistungen, unserem Arbeitsablauf und dazu, wie wir Ihnen helfen können, Ihr Manuskript in ein professionelles Werk zu verwandeln."
+    },
+    "items": [
+      {
+        "question": "Behalte ich die Rechte an meinem Werk?",
+        "answer": "Ja. Immer. Das Urheberrecht verbleibt vollständig bei der Autorin oder dem Autor des Werkes."
+      },
+      {
+        "question": "Sind Sie ein traditioneller Verlag?",
+        "answer": "Nein. Wir helfen Ihnen dabei, Ihr Manuskript so vorzubereiten, dass Sie es traditionellen Verlagen vorlegen oder den Weg der unabhängigen Veröffentlichung wählen können."
+      },
+      {
+        "question": "Veröffentlichen Sie mein Buch direkt?",
+        "answer": "Nein. Wir bieten professionelle Dienstleistungen für unabhängige Autorinnen und Autoren an, die in jeder Phase ihres Verlagsprojekts Unterstützung benötigen."
+      },
+      {
+        "question": "Garantieren Sie Buchverkäufe?",
+        "answer": "Nein. Kein seriöser Dienstleister kann den Verkauf eines Buches garantieren. Unsere Aufgabe besteht darin, Ihnen zu helfen, Ihr Werk in höchstmöglicher Qualität zu präsentieren."
+      },
+      {
+        "question": "Kann ich nur eine einzelne Dienstleistung buchen?",
+        "answer": "Ja. Sie können ausschließlich die Dienstleistung buchen, die Sie benötigen, ohne weitere Leistungen in Anspruch nehmen zu müssen."
+      },
+      {
+        "question": "Arbeiten Sie auch mit Autorinnen und Autoren außerhalb Spaniens?",
+        "answer": "Ja. Wir arbeiten sowohl mit Autorinnen und Autoren aus Spanien als auch aus dem Ausland vollständig online zusammen."
+      },
+      {
+        "question": "Wie lange dauert die Bearbeitung?",
+        "answer": "Das hängt von der Art der Dienstleistung und dem Umfang des Projekts ab. Vor Beginn nennen wir Ihnen stets einen voraussichtlichen Zeitrahmen, den wir zuverlässig einhalten."
+      },
+      {
+        "question": "Wie erfolgt die Bezahlung?",
+        "answer": "Per Banküberweisung oder mit einer anderen Zahlungsmethode, die zuvor mit der Autorin oder dem Autor vereinbart wurde."
+      },
+      {
+        "question": "Können Sie mir helfen, wenn ich eine Dienstleistung benötige, die Sie nicht anbieten?",
+        "answer": "Ja. Als Studio für Art Direction sind wir offen für neue Anfragen und bieten individuelle Lösungen an, wann immer wir Ihnen weiterhelfen können."
+      }
+    ]
   }
 }

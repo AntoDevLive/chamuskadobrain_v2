@@ -364,6 +364,28 @@
           }
         }
       }
+    },
+    "nosotros": {
+      "sectionTitle": "À propos de nous",
+      "imageAlt": "Équipe Chamuskado Brain",
+      "badge": "Faites notre connaissance",
+      "title": "Nous ne publions pas de livres. Nous accompagnons celles et ceux qui les écrivent.",
+      "description": "Nous ne sommes que deux. Deux professionnels créatifs qui mettent en commun leurs compétences pour aider les auteurs à transformer leurs manuscrits en livres dont ils peuvent être fiers.",
+      "features": {
+        "founders": {
+          "label": "Équipe",
+          "value": "2 fondateurs"
+        },
+        "disciplines": {
+          "label": "Expertises",
+          "value": "Édition et illustration"
+        },
+        "approach": {
+          "label": "Approche",
+          "value": "Accompagnement 100 % personnalisé"
+        }
+      },
+      "cta": "Faites notre connaissance"
     }
   },
   "serviciosPage": {
@@ -381,5 +403,66 @@
       "description": "Parlez-nous de votre projet et nous préparerons un devis personnalisé, sans engagement, pour vous aider à franchir la prochaine étape en tant qu'auteur.",
       "button": "Demander un devis"
     }
+  },
+  "tarifasPage": {
+    "hero": {
+      "badge": "TARIFS",
+      "title": "Des tarifs transparents pour les auteurs indépendants.",
+      "description": "Consultez nos tarifs indicatifs. Si votre projet nécessite un traitement particulier, nous préparerons un devis personnalisé, sans engagement."
+    },
+    "pricing": {
+      "price": "tarif",
+      "prices": "tarifs"
+    },
+    "cta": {
+      "button": "Demander un devis",
+      "title": "Besoin d'un devis personnalisé ?",
+      "description": "Parlez-nous de votre projet et nous préparerons une proposition adaptée à vos besoins, sans engagement."
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "badge": "FOIRE AUX QUESTIONS",
+      "title": "Nous répondons aux questions les plus fréquentes des auteurs.",
+      "description": "Nous savons que publier un livre soulève de nombreuses questions. Vous trouverez ici les réponses aux questions les plus fréquentes concernant nos services, notre méthode de travail et la manière dont nous pouvons vous aider à transformer votre manuscrit en une œuvre professionnelle."
+    },
+    "items": [
+      {
+        "question": "Est-ce que je conserve les droits sur mon œuvre ?",
+        "answer": "Oui. Toujours. Les droits d'auteur appartiennent intégralement à l'auteur de l'œuvre."
+      },
+      {
+        "question": "Êtes-vous une maison d'édition traditionnelle ?",
+        "answer": "Non. Nous vous aidons à préparer votre manuscrit afin de le présenter à des maisons d'édition traditionnelles ou d'opter pour l'autoédition."
+      },
+      {
+        "question": "Publiez-vous directement mon livre ?",
+        "answer": "Non. Nous proposons des services professionnels aux auteurs indépendants qui ont besoin d'un accompagnement à n'importe quelle étape de leur projet éditorial."
+      },
+      {
+        "question": "Garantissez-vous les ventes ?",
+        "answer": "Non. Aucun professionnel sérieux ne peut garantir les ventes d'un livre. Notre mission est de vous aider à présenter une œuvre de la plus haute qualité possible."
+      },
+      {
+        "question": "Puis-je ne commander qu'un seul service ?",
+        "answer": "Oui. Vous pouvez choisir uniquement le service dont vous avez besoin, sans obligation d'en souscrire d'autres."
+      },
+      {
+        "question": "Travaillez-vous avec des auteurs en dehors de l'Espagne ?",
+        "answer": "Oui. Nous travaillons avec des auteurs d'Espagne comme de l'étranger, entièrement à distance."
+      },
+      {
+        "question": "Combien de temps cela prend-il ?",
+        "answer": "Cela dépend du type de service et de l'ampleur du projet. Avant de commencer, nous vous communiquons toujours un délai estimatif que nous nous engageons à respecter."
+      },
+      {
+        "question": "Comment le paiement est-il effectué ?",
+        "answer": "Par virement bancaire ou par tout autre moyen convenu au préalable avec l'auteur."
+      },
+      {
+        "question": "Si j'ai besoin d'un service que vous ne proposez pas, pouvez-vous m'aider ?",
+        "answer": "Oui. En tant que studio de direction artistique, nous sommes ouverts aux nouvelles propositions et nous proposons des solutions personnalisées chaque fois que nous pouvons vous aider."
+      }
+    ]
   }
 }

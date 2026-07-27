@@ -363,6 +363,28 @@
           }
         }
       }
+    },
+    "nosotros": {
+      "sectionTitle": "Chi siamo",
+      "imageAlt": "Team Chamuskado Brain",
+      "badge": "Conosciamoci",
+      "title": "Non pubblichiamo libri. Affianchiamo chi li scrive.",
+      "description": "Siamo soltanto in due. Due professionisti creativi che uniscono le proprie competenze per aiutare gli autori a trasformare i loro manoscritti in libri di cui andare fieri.",
+      "features": {
+        "founders": {
+          "label": "Team",
+          "value": "2 fondatori"
+        },
+        "disciplines": {
+          "label": "Competenze",
+          "value": "Editing e illustrazione"
+        },
+        "approach": {
+          "label": "Approccio",
+          "value": "Servizio 100% personalizzato"
+        }
+      },
+      "cta": "Conosciamoci"
     }
   },
   "serviciosPage": {
@@ -380,5 +402,66 @@
       "description": "Raccontaci il tuo progetto e prepareremo un preventivo personalizzato e senza impegno per aiutarti a fare il prossimo passo come autore.",
       "button": "Richiedi un preventivo"
     }
+  },
+  "tarifasPage": {
+    "hero": {
+      "badge": "TARIFFE",
+      "title": "Tariffe chiare per autori indipendenti.",
+      "description": "Consulta le nostre tariffe indicative. Se il tuo progetto richiede un trattamento speciale, prepareremo un preventivo personalizzato e senza impegno."
+    },
+    "pricing": {
+      "price": "prezzo",
+      "prices": "prezzi"
+    },
+    "cta": {
+      "button": "Richiedi un preventivo",
+      "title": "Hai bisogno di un preventivo personalizzato?",
+      "description": "Raccontaci il tuo progetto e prepareremo una proposta su misura per le tue esigenze, senza alcun impegno."
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "badge": "DOMANDE FREQUENTI",
+      "title": "Rispondiamo ai dubbi più comuni degli autori.",
+      "description": "Sappiamo che pubblicare un libro genera molte domande. Qui troverai le risposte ai quesiti più frequenti sui nostri servizi, sul processo di lavoro e su come possiamo aiutarti a trasformare il tuo manoscritto in un'opera professionale."
+    },
+    "items": [
+      {
+        "question": "Conservo i diritti sulla mia opera?",
+        "answer": "Sì. Sempre. I diritti d'autore appartengono interamente all'autore dell'opera."
+      },
+      {
+        "question": "Siete una casa editrice tradizionale?",
+        "answer": "No. Ti aiutiamo a preparare il materiale per presentare la tua opera alle case editrici tradizionali oppure a scegliere la pubblicazione indipendente."
+      },
+      {
+        "question": "Pubblicate direttamente il mio libro?",
+        "answer": "No. Offriamo servizi professionali agli autori indipendenti che necessitano di supporto in qualsiasi fase del loro progetto editoriale."
+      },
+      {
+        "question": "Garantite le vendite?",
+        "answer": "No. Nessun professionista serio può garantire le vendite di un libro. Il nostro lavoro consiste nell'aiutarti a presentare un'opera della massima qualità possibile."
+      },
+      {
+        "question": "Posso acquistare un solo servizio?",
+        "answer": "Sì. Puoi acquistare esclusivamente il servizio di cui hai bisogno, senza alcun obbligo di richiederne altri."
+      },
+      {
+        "question": "Lavorate anche fuori dalla Spagna?",
+        "answer": "Sì. Collaboriamo con autori sia in Spagna che all'estero, interamente online."
+      },
+      {
+        "question": "Quanto tempo richiede il lavoro?",
+        "answer": "Dipende dal tipo di servizio e dall'entità del progetto. Prima di iniziare forniamo sempre una stima dei tempi che ci impegniamo a rispettare."
+      },
+      {
+        "question": "Come si effettua il pagamento?",
+        "answer": "Tramite bonifico bancario o con qualsiasi altro metodo concordato in precedenza con l'autore."
+      },
+      {
+        "question": "Se ho bisogno di un servizio che non offrite, potete aiutarmi?",
+        "answer": "Sì. Come studio di direzione artistica siamo aperti a nuove proposte e a offrire soluzioni personalizzate ogni volta che possiamo aiutarti."
+      }
+    ]
   }
 }

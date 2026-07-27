@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ITarifa } from '../../interfaces/tarifa';
 import { tarifasJson } from '../../json/tarifas';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-tarifas-page',
-  imports: [],
+  imports: [TranslocoPipe],
   templateUrl: './tarifas-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

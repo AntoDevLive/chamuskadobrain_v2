@@ -1,33 +1,32 @@
 <main>
 
   <!-- HERO -->
-<section class="relative overflow-hidden pt-10">
+  <section class="relative overflow-hidden pt-10">
 
-  <!-- Imagen de fondo -->
-  <div class="absolute inset-0 bg-[url('/img/card3.png')] bg-cover bg-center">
-  </div>
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0 bg-[url('/img/card3.png')] bg-cover bg-center">
+    </div>
 
-  <!-- Overlay morado -->
-  <div class="absolute inset-0 bg-purple-950/90">
-  </div>
+    <!-- Overlay morado -->
+    <div class="absolute inset-0 bg-purple-950/90">
+    </div>
 
-  <!-- Decoración -->
-  <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-amarillo/20 blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 h-60 w-60 rounded-full bg-amber-300/10 blur-3xl"></div>
+    <!-- Decoración -->
+    <div class="absolute -left-20 top-0 h-72 w-72 rounded-full bg-amarillo/20 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 h-60 w-60 rounded-full bg-amber-300/10 blur-3xl"></div>
 
     <div class="mx-auto max-w-7xl px-6 py-16" data-aos="fade-right">
 
       <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
-        TARIFAS
+        {{ 'tarifasPage.hero.badge' | transloco }}
       </span>
 
       <h1 class="mt-6 max-w-4xl text-4xl font-black text-white lg:text-5xl">
-        Tarifas claras para autores independientes.
+        {{ 'tarifasPage.hero.title' | transloco }}
       </h1>
 
       <p class="mt-5 max-w-3xl text-lg leading-relaxed text-white/80">
-        Consulta nuestros precios orientativos. Si tu proyecto requiere un tratamiento especial,
-        prepararemos un presupuesto personalizado sin compromiso.
+        {{ 'tarifasPage.hero.description' | transloco }}
       </p>
 
     </div>
@@ -55,13 +54,13 @@
 
               <h2 class="text-2xl font-black text-purple-950">
 
-                {{ tarifa.servicio }}
+                {{ 'home.tarifas.items.' + tarifa.slug + '.title' | transloco }}
 
               </h2>
 
               <p class="mt-2 text-sm leading-6 text-stone-600">
 
-                {{ tarifa.slogan }}
+                {{ 'home.tarifas.items.' + tarifa.slug + '.description' | transloco }}
 
               </p>
 
@@ -70,7 +69,11 @@
             <div class="rounded-full bg-purple-100 px-3 py-1 text-xs font-bold text-purple-950">
 
               {{ tarifa.tarifas.length }}
-              {{ tarifa.tarifas.length === 1 ? 'precio' : 'precios' }}
+              {{
+              tarifa.tarifas.length === 1
+              ? ('tarifasPage.pricing.price' | transloco)
+              : ('tarifasPage.pricing.prices' | transloco)
+              }}
 
             </div>
 
@@ -90,13 +93,13 @@
 
               <span class="text-sm text-stone-700">
 
-                {{ precio.concepto }}
+                {{ 'home.tarifas.items.' + tarifa.slug + '.tarifas.' + $index + '.concepto' | transloco }}
 
               </span>
 
               <span class="rounded-full bg-amarillo px-3 py-1 text-sm font-bold text-stone-900">
 
-                {{ precio.precio }}
+                {{ 'home.tarifas.items.' + tarifa.slug + '.tarifas.' + $index + '.precio' | transloco }}
 
               </span>
 
@@ -123,7 +126,7 @@
           <button
             class="mt-6 w-full cursor-pointer rounded-xl border-2 border-purple-950 py-3 font-semibold text-purple-950 transition hover:bg-purple-950 hover:text-white">
 
-            Solicitar presupuesto
+            {{ 'tarifasPage.cta.button' | transloco }}
 
           </button>
 
@@ -145,21 +148,20 @@
 
       <h2 class="text-4xl font-black text-white">
 
-        ¿Necesitas un presupuesto personalizado?
+        {{ 'tarifasPage.cta.title' | transloco }}
 
       </h2>
 
       <p class="mx-auto mt-5 max-w-3xl text-lg text-white/80">
 
-        Cuéntanos tu proyecto y prepararemos una propuesta adaptada a tus necesidades,
-        sin compromiso.
+        {{ 'tarifasPage.cta.description' | transloco }}
 
       </p>
 
       <a routerLink="/presupuesto"
         class="mt-8 inline-flex rounded-xl bg-amarillo px-8 py-4 text-lg font-bold text-stone-900 transition hover:-translate-y-1">
 
-        Solicitar presupuesto
+        {{ 'tarifasPage.cta.button' | transloco }}
 
       </a>
 

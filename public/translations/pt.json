@@ -364,6 +364,28 @@
           }
         }
       }
+    },
+    "nosotros": {
+      "sectionTitle": "Sobre nós",
+      "imageAlt": "Equipa Chamuskado Brain",
+      "badge": "Conheça-nos",
+      "title": "Não publicamos livros. Acompanhamos quem os escreve.",
+      "description": "Somos apenas nós os dois. Dois profissionais criativos que unem as suas competências para ajudar outros autores a transformar os seus manuscritos em livros dos quais se possam orgulhar.",
+      "features": {
+        "founders": {
+          "label": "Equipa",
+          "value": "2 fundadores"
+        },
+        "disciplines": {
+          "label": "Especialidades",
+          "value": "Edição e ilustração"
+        },
+        "approach": {
+          "label": "Abordagem",
+          "value": "Acompanhamento 100% personalizado"
+        }
+      },
+      "cta": "Conheça-nos"
     }
   },
   "serviciosPage": {
@@ -381,5 +403,66 @@
       "description": "Conte-nos sobre o seu projeto e prepararemos um orçamento personalizado, sem compromisso, para ajudá-lo a dar o próximo passo como autor.",
       "button": "Solicitar orçamento"
     }
+  },
+  "tarifasPage": {
+    "hero": {
+      "badge": "PREÇOS",
+      "title": "Preços claros para autores independentes.",
+      "description": "Consulte os nossos preços indicativos. Se o seu projeto exigir um tratamento especial, prepararemos um orçamento personalizado, sem compromisso."
+    },
+    "pricing": {
+      "price": "preço",
+      "prices": "preços"
+    },
+    "cta": {
+      "button": "Solicitar orçamento",
+      "title": "Precisa de um orçamento personalizado?",
+      "description": "Conte-nos sobre o seu projeto e prepararemos uma proposta adaptada às suas necessidades, sem compromisso."
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "badge": "PERGUNTAS FREQUENTES",
+      "title": "Respondemos às dúvidas mais frequentes dos autores.",
+      "description": "Sabemos que publicar um livro levanta muitas dúvidas. Aqui encontrará respostas às perguntas mais frequentes sobre os nossos serviços, o processo de trabalho e como podemos ajudá-lo a transformar o seu manuscrito numa obra profissional."
+    },
+    "items": [
+      {
+        "question": "Conservo os direitos da minha obra?",
+        "answer": "Sim. Sempre. Os direitos de autor pertencem integralmente ao autor da obra."
+      },
+      {
+        "question": "São uma editora tradicional?",
+        "answer": "Não. Ajudamo-lo a preparar o seu manuscrito para o apresentar a editoras tradicionais ou optar pela publicação independente."
+      },
+      {
+        "question": "Publicam diretamente o meu livro?",
+        "answer": "Não. Prestamos serviços profissionais a autores independentes que necessitam de apoio em qualquer fase do seu projeto editorial."
+      },
+      {
+        "question": "Garantem as vendas?",
+        "answer": "Não. Nenhum profissional sério pode garantir as vendas de um livro. O nosso trabalho consiste em ajudá-lo a apresentar a sua obra com a máxima qualidade possível."
+      },
+      {
+        "question": "Posso contratar apenas um serviço?",
+        "answer": "Sim. Pode contratar apenas o serviço de que necessita, sem qualquer obrigação de adquirir outros."
+      },
+      {
+        "question": "Trabalham fora de Espanha?",
+        "answer": "Sim. Trabalhamos com autores de Espanha e do estrangeiro, totalmente online."
+      },
+      {
+        "question": "Quanto tempo demora?",
+        "answer": "Depende do tipo de serviço e da dimensão do projeto. Antes de começarmos, fornecemos sempre um prazo estimado que nos comprometemos a cumprir."
+      },
+      {
+        "question": "Como é efetuado o pagamento?",
+        "answer": "Por transferência bancária ou por qualquer outro método previamente acordado com o autor."
+      },
+      {
+        "question": "Se precisar de um serviço que não oferecem, podem ajudar-me?",
+        "answer": "Sim. Como estúdio de direção artística, estamos abertos a novas propostas e a oferecer soluções personalizadas sempre que pudermos ajudá-lo."
+      }
+    ]
   }
 }

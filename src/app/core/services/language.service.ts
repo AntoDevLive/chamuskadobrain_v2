@@ -15,7 +15,7 @@ export class LanguageService {
 
   readonly languages: LanguageOption[] = [
     { code: 'es', label: 'Español', flag: '🇪🇸' },
-    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'en', label: 'English', flag: '🇪🇳' },
     { code: 'fr', label: 'Français', flag: '🇫🇷' },
     { code: 'it', label: 'Italiano', flag: '🇮🇹' },
     { code: 'pt', label: 'Português', flag: '🇵🇹' },

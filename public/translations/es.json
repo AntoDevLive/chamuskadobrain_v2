@@ -363,6 +363,28 @@
           }
         }
       }
+    },
+    "nosotros": {
+      "sectionTitle": "Sobre nosotros",
+      "imageAlt": "Equipo Chamuskado Brain",
+      "badge": "Conócenos",
+      "title": "No publicamos libros. Acompañamos a quienes los escriben.",
+      "description": "Solo estamos nosotros dos. Personas creativas que unimos nuestras profesiones para ayudar a otros autores a convertir sus manuscritos en libros de los que sentirse orgullosos.",
+      "features": {
+        "founders": {
+          "label": "Equipo",
+          "value": "2 fundadores"
+        },
+        "disciplines": {
+          "label": "Disciplinas",
+          "value": "Edición e ilustración"
+        },
+        "approach": {
+          "label": "Enfoque",
+          "value": "Trato 100% personalizado"
+        }
+      },
+      "cta": "Conócenos"
     }
   },
   "serviciosPage": {
@@ -380,5 +402,66 @@
       "description": "Cuéntanos tu proyecto y prepararemos un presupuesto personalizado sin compromiso para ayudarte a dar el siguiente paso como autor.",
       "button": "Solicitar presupuesto"
     }
+  },
+  "tarifasPage": {
+    "hero": {
+      "badge": "TARIFAS",
+      "title": "Tarifas claras para autores independientes.",
+      "description": "Consulta nuestros precios orientativos. Si tu proyecto requiere un tratamiento especial, prepararemos un presupuesto personalizado sin compromiso."
+    },
+    "pricing": {
+      "price": "precio",
+      "prices": "precios"
+    },
+    "cta": {
+      "button": "Solicitar presupuesto",
+      "title": "¿Necesitas un presupuesto personalizado?",
+      "description": "Cuéntanos tu proyecto y prepararemos una propuesta adaptada a tus necesidades, sin compromiso."
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "badge": "PREGUNTAS FRECUENTES",
+      "title": "Resolvemos las dudas más habituales de los autores.",
+      "description": "Sabemos que publicar un libro genera muchas preguntas. Aquí encontrarás respuesta a las consultas más frecuentes sobre nuestros servicios, el proceso de trabajo y cómo podemos ayudarte a convertir tu manuscrito en una obra profesional."
+    },
+    "items": [
+      {
+        "question": "¿Conservo los derechos de mi obra?",
+        "answer": "Sí. Siempre. Los derechos de autor pertenecen íntegramente al autor de la obra."
+      },
+      {
+        "question": "¿Sois una editorial tradicional?",
+        "answer": "No. Te ayudamos a preparar el material para presentar tu obra a editoriales tradicionales o a optar por la publicación independiente."
+      },
+      {
+        "question": "¿Publicáis directamente mi libro?",
+        "answer": "No. Prestamos servicios profesionales para autores independientes que necesitan apoyo en cualquier fase de su proyecto editorial."
+      },
+      {
+        "question": "¿Garantizáis ventas?",
+        "answer": "No. Ningún profesional serio puede garantizar las ventas de un libro. Nuestro trabajo consiste en ayudarte a presentar una obra con la máxima calidad posible."
+      },
+      {
+        "question": "¿Puedo contratar solo un servicio?",
+        "answer": "Sí. Puedes contratar únicamente el servicio que necesites sin obligación de adquirir ningún otro."
+      },
+      {
+        "question": "¿Trabajáis fuera de España?",
+        "answer": "Sí. Trabajamos con autores tanto de España como del extranjero de forma completamente online."
+      },
+      {
+        "question": "¿Cuánto tardáis?",
+        "answer": "Depende del tipo de servicio y del volumen del proyecto. Antes de comenzar siempre facilitamos un plazo aproximado que cumplimos con nuestros autores."
+      },
+      {
+        "question": "¿Cómo se realiza el pago?",
+        "answer": "Mediante transferencia bancaria o cualquier otro método previamente acordado con el autor."
+      },
+      {
+        "question": "Si necesito un servicio que no ofrecéis, ¿podéis ayudarme?",
+        "answer": "Sí. Como estudio de dirección artística estamos abiertos a propuestas y a ofrecer soluciones personalizadas siempre que podamos ayudarte."
+      }
+    ]
   }
 }

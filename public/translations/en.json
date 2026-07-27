@@ -364,6 +364,28 @@
           }
         }
       }
+    },
+    "nosotros": {
+      "sectionTitle": "About us",
+      "imageAlt": "Chamuskado Brain team",
+      "badge": "Get to know us",
+      "title": "We don't publish books. We support the people who write them.",
+      "description": "It's just the two of us. Two creative professionals who combine our expertise to help authors turn their manuscripts into books they can truly be proud of.",
+      "features": {
+        "founders": {
+          "label": "Team",
+          "value": "2 founders"
+        },
+        "disciplines": {
+          "label": "Expertise",
+          "value": "Editing & illustration"
+        },
+        "approach": {
+          "label": "Approach",
+          "value": "100% personalized service"
+        }
+      },
+      "cta": "Get to know us"
     }
   },
   "serviciosPage": {
@@ -381,5 +403,66 @@
       "description": "Tell us about your project and we'll prepare a personalized, no-obligation quote to help you take the next step as an author.",
       "button": "Request a quote"
     }
+  },
+  "tarifasPage": {
+    "hero": {
+      "badge": "PRICING",
+      "title": "Clear pricing for independent authors.",
+      "description": "Browse our guideline prices. If your project requires special treatment, we'll prepare a personalized, no-obligation quote."
+    },
+    "pricing": {
+      "price": "price",
+      "prices": "prices"
+    },
+    "cta": {
+      "button": "Request a quote",
+      "title": "Need a personalized quote?",
+      "description": "Tell us about your project and we'll prepare a proposal tailored to your needs, with no obligation."
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "badge": "FREQUENTLY ASKED QUESTIONS",
+      "title": "Answering the most common questions from authors.",
+      "description": "We know that publishing a book raises many questions. Here you'll find answers to the most frequently asked questions about our services, our workflow, and how we can help you turn your manuscript into a professional publication."
+    },
+    "items": [
+      {
+        "question": "Do I retain the rights to my work?",
+        "answer": "Yes. Always. The copyright remains entirely with the author of the work."
+      },
+      {
+        "question": "Are you a traditional publishing house?",
+        "answer": "No. We help you prepare your manuscript so you can submit it to traditional publishers or choose the independent publishing route."
+      },
+      {
+        "question": "Do you publish my book directly?",
+        "answer": "No. We provide professional services for independent authors who need support at any stage of their publishing project."
+      },
+      {
+        "question": "Do you guarantee book sales?",
+        "answer": "No. No serious professional can guarantee book sales. Our job is to help you present your work with the highest possible quality."
+      },
+      {
+        "question": "Can I hire just one service?",
+        "answer": "Yes. You can hire only the service you need, with no obligation to purchase any others."
+      },
+      {
+        "question": "Do you work with authors outside Spain?",
+        "answer": "Yes. We work with authors both in Spain and abroad, entirely online."
+      },
+      {
+        "question": "How long does the process take?",
+        "answer": "It depends on the type of service and the scope of the project. Before we begin, we always provide an estimated timeline that we are committed to meeting."
+      },
+      {
+        "question": "How do I make the payment?",
+        "answer": "Payment can be made by bank transfer or any other method agreed upon in advance with the author."
+      },
+      {
+        "question": "If I need a service you don't offer, can you still help me?",
+        "answer": "Yes. As an art direction studio, we are open to new proposals and to providing customized solutions whenever we can help."
+      }
+    ]
   }
 }
