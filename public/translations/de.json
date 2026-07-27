@@ -365,5 +365,21 @@
         }
       }
     }
+  },
+  "serviciosPage": {
+    "hero": {
+      "badge": "LEKTORATS- UND VERLAGSSERVICES",
+      "title": "Alles, was Ihr Buch braucht, um zu einem professionellen Werk zu werden.",
+      "description": "Von der Korrektur bis zur Veröffentlichung auf Amazon. Wählen Sie den Service, den Sie benötigen, oder kombinieren Sie mehrere, um ein maßgeschneidertes Verlagsprojekt zu erstellen."
+    },
+    "list": {
+      "sectionTitle": "Unsere Leistungen",
+      "sectionSubtitle": "Professionelle Lösungen für unabhängige Autorinnen und Autoren in jeder Phase ihres Verlagsprojekts."
+    },
+    "cta": {
+      "title": "Sie wissen nicht, welchen Service Ihr Buch benötigt?",
+      "description": "Erzählen Sie uns von Ihrem Projekt, und wir erstellen Ihnen ein unverbindliches, individuelles Angebot, damit Sie den nächsten Schritt als Autorin oder Autor gehen können.",
+      "button": "Angebot anfordern"
+    }
   }
 }

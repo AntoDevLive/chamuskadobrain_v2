@@ -364,5 +364,21 @@
         }
       }
     }
+  },
+  "serviciosPage": {
+    "hero": {
+      "badge": "SERVIZI EDITORIALI",
+      "title": "Tutto ciò di cui il tuo libro ha bisogno per diventare un'opera professionale.",
+      "description": "Dalla correzione di bozze alla pubblicazione su Amazon. Scegli il servizio di cui hai bisogno oppure combina più servizi per creare un progetto editoriale su misura."
+    },
+    "list": {
+      "sectionTitle": "I nostri servizi",
+      "sectionSubtitle": "Soluzioni professionali per autori indipendenti in qualsiasi fase del loro progetto editoriale."
+    },
+    "cta": {
+      "title": "Non sai di quale servizio ha bisogno il tuo libro?",
+      "description": "Raccontaci il tuo progetto e prepareremo un preventivo personalizzato e senza impegno per aiutarti a fare il prossimo passo come autore.",
+      "button": "Richiedi un preventivo"
+    }
   }
 }

@@ -365,5 +365,21 @@
         }
       }
     }
+  },
+  "serviciosPage": {
+    "hero": {
+      "badge": "SERVIÇOS EDITORIAIS",
+      "title": "Tudo o que o seu livro precisa para se tornar uma obra profissional.",
+      "description": "Da revisão à publicação na Amazon. Escolha o serviço de que precisa ou combine vários para criar um projeto editorial à sua medida."
+    },
+    "list": {
+      "sectionTitle": "Os nossos serviços",
+      "sectionSubtitle": "Soluções profissionais para autores independentes em qualquer fase do seu projeto editorial."
+    },
+    "cta": {
+      "title": "Não sabe de que serviço o seu livro precisa?",
+      "description": "Conte-nos sobre o seu projeto e prepararemos um orçamento personalizado, sem compromisso, para ajudá-lo a dar o próximo passo como autor.",
+      "button": "Solicitar orçamento"
+    }
   }
 }

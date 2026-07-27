@@ -365,5 +365,21 @@
         }
       }
     }
+  },
+  "serviciosPage": {
+    "hero": {
+      "badge": "SERVICES ÉDITORIAUX",
+      "title": "Tout ce dont votre livre a besoin pour devenir une œuvre professionnelle.",
+      "description": "De la correction à la publication sur Amazon. Choisissez le service dont vous avez besoin ou combinez-en plusieurs pour créer un projet éditorial sur mesure."
+    },
+    "list": {
+      "sectionTitle": "Nos services",
+      "sectionSubtitle": "Des solutions professionnelles pour les auteurs indépendants à chaque étape de leur projet éditorial."
+    },
+    "cta": {
+      "title": "Vous ne savez pas de quel service votre livre a besoin ?",
+      "description": "Parlez-nous de votre projet et nous préparerons un devis personnalisé, sans engagement, pour vous aider à franchir la prochaine étape en tant qu'auteur.",
+      "button": "Demander un devis"
+    }
   }
 }

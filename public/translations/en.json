@@ -365,5 +365,21 @@
         }
       }
     }
+  },
+  "serviciosPage": {
+    "hero": {
+      "badge": "EDITORIAL SERVICES",
+      "title": "Everything your book needs to become a professional work.",
+      "description": "From proofreading to Amazon publishing. Choose the service you need or combine several to create a publishing project tailored to you."
+    },
+    "list": {
+      "sectionTitle": "Our services",
+      "sectionSubtitle": "Professional solutions for independent authors at every stage of their publishing journey."
+    },
+    "cta": {
+      "title": "Not sure which service your book needs?",
+      "description": "Tell us about your project and we'll prepare a personalized, no-obligation quote to help you take the next step as an author.",
+      "button": "Request a quote"
+    }
   }
 }
