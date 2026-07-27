@@ -37,10 +37,11 @@
           </p>
 
           <!-- BUTTON -->
-          <button
+          <a
+            [routerLink]="['/servicio', servicio.slug]"
             class="cursor-pointer mt-auto self-start rounded-full bg-amarillo px-4 py-1 text-sm font-semibold transition hover:bg-amarillo/90 duration-200 text-stone-950">
             {{ 'home.services.cardCta' | transloco }}
-          </button>
+          </a>
 
         </div>
 
@@ -53,8 +54,8 @@
     <!-- BOTÓN FINAL -->
     <div class="mt-16 flex justify-center">
 
-      <a href="#"
-        class="shadow-md shadow-black/80 group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-purple-950 px-10 py-4 text-lg font-bold text-white hover:shadow-lg hover:shadow-black/80 transition-all duration-300 hover:bg-purple-950/90 hover:-translate-y-1">
+      <a routerLink="/servicios"
+        class="shadow-md shadow-black/80 group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-purple-950 px-10 py-4 text-lg font-bold text-white hover:shadow-lg hover:shadow-black/80 transition-all duration-300 hover:bg-purple-950/90 hover:-translate-y-1 cursor-pointer">
 
         <!-- brillo -->
         <span

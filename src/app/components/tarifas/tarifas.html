@@ -53,10 +53,11 @@
 
         </div>
 
-        <button
-          class="mt-8 cursor-pointer rounded-xl bg-white py-3 font-bold text-purple-950 transition hover:bg-stone-100 duration-200 hover:shadow-md hover:shadow-purple-300">
+        <a
+          routerLink="presupuesto"
+          class="mt-8 cursor-pointer rounded-xl bg-white py-3 font-bold text-purple-950 transition hover:bg-stone-100 duration-200 hover:shadow-md hover:shadow-purple-300 text-center">
           {{ ('home.tarifas.items.' + tarifas[0].slug + '.cta') | transloco }}
-        </button>
+        </a>
 
       </div>
 
@@ -111,7 +112,7 @@
 
     <div class="mt-16 flex justify-center">
 
-      <a href="#"
+      <a routerLink="tarifas"
         class="shadow-md shadow-black/80 group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-purple-950 px-10 py-4 text-lg font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-purple-950/90 hover:shadow-lg hover:shadow-black/80">
 
         <span
