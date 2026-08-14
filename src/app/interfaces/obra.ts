@@ -10,6 +10,7 @@ export interface IObra {
   title: string;
   synopsis: string;
   amazonUrl: string;
+  booktrailerUrl?: string;
   valoraciones: IValoracion[];
   features: {
     label: string;

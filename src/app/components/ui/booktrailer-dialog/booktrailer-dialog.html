@@ -1,0 +1,22 @@
+<div class="relative w-full overflow-hidden rounded-2xl bg-black">
+
+  <!-- Cerrar -->
+
+  <button type="button" (click)="close()" aria-label="Cerrar booktrailer"
+    class="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl font-light leading-none text-purple-950 shadow-lg transition-all duration-300 hover:scale-110 hover:bg-white">
+
+    ×
+
+  </button>
+
+  <!-- Vídeo -->
+
+  <div class="aspect-video w-full">
+
+    <iframe [src]="videoUrl" class="aspect-video h-auto w-full" title="Booktrailer"
+      allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+    </iframe>
+
+  </div>
+
+</div>

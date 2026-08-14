@@ -17,16 +17,15 @@
     <div class="max-w-3xl">
 
       <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
-        PRESUPUESTO
+        {{ 'budgetPage.hero.badge' | transloco }}
       </span>
 
       <h1 class="mt-6 text-4xl font-black leading-tight text-white lg:text-5xl">
-        Solicita tu presupuesto y descubre cuánto cuesta dar vida a tu libro.
+        {{ 'budgetPage.hero.title' | transloco }}
       </h1>
 
       <p class="mt-5 text-lg leading-relaxed text-white/80">
-        Cuéntanos los detalles de tu manuscrito. Cuanta más información nos facilites, más preciso será el
-        presupuesto que recibirás.
+        {{ 'budgetPage.hero.description' | transloco }}
       </p>
 
     </div>
@@ -44,12 +43,11 @@
     <aside class="bg-purple-950 p-10 text-white">
 
       <h2 class="text-3xl font-black">
-        Un presupuesto a tu medida.
+        {{ 'budgetPage.info.title' | transloco }}
       </h2>
 
       <p class="mt-6 leading-8 text-white/80">
-        Adjunta tu manuscrito y cuéntanos tus plazos. Analizaremos tu proyecto y te enviaremos un presupuesto
-        detallado y sin sorpresas.
+        {{ 'budgetPage.info.description' | transloco }}
       </p>
 
       <div class="mt-12 space-y-6">
@@ -59,8 +57,8 @@
             📄
           </div>
           <div>
-            <h3 class="font-bold">Análisis del manuscrito</h3>
-            <p class="text-white/70">Revisamos tu obra antes de darte cifras.</p>
+            <h3 class="font-bold">{{ 'budgetPage.info.analysis.title' | transloco }}</h3>
+            <p class="text-white/70">{{ 'budgetPage.info.analysis.description' | transloco }}</p>
           </div>
         </div>
 
@@ -69,8 +67,8 @@
             💰
           </div>
           <div>
-            <h3 class="font-bold">Presupuesto detallado</h3>
-            <p class="text-white/70">Desglosado por servicio, sin costes ocultos.</p>
+            <h3 class="font-bold">{{ 'budgetPage.info.budget.title' | transloco }}</h3>
+            <p class="text-white/70">{{ 'budgetPage.info.budget.description' | transloco }}</p>
           </div>
         </div>
 
@@ -79,8 +77,8 @@
             🔒
           </div>
           <div>
-            <h3 class="font-bold">Confidencialidad total</h3>
-            <p class="text-white/70">Tu manuscrito está a salvo con nosotros.</p>
+            <h3 class="font-bold">{{ 'budgetPage.info.confidentiality.title' | transloco }}</h3>
+            <p class="text-white/70">{{ 'budgetPage.info.confidentiality.description' | transloco }}</p>
           </div>
         </div>
 
@@ -98,7 +96,7 @@
         class="absolute inset-x-8 top-4 z-20 flex items-center gap-3 rounded-xl border border-green-200 bg-green-50 px-5 py-4 text-green-800 shadow-lg"
         animate.enter="toast-in" animate.leave="toast-out">
         <span class="text-xl">✅</span>
-        <p class="font-semibold">Tu solicitud se ha enviado correctamente. Te enviaremos el presupuesto pronto.</p>
+        <p class="font-semibold">{{ 'budgetPage.messages.success' | transloco }}</p>
       </div>
       }
 
@@ -108,7 +106,7 @@
         class="absolute inset-x-8 top-4 z-20 flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-5 py-4 text-red-800 shadow-lg"
         animate.enter="toast-in" animate.leave="toast-out">
         <span class="text-xl">⚠️</span>
-        <p class="font-semibold">Ha ocurrido un error al enviar tu solicitud. Inténtalo de nuevo.</p>
+        <p class="font-semibold">{{ 'budgetPage.messages.error' | transloco }}</p>
       </div>
       }
 
@@ -116,7 +114,9 @@
 
         <!-- Nombre -->
         <div>
-          <label class="mb-2 block font-semibold text-stone-800" for="nombre">Nombre *</label>
+          <label class="mb-2 block font-semibold text-stone-800" for="nombre">
+            {{ 'budgetPage.form.name.label' | transloco }}
+          </label>
           <input id="nombre" type="text" formControlName="nombre" [class.border-red-400]="hasError('nombre')"
             [class.ring-4]="hasError('nombre')" [class.ring-red-100]="hasError('nombre')"
             [class.animate-shake]="hasError('nombre')"
@@ -131,7 +131,9 @@
 
         <!-- Email -->
         <div>
-          <label class="mb-2 block font-semibold text-stone-800" for="email">Correo electrónico *</label>
+          <label class="mb-2 block font-semibold text-stone-800" for="email">
+            {{ 'budgetPage.form.email.label' | transloco }}
+          </label>
           <input id="email" type="email" formControlName="email" [class.border-red-400]="hasError('email')"
             [class.ring-4]="hasError('email')" [class.ring-red-100]="hasError('email')"
             [class.animate-shake]="hasError('email')"
@@ -146,16 +148,20 @@
 
         <!-- Servicio -->
         <div>
-          <label class="mb-2 block font-semibold text-stone-800" for="servicio">Servicio solicitado *</label>
+          <label class="mb-2 block font-semibold text-stone-800" for="servicio">
+            {{ 'budgetPage.form.service.label' | transloco }}
+          </label>
           <select id="servicio" formControlName="servicio" [class.border-red-400]="hasError('servicio')"
             [class.ring-4]="hasError('servicio')" [class.ring-red-100]="hasError('servicio')"
             class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
-            <option value="" disabled selected>Selecciona una opción</option>
-            <option>Corrección</option>
-            <option>Maquetación</option>
-            <option>Portada</option>
-            <option>Publicación</option>
-            <option>Varios servicios</option>
+            <option value="" disabled selected>
+              {{ 'budgetPage.form.service.placeholder' | transloco }}
+            </option>
+            <option>{{ 'budgetPage.form.service.options.correction' | transloco }}</option>
+            <option>{{ 'budgetPage.form.service.options.layout' | transloco }}</option>
+            <option>{{ 'budgetPage.form.service.options.cover' | transloco }}</option>
+            <option>{{ 'budgetPage.form.service.options.publishing' | transloco }}</option>
+            <option>{{ 'budgetPage.form.service.options.multiple' | transloco }}</option>
           </select>
           @if (hasError('servicio')) {
           <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
@@ -169,10 +175,13 @@
         <div class="grid gap-6 md:grid-cols-2">
 
           <div>
-            <label class="mb-2 block font-semibold text-stone-800" for="palabras">Número de palabras *</label>
-            <input id="palabras" type="number" placeholder="Ej. 85000" formControlName="palabras"
-              [class.border-red-400]="hasError('palabras')" [class.ring-4]="hasError('palabras')"
-              [class.ring-red-100]="hasError('palabras')" [class.animate-shake]="hasError('palabras')"
+            <label class="mb-2 block font-semibold text-stone-800" for="palabras">
+              {{ 'budgetPage.form.words.label' | transloco }}
+            </label>
+            <input id="palabras" type="number" [placeholder]="'budgetPage.form.words.placeholder' | transloco"
+              formControlName="palabras" [class.border-red-400]="hasError('palabras')"
+              [class.ring-4]="hasError('palabras')" [class.ring-red-100]="hasError('palabras')"
+              [class.animate-shake]="hasError('palabras')"
               class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
             @if (hasError('palabras')) {
             <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
@@ -183,10 +192,13 @@
           </div>
 
           <div>
-            <label class="mb-2 block font-semibold text-stone-800" for="paginas">Número de páginas *</label>
-            <input id="paginas" type="number" placeholder="Ej. 320" formControlName="paginas"
-              [class.border-red-400]="hasError('paginas')" [class.ring-4]="hasError('paginas')"
-              [class.ring-red-100]="hasError('paginas')" [class.animate-shake]="hasError('paginas')"
+            <label class="mb-2 block font-semibold text-stone-800" for="paginas">
+              {{ 'budgetPage.form.pages.label' | transloco }}
+            </label>
+            <input id="paginas" type="number" [placeholder]="'budgetPage.form.pages.placeholder' | transloco"
+              formControlName="paginas" [class.border-red-400]="hasError('paginas')"
+              [class.ring-4]="hasError('paginas')" [class.ring-red-100]="hasError('paginas')"
+              [class.animate-shake]="hasError('paginas')"
               class="w-full rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10">
             @if (hasError('paginas')) {
             <p class="mt-2 flex items-center gap-1 text-sm font-medium text-red-600" animate.enter="field-error-in"
@@ -201,7 +213,7 @@
         <!-- Fecha de publicación -->
         <div>
           <label class="mb-2 block font-semibold text-stone-800">
-            Fecha aproximada de publicación *
+            {{ 'budgetPage.form.publicationDate.label' | transloco }}
           </label>
 
           <app-calendar-input formControlName="fechaPublicacion" [class.animate-shake]="hasError('fechaPublicacion')">
@@ -217,8 +229,10 @@
 
         <!-- Comentarios adicionales -->
         <div>
-          <label class="mb-2 block font-semibold text-stone-800" for="comentarios">Comentarios adicionales</label>
-          <textarea id="comentarios" rows="5" placeholder="Cualquier detalle adicional que quieras compartir..."
+          <label class="mb-2 block font-semibold text-stone-800" for="comentarios">
+            {{ 'budgetPage.form.comments.label' | transloco }}
+          </label>
+          <textarea id="comentarios" rows="5" [placeholder]="'budgetPage.form.comments.placeholder' | transloco"
             formControlName="comentarios" [class.border-red-400]="hasError('comentarios')"
             [class.ring-4]="hasError('comentarios')" [class.ring-red-100]="hasError('comentarios')"
             class="w-full resize-none rounded-xl border border-stone-300 px-5 py-4 transition focus:border-purple-950 focus:outline-none focus:ring-4 focus:ring-purple-950/10"></textarea>
@@ -232,7 +246,9 @@
 
         <!-- Adjuntar manuscrito -->
         <div>
-          <label class="mb-2 block font-semibold text-stone-800">Adjuntar manuscrito *</label>
+          <label class="mb-2 block font-semibold text-stone-800">
+            {{ 'budgetPage.form.manuscript.label' | transloco }}
+          </label>
 
           <input #fileInput id="manuscrito" type="file" class="hidden" accept=".pdf,.doc,.docx,.odt"
             (change)="onFileSelected($event)">
@@ -243,8 +259,12 @@
             [class.border-red-400]="fileTouched && fileError" [class.animate-shake]="fileTouched && fileError"
             class="flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-stone-300 px-5 py-10 text-center transition hover:border-purple-950 hover:bg-purple-50">
             <span class="text-3xl">📎</span>
-            <p class="font-semibold text-stone-700">Arrastra tu manuscrito aquí o haz clic para seleccionarlo</p>
-            <p class="text-sm text-stone-400">PDF, DOC, DOCX u ODT — máx. 15MB</p>
+            <p class="font-semibold text-stone-700">
+              {{ 'budgetPage.form.manuscript.dropzone' | transloco }}
+            </p>
+            <p class="text-sm text-stone-400">
+              {{ 'budgetPage.form.manuscript.formats' | transloco }}
+            </p>
           </label>
           } @else {
           <div class="flex items-center justify-between gap-4 rounded-xl border border-green-200 bg-green-50 px-5 py-4"
@@ -258,7 +278,7 @@
             </div>
             <button type="button" (click)="removeFile()"
               class="shrink-0 rounded-full px-3 py-1 text-sm font-semibold text-red-600 transition hover:bg-red-100">
-              Quitar
+              {{ 'budgetPage.form.manuscript.remove' | transloco }}
             </button>
           </div>
           }
@@ -273,14 +293,14 @@
 
         <!-- Botón -->
         <button type="submit" [disabled]="sending"
-          class="w-full rounded-xl bg-purple-950 px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-purple-900 hover:shadow-xl hover:shadow-purple-900/30 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0">
+          class="w-full cursor-pointer rounded-xl bg-purple-950 px-8 py-4 text-lg font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-purple-900 hover:shadow-xl hover:shadow-purple-900/30 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0">
           @if (sending) {
           <span class="inline-flex items-center gap-2">
             <span class="h-4 w-4 animate-spin rounded-full border-2 border-white/40 border-t-white"></span>
-            ENVIANDO...
+            {{ 'budgetPage.form.submit.sending' | transloco }}
           </span>
           } @else {
-          QUIERO MI PRESUPUESTO
+          {{ 'budgetPage.form.submit.default' | transloco }}
           }
         </button>
 

@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-contacto-page',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, TranslocoPipe],
   templateUrl: './contacto-page.html',
   styleUrl: './contacto-page.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -115,24 +116,46 @@ export class ContactoPage {
     if (!c) return '';
 
     if (c.hasError('required'))
-      return 'Este campo es obligatorio.';
+      return 'contactPage.validation.required';
 
     if (c.hasError('email'))
-      return 'Introduce un correo válido.';
+      return 'contactPage.validation.email';
 
     if (c.hasError('minlength'))
-      return `Debe tener al menos ${c.errors?.['minlength'].requiredLength} caracteres.`;
+      return 'contactPage.validation.minlength';
 
     if (c.hasError('maxlength'))
-      return `No puede superar ${c.errors?.['maxlength'].requiredLength} caracteres.`;
+      return 'contactPage.validation.maxlength';
 
     if (c.hasError('min'))
-      return 'Debe ser mayor de 1.000 palabras.';
+      return 'contactPage.validation.minWords';
 
     if (c.hasError('max'))
-      return 'El número parece demasiado elevado.';
+      return 'contactPage.validation.maxWords';
 
     return '';
+
+  }
+
+  getErrorParams(control: string): { requiredLength: number } | null {
+
+    const c = this.form.get(control);
+
+    if (!c) return null;
+
+    if (c.hasError('minlength')) {
+      return {
+        requiredLength: c.errors?.['minlength'].requiredLength
+      };
+    }
+
+    if (c.hasError('maxlength')) {
+      return {
+        requiredLength: c.errors?.['maxlength'].requiredLength
+      };
+    }
+
+    return null;
 
   }
 

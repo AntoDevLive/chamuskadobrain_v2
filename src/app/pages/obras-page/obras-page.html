@@ -137,15 +137,26 @@
 
           <!-- Amazon -->
 
-          <div class="mt-10 flex justify-center lg:justify-start">
-
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
+          
             <a [href]="obra.amazonUrl" target="_blank"
-              class="rounded-xl border-2 border-purple-950 px-8 py-3 font-bold text-purple-950 transition duration-300 hover:bg-purple-950 hover:text-white">
-
+              class="inline-flex items-center justify-center rounded-xl border-2 border-purple-950 px-8 py-3 font-bold tracking-widest text-purple-950 transition duration-300 hover:-translate-y-1 hover:bg-purple-950 hover:text-white hover:shadow-lg hover:shadow-purple-950/20">
+          
               Ver en Amazon
-
+          
             </a>
-
+          
+            @if (obra.booktrailerUrl) {
+            
+            <button type="button" (click)="openBooktrailer(obra.booktrailerUrl)"
+              class="inline-flex cursor-pointer items-center justify-center rounded-xl bg-purple-950 px-8 py-3 font-bold tracking-widest text-white transition duration-300 hover:-translate-y-1 hover:bg-purple-900 hover:shadow-lg hover:shadow-purple-950/30">
+            
+              ▶ Booktrailer
+            
+            </button>
+            
+            }
+          
           </div>
 
         </div>
@@ -486,7 +497,7 @@
       <div class="flex justify-center">
 
         <button type="button" (click)="toggleObra(obra.id)"
-          class="group flex items-center gap-3 rounded-full border-2 border-purple-950 bg-white px-8 py-3 font-bold text-purple-950 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-950 hover:text-white hover:shadow-lg hover:shadow-purple-950/20">
+          class="group cursor-pointer flex items-center gap-3 rounded-full border-2 border-purple-950 bg-white px-8 py-3 font-bold text-purple-950 transition-all duration-300 hover:-translate-y-1 hover:bg-purple-950 hover:text-white hover:shadow-lg hover:shadow-purple-950/20">
 
           <span>
 

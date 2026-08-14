@@ -16,24 +16,21 @@
   <div class="mx-auto max-w-7xl px-6 py-16" data-aos="fade-right">
 
     <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
-      SOBRE NOSOTROS
+      {{ 'aboutPage.hero.badge' | transloco }}
     </span>
 
     <h1 class="mt-6 max-w-4xl text-4xl font-black leading-tight text-white lg:text-6xl">
-      No publicamos libros.
-      <span class="text-amarillo">Acompañamos a quienes los escriben.</span>
+      {{ 'aboutPage.hero.title' | transloco }}
+      <span class="text-amarillo">{{ 'aboutPage.hero.titleHighlight' | transloco }}</span>
     </h1>
 
     <p class="mt-6 max-w-3xl text-lg leading-relaxed text-white/80">
-      Chamuskado Brain nació de una idea muy sencilla: toda gran historia merece una oportunidad.
-      Detrás de este proyecto no hay una gran empresa ni un equipo de decenas de personas. Solo
-      estamos nosotros dos.
+      {{ 'aboutPage.hero.description' | transloco }}
     </p>
 
   </div>
 
 </section>
-
 <!-- QUIÉNES SOMOS -->
 <section class="mx-auto my-20 max-w-7xl px-4 sm:px-6" data-aos="fade-up">
 
@@ -54,23 +51,19 @@
     <div class="text-center lg:text-left" data-aos="fade-left">
 
       <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-charcoal">
-        Nuestra historia
+        {{ 'aboutPage.story.badge' | transloco }}
       </span>
 
       <h2 class="mt-5 text-3xl font-black text-stone-900 sm:text-4xl">
-        Personas creativas, no una gran empresa
+        {{ 'aboutPage.story.title' | transloco }}
       </h2>
 
       <p class="mt-6 leading-8 text-stone-700">
-        Solo estamos nosotros dos. Personas creativas que decidimos unir nuestras profesiones
-        para ayudar a otros autores a convertir sus manuscritos en libros de los que sentirse
-        orgullosos.
+        {{ 'aboutPage.story.paragraphs.first' | transloco }}
       </p>
 
       <p class="mt-4 leading-8 text-stone-700">
-        Mientras uno imagina mundos con lápiz, tinta y tableta gráfica, la otra pule palabras,
-        estructura historias y acompaña a los autores en todo el proceso editorial. Dos
-        disciplinas distintas con un mismo objetivo: cuidar cada obra como si fuera propia.
+        {{ 'aboutPage.story.paragraphs.second' | transloco }}
       </p>
 
     </div>
@@ -83,40 +76,27 @@
     <div class="mx-auto max-w-4xl space-y-6 leading-8 text-stone-700">
 
       <p>
-        Chamuskado Brain nació hace años como un proyecto creativo donde convivían la
-        ilustración, la literatura y el diseño. Con el tiempo fue evolucionando hasta convertirse
-        en un estudio editorial especializado en autopublicación y servicios para autores
-        independientes.
+        {{ 'aboutPage.story.narrative.first' | transloco }}
       </p>
 
       <p>
-        Sabemos lo que significa terminar un manuscrito y no saber cuál es el siguiente paso.
-        Nosotros también hemos estado ahí. Hemos escrito, corregido, ilustrado, maquetado,
-        diseñado y publicado nuestras propias obras. Hemos aprendido del proceso, de los errores
-        y de la experiencia. Y precisamente por eso, hoy podemos acompañar a otros escritores
-        desde una perspectiva cercana y real.
+        {{ 'aboutPage.story.narrative.second' | transloco }}
       </p>
 
       <p>
-        No creemos en contratos que arrebatan derechos ni en fórmulas impersonales. Creemos en
-        las historias, en el trabajo artesanal y en la importancia de ofrecer un trato humano,
-        transparente y completamente personalizado.
+        {{ 'aboutPage.story.narrative.third' | transloco }}
       </p>
 
       <p>
-        Cada proyecto que llega a Chamuskado Brain es único. No trabajamos con plantillas ni
-        soluciones automáticas. Escuchamos, asesoramos y adaptamos cada servicio a las
-        necesidades de cada autor porque entendemos que detrás de cada libro hay meses —o
-        incluso años— de mucha ilusión, esfuerzo y dedicación.
+        {{ 'aboutPage.story.narrative.fourth' | transloco }}
       </p>
 
       <p>
-        Nuestro compromiso es ayudarte a que tu obra vea la luz con la calidad que merece, sin
-        perder nunca su esencia.
+        {{ 'aboutPage.story.narrative.fifth' | transloco }}
       </p>
 
       <p class="text-center text-xl font-black text-purple-950">
-        Porque los libros cambian cuando pasan por nuestras manos. Pero siguen siendo tuyos.
+        {{ 'aboutPage.story.closing' | transloco }}
       </p>
 
     </div>
@@ -124,7 +104,6 @@
   </div>
 
 </section>
-
 <!-- NUESTRO EQUIPO -->
 <section class="mx-auto my-20 max-w-7xl px-4 sm:px-6" data-aos="fade-up">
 
@@ -135,14 +114,14 @@
     </div>
 
     <h2 class="bg-page relative px-5 text-center text-3xl font-black text-stone-900 sm:text-4xl">
-      Nuestro equipo
+      {{ 'aboutPage.team.title' | transloco }}
     </h2>
 
   </div>
 
   <div class="grid gap-10 lg:grid-cols-2">
 
-    @for (miembro of equipo; track miembro.name) {
+    @for (miembro of equipo; track miembro.id) {
 
     <article
       class="overflow-hidden rounded-[32px] bg-white p-8 shadow-xl shadow-stone-300/30 transition-all duration-500 sm:p-10">
@@ -155,25 +134,25 @@
           <div class="absolute inset-0 rounded-full bg-purple-950/10 blur-xl">
           </div>
 
-          <img [src]="miembro.photo" [alt]="miembro.name"
+          <img [src]="miembro.photo" [alt]="('aboutPage.team.members.' + miembro.id + '.name') | transloco"
             class="relative h-36 w-36 rounded-full object-cover shadow-2xl shadow-black/30 sm:h-44 sm:w-44">
 
         </div>
 
         <span class="mt-6 rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-charcoal">
-          {{ miembro.role }}
+          {{ ('aboutPage.team.members.' + miembro.id + '.role') | transloco }}
         </span>
 
         <h3 class="mt-5 text-2xl font-black text-stone-900 sm:text-3xl">
-          {{ miembro.name }}
+          {{ ('aboutPage.team.members.' + miembro.id + '.name') | transloco }}
         </h3>
 
         <p class="mt-5 leading-7 text-stone-700">
-          {{ miembro.bio }}
+          {{ ('aboutPage.team.members.' + miembro.id + '.bio') | transloco }}
         </p>
 
         <blockquote class="mt-6 border-l-4 border-amarillo pl-4 text-left italic leading-7 text-stone-600">
-          "{{ miembro.quote }}"
+          "{{ ('aboutPage.team.members.' + miembro.id + '.quote') | transloco }}"
         </blockquote>
 
       </div>
@@ -185,7 +164,6 @@
   </div>
 
 </section>
-
 <!-- NUESTRA FILOSOFÍA -->
 <section class="relative overflow-hidden py-20" data-aos="fade-up">
 
@@ -198,22 +176,19 @@
   <div class="relative mx-auto max-w-4xl px-6 text-center">
 
     <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
-      Nuestra filosofía
+      {{ 'aboutPage.philosophy.badge' | transloco }}
     </span>
 
     <h2 class="mt-6 text-3xl font-black text-white sm:text-4xl">
-      Libros hechos con calma
+      {{ 'aboutPage.philosophy.title' | transloco }}
     </h2>
 
     <p class="mt-6 text-lg leading-8 text-white/80">
-      Creemos en los libros hechos con calma, en la ilustración creada a mano antes de
-      convertirse en digital y en las correcciones que respetan la voz del autor. En el diseño
-      que transmite la esencia de una historia y también en acompañar a cada escritor con la
-      misma ilusión con la que nosotros afrontamos nuestros propios proyectos.
+      {{ 'aboutPage.philosophy.paragraph' | transloco }}
     </p>
 
     <p class="mt-10 text-2xl font-black text-amarillo">
-      Bienvenido a nuestro pequeño cerebro chamuskado.
+      {{ 'aboutPage.philosophy.closing' | transloco }}
     </p>
 
   </div>

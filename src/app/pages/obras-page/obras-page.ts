@@ -1,13 +1,22 @@
-import { ChangeDetectionStrategy, Component, inject, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  ElementRef,
+  QueryList,
+  ViewChildren
+} from '@angular/core';
 import { SlicePipe } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { IObra } from '../../interfaces/obra';
 import { ObraImageDialog } from '../../components/ui/obra-image-dialog/obra-image-dialog';
+import { BooktrailerDialog } from '../../components/ui/booktrailer-dialog/booktrailer-dialog';
 import { obrasJson } from '../../json/obras';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { register } from 'swiper/element/bundle';
 
 register();
+
 @Component({
   selector: 'app-obras-page',
   imports: [MatDialogModule, SlicePipe],
@@ -16,12 +25,19 @@ register();
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ObrasPage {
+
   @ViewChildren('reviewsSwiper')
   private swipers!: QueryList<ElementRef>;
 
   private readonly dialog = inject(MatDialog);
 
+  obras: IObra[] = obrasJson;
+
   expandedId: number | null = null;
+
+  expandedReviews = new Set<string>();
+
+  private expandedObraId: number | null = null;
 
   toggleObra(id: number): void {
     this.expandedId = this.expandedId === id ? null : id;
@@ -39,26 +55,28 @@ export class ObrasPage {
     });
   }
 
-  private expandedObraId: number | null = null;
-
-  obras: IObra[] = obrasJson;
-
-  previousReview(swiper: HTMLElement): void {
-
-    (swiper as any).swiper.slidePrev();
-
+  openBooktrailer(url: string): void {
+    this.dialog.open(BooktrailerDialog, {
+      data: {
+        url
+      },
+      width: 'min(1000px, 94vw)',
+      maxWidth: '94vw',
+      panelClass: 'booktrailer-dialog',
+      autoFocus: false
+    });
   }
 
-  expandedReviews = new Set<string>();
+  previousReview(swiper: HTMLElement): void {
+    (swiper as any).swiper.slidePrev();
+  }
 
   toggleReview(reviewId: string): void {
-
     if (this.expandedReviews.has(reviewId)) {
       this.expandedReviews.delete(reviewId);
     } else {
       this.expandedReviews.add(reviewId);
     }
-
   }
 
   isReviewExpanded(reviewId: string): boolean {
@@ -70,13 +88,10 @@ export class ObrasPage {
   }
 
   nextReview(swiper: HTMLElement): void {
-
     (swiper as any).swiper.slideNext();
-
   }
 
   showReviewButtons(obra: IObra): boolean {
-
     const width = window.innerWidth;
 
     if (width >= 1080) {
@@ -88,6 +103,5 @@ export class ObrasPage {
     }
 
     return obra.valoraciones.length > 1;
-
   }
 }

@@ -17,6 +17,7 @@ export const obrasJson: IObra[] = [
     ¿Provocará esto algún cambio de última hora en sus planes? ¿Quién es el verdadero merecedor de la herencia?
     Que el gramófono empiece a sonar.`,
     amazonUrl: 'https://www.amazon.es/Malababa-Paloma-Castizo/dp/8409672952/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=85OIL1WK9TS0&dib=eyJ2IjoiMSJ9.y3PJoP9KSis31T3tMmw5pg.nxOpzpLYhDTX6pBteVcLzPprKj1JJWPemC_izEWuszE&dib_tag=se&keywords=malababa+paloma+castizo&qid=1784132927&sprefix=malababa+paloma+castizo%2Caps%2C69&sr=8-1',
+    booktrailerUrl: 'https://www.youtube.com/embed/4A4CfHWpBCs',
     valoraciones: valoracionesMalababa,
     features: [
       { label: 'Editorial', value: 'Chamuskado Brain' },

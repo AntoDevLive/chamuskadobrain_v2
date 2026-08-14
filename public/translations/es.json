@@ -463,5 +463,204 @@
         "answer": "Sí. Como estudio de dirección artística estamos abiertos a propuestas y a ofrecer soluciones personalizadas siempre que podamos ayudarte."
       }
     ]
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "SOBRE NOSOTROS",
+      "title": "No publicamos libros.",
+      "titleHighlight": "Acompañamos a quienes los escriben.",
+      "description": "Chamuskado Brain nació de una idea muy sencilla: toda gran historia merece una oportunidad. Detrás de este proyecto no hay una gran empresa ni un equipo de decenas de personas. Solo estamos nosotros dos."
+    },
+    "story": {
+      "badge": "Nuestra historia",
+      "title": "Personas creativas, no una gran empresa",
+      "paragraphs": {
+        "first": "Solo estamos nosotros dos. Personas creativas que decidimos unir nuestras profesiones para ayudar a otros autores a convertir sus manuscritos en libros de los que sentirse orgullosos.",
+        "second": "Mientras uno imagina mundos con lápiz, tinta y tableta gráfica, la otra pule palabras, estructura historias y acompaña a los autores en todo el proceso editorial. Dos disciplinas distintas con un mismo objetivo: cuidar cada obra como si fuera propia."
+      },
+      "narrative": {
+        "first": "Chamuskado Brain nació hace años como un proyecto creativo donde convivían la ilustración, la literatura y el diseño. Con el tiempo fue evolucionando hasta convertirse en un estudio editorial especializado en autopublicación y servicios para autores independientes.",
+        "second": "Sabemos lo que significa terminar un manuscrito y no saber cuál es el siguiente paso. Nosotros también hemos estado ahí. Hemos escrito, corregido, ilustrado, maquetado, diseñado y publicado nuestras propias obras. Hemos aprendido del proceso, de los errores y de la experiencia. Y precisamente por eso, hoy podemos acompañar a otros escritores desde una perspectiva cercana y real.",
+        "third": "No creemos en contratos que arrebatan derechos ni en fórmulas impersonales. Creemos en las historias, en el trabajo artesanal y en la importancia de ofrecer un trato humano, transparente y completamente personalizado.",
+        "fourth": "Cada proyecto que llega a Chamuskado Brain es único. No trabajamos con plantillas ni soluciones automáticas. Escuchamos, asesoramos y adaptamos cada servicio a las necesidades de cada autor porque entendemos que detrás de cada libro hay meses —o incluso años— de mucha ilusión, esfuerzo y dedicación.",
+        "fifth": "Nuestro compromiso es ayudarte a que tu obra vea la luz con la calidad que merece, sin perder nunca su esencia."
+      },
+      "closing": "Porque los libros cambian cuando pasan por nuestras manos. Pero siguen siendo tuyos."
+    },
+    "team": {
+      "title": "Nuestro equipo",
+      "members": {
+        "paloma": {
+          "name": "Paloma Castizo",
+          "role": "Fundadora · Dirección Editorial",
+          "bio": "Escritora, editora y correctora profesional. Especializada en el acompañamiento editorial de autores independientes, la revisión de manuscritos, los informes de lectura y la autopublicación. En Chamuskado Brain coordina cada proyecto y acompaña a los autores desde el primer borrador hasta la publicación de su obra.",
+          "quote": "Creo que una buena edición no consiste en cambiar la voz de un autor, sino en ayudarle a que su historia llegue al lector exactamente como merece."
+        },
+        "victor": {
+          "name": "Víctor Tourbillon",
+          "role": "Fundador · Dirección Artística",
+          "bio": "Artista e ilustrador especializado en dibujo tradicional y técnicas digitales. Responsable de la identidad visual de Chamuskado Brain, desarrolla portadas, ilustraciones y proyectos gráficos personalizados para dar vida a cada historia.",
+          "quote": "Cada ilustración es una puerta de entrada a una historia. Mi trabajo es conseguir que el lector quiera abrirla."
+        }
+      }
+    },
+    "philosophy": {
+      "badge": "Nuestra filosofía",
+      "title": "Libros hechos con calma",
+      "paragraph": "Creemos en los libros hechos con calma, en la ilustración creada a mano antes de convertirse en digital y en las correcciones que respetan la voz del autor. En el diseño que transmite la esencia de una historia y también en acompañar a cada escritor con la misma ilusión con la que nosotros afrontamos nuestros propios proyectos.",
+      "closing": "Bienvenido a nuestro pequeño cerebro chamuskado."
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "CONTACTO",
+      "title": "Cuéntanos tu proyecto y te prepararemos un presupuesto personalizado.",
+      "description": "Cada libro es diferente. Completa el formulario y estudiaremos tu caso para ofrecerte la solución editorial que mejor se adapte a tu obra."
+    },
+    "info": {
+      "title": "Hablemos de tu libro.",
+      "description": "Rellena el formulario con la mayor información posible. Cuantos más detalles conozcamos sobre tu obra, más ajustado será el presupuesto que podremos ofrecerte.",
+      "items": {
+        "response": {
+          "title": "Respuesta rápida",
+          "description": "Respondemos normalmente en 24-48 horas."
+        },
+        "budget": {
+          "title": "Presupuesto personalizado",
+          "description": "Adaptado a las necesidades reales de tu obra."
+        },
+        "commitment": {
+          "title": "Sin compromiso",
+          "description": "Resolveremos tus dudas antes de comenzar."
+        }
+      }
+    },
+    "form": {
+      "name": {
+        "label": "Nombre *"
+      },
+      "email": {
+        "label": "Correo electrónico *"
+      },
+      "service": {
+        "label": "Servicio solicitado",
+        "placeholder": "Selecciona una opción",
+        "options": {
+          "correction": "Corrección",
+          "layout": "Maquetación",
+          "cover": "Portada",
+          "publication": "Publicación",
+          "multiple": "Varios servicios"
+        }
+      },
+      "genre": {
+        "label": "Género literario",
+        "placeholder": "Thriller, fantasía..."
+      },
+      "words": {
+        "label": "Número aproximado de palabras",
+        "placeholder": "Ej. 85000"
+      },
+      "message": {
+        "label": "Mensaje *",
+        "placeholder": "Cuéntanos en qué punto se encuentra tu obra..."
+      },
+      "success": "Tu consulta se ha enviado correctamente. Te responderemos pronto.",
+      "error": "Ha ocurrido un error al enviar el formulario. Inténtalo de nuevo.",
+      "submit": "ENVIAR CONSULTA",
+      "sending": "ENVIANDO..."
+    },
+    "validation": {
+      "required": "Este campo es obligatorio.",
+      "email": "Introduce un correo válido.",
+      "minlength": "Debe tener al menos {{requiredLength}} caracteres.",
+      "maxlength": "No puede superar los {{requiredLength}} caracteres.",
+      "minWords": "Debe ser mayor de 1.000 palabras.",
+      "maxWords": "El número parece demasiado elevado."
+    }
+  },
+  "budgetPage": {
+    "hero": {
+      "badge": "PRESUPUESTO",
+      "title": "Solicita tu presupuesto y descubre cuánto cuesta dar vida a tu libro.",
+      "description": "Cuéntanos los detalles de tu manuscrito. Cuanta más información nos facilites, más preciso será el presupuesto que recibirás."
+    },
+    "info": {
+      "title": "Un presupuesto a tu medida.",
+      "description": "Adjunta tu manuscrito y cuéntanos tus plazos. Analizaremos tu proyecto y te enviaremos un presupuesto detallado y sin sorpresas.",
+      "manuscript": {
+        "title": "Análisis del manuscrito",
+        "description": "Revisamos tu obra antes de darte cifras."
+      },
+      "budget": {
+        "title": "Presupuesto detallado",
+        "description": "Desglosado por servicio, sin costes ocultos."
+      },
+      "confidentiality": {
+        "title": "Confidencialidad total",
+        "description": "Tu manuscrito está a salvo con nosotros."
+      }
+    },
+    "form": {
+      "success": "Tu solicitud se ha enviado correctamente. Te enviaremos el presupuesto pronto.",
+      "error": "Ha ocurrido un error al enviar tu solicitud. Inténtalo de nuevo.",
+      "name": {
+        "label": "Nombre *"
+      },
+      "email": {
+        "label": "Correo electrónico *"
+      },
+      "service": {
+        "label": "Servicio solicitado *",
+        "placeholder": "Selecciona una opción",
+        "options": {
+          "correction": "Corrección",
+          "layout": "Maquetación",
+          "cover": "Portada",
+          "publication": "Publicación",
+          "multiple": "Varios servicios"
+        }
+      },
+      "words": {
+        "label": "Número de palabras *",
+        "placeholder": "Ej. 85000"
+      },
+      "pages": {
+        "label": "Número de páginas *",
+        "placeholder": "Ej. 320"
+      },
+      "publicationDate": {
+        "label": "Fecha aproximada de publicación *"
+      },
+      "comments": {
+        "label": "Comentarios adicionales",
+        "placeholder": "Cualquier detalle adicional que quieras compartir..."
+      },
+      "manuscript": {
+        "label": "Adjuntar manuscrito *",
+        "dropzone": "Arrastra tu manuscrito aquí o haz clic para seleccionarlo",
+        "formats": "PDF, DOC, DOCX u ODT — máx. 15MB",
+        "remove": "Quitar"
+      },
+      "submit": {
+        "sending": "ENVIANDO...",
+        "default": "QUIERO MI PRESUPUESTO"
+      },
+      "errors": {
+        "required": "Este campo es obligatorio.",
+        "whitespace": "Este campo no puede contener solo espacios en blanco.",
+        "email": "Introduce un correo válido.",
+        "minlength": "Debe tener al menos {{requiredLength}} caracteres.",
+        "maxlength": "No puede superar {{requiredLength}} caracteres.",
+        "wordsMin": "Debe ser mayor de 1.000 palabras.",
+        "wordsMax": "El número parece demasiado elevado.",
+        "pagesMin": "Debe ser mayor de 10 páginas.",
+        "pagesMax": "El número parece demasiado elevado.",
+        "pastDate": "Selecciona una fecha posterior al día de hoy.",
+        "fileRequired": "Adjunta tu manuscrito para continuar.",
+        "fileFormat": "Formato no admitido. Usa: {{formats}}.",
+        "fileSize": "El archivo supera el tamaño máximo de {{maxSize}}MB."
+      }
+    }
   }
 }

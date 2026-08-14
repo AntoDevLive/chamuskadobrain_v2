@@ -27,3 +27,25 @@
 .active::after {
   width: 100%;
 }
+
+.booktrailer-dialog .mat-mdc-dialog-container {
+  padding: 0 !important;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: transparent;
+}
+
+.booktrailer-dialog .mdc-dialog__surface {
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+
+  .booktrailer-dialog .mat-mdc-dialog-container {
+    padding: 0 !important;
+    border-radius: 1rem;
+  }
+
+}
