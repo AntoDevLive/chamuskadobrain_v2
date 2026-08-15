@@ -1,23 +1,45 @@
-<div class="flex items-center justify-center gap-6 p-6">
+<div class="relative flex items-center justify-center gap-2 px-3 py-2 sm:gap-4 sm:px-4 sm:py-4 md:p-6">
+  <!-- Cerrar -->
+  <button type="button" mat-dialog-close aria-label="Cerrar"
+    class="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white/70 backdrop-blur-md transition-all duration-200 hover:border-white/30 hover:bg-white/20 hover:text-white sm:right-3 sm:top-3 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      class="h-4 w-4">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+    </svg>
+  </button>
 
   <!-- Flecha izquierda -->
-
-  <button mat-icon-button (click)="showFront()" [disabled]="!showingBack()">
-
+  <button mat-icon-button (click)="showFront()" [disabled]="!showingBack()" aria-label="Imagen anterior"
+    class="!h-11 !w-11 !shrink-0 !rounded-full !border !border-white/30 !bg-white/20 !text-white !shadow-lg !backdrop-blur-md transition-all duration-200 hover:!border-white/40 hover:!bg-white/30 hover:!shadow-xl disabled:!border-white/10 disabled:!bg-white/5 disabled:!text-white/30">
     <mat-icon>chevron_left</mat-icon>
-
   </button>
 
-  <!-- Imagen -->
+<!-- Libro -->
+<div class="flex h-[70vh] w-[60vw] max-w-[420px] items-center justify-center sm:h-[75vh] sm:w-[420px] overflow-hidden"
+  style="perspective: 1400px;">
+  <div class="relative h-full w-full" style="transform-style: preserve-3d;"
+    [style.transform]="showingBack() ? 'rotateY(180deg)' : 'rotateY(0deg)'"
+    [style.transition]="'transform 700ms cubic-bezier(0.65, 0, 0.35, 1)'">
+    <!-- Portada -->
+    <div class="absolute inset-0 flex items-center justify-center" style="backface-visibility: hidden;">
+      <img [src]="data.images.front" [alt]="data.title"
+        class="max-h-full max-w-full rounded-2xl object-contain" />
+    </div>
 
-  <img [src]="currentImage()" [alt]="data.title" class="max-h-[80vh] rounded-xl shadow-2xl">
+    <!-- Contraportada -->
+    <div class="absolute inset-0 flex items-center justify-center" style="
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+      ">
+      <img [src]="data.images.back" [alt]="data.title + ' - contraportada'"
+        class="max-h-full max-w-full rounded-2xl object-contain shadow-xl shadow-gray-700/50" />
+    </div>
+  </div>
+</div>
 
   <!-- Flecha derecha -->
-
-  <button mat-icon-button (click)="showBack()" [disabled]="showingBack()">
-
+  <button mat-icon-button (click)="showBack()" [disabled]="showingBack()" aria-label="Imagen siguiente"
+    class="!h-11 !w-11 !shrink-0 !rounded-full !border !border-white/30 !bg-white/20 !text-white !shadow-lg !backdrop-blur-md transition-all duration-200 hover:!border-white/40 hover:!bg-white/30 hover:!shadow-xl disabled:!border-white/10 disabled:!bg-white/5 disabled:!text-white/30">
     <mat-icon>chevron_right</mat-icon>
-
   </button>
-
 </div>

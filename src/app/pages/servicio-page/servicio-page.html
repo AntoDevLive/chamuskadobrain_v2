@@ -10,19 +10,19 @@
 
       <span class="rounded-full bg-amarillo px-4 py-1 text-sm font-bold text-stone-900">
 
-        Servicio editorial
+        {{ 'servicioPage.kicker' | transloco }}
 
       </span>
 
       <h1 class="mt-6 max-w-4xl text-5xl font-black text-white">
 
-        {{ servicio.title }}
+        {{ 'home.services.items.' + servicio.slug + '.title' | transloco }}
 
       </h1>
 
       <p class="mt-5 max-w-3xl text-lg leading-relaxed text-white/80">
 
-        {{ tarifa.slogan }}
+        {{ 'servicioPage.items.' + tarifa.slug + '.slogan' | transloco }}
 
       </p>
 
@@ -42,13 +42,13 @@
 
         <h2 class="text-3xl font-black text-stone-900">
 
-          ¿En qué consiste?
+          {{ 'servicioPage.whatIsIt' | transloco }}
 
         </h2>
 
         <p class="mt-6 text-lg leading-8 text-stone-700">
 
-          {{ tarifa.descripcion }}
+          {{ 'servicioPage.items.' + tarifa.slug + '.descripcion' | transloco }}
 
         </p>
 
@@ -74,7 +74,7 @@
 
       <h2 class="mb-10 text-3xl font-black text-stone-900">
 
-        ¿Qué incluye?
+        {{ 'servicioPage.whatIncludes' | transloco }}
 
       </h2>
 
@@ -85,14 +85,12 @@
         <div class="flex items-start gap-3 rounded-xl bg-stone-50 p-4">
 
           <div class="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-amarillo font-bold text-stone-900">
-
             ✓
-
           </div>
 
           <p class="text-stone-700">
 
-            {{ item }}
+            {{ 'servicioPage.items.' + tarifa.slug + '.incluye.' + $index | transloco }}
 
           </p>
 
@@ -118,7 +116,7 @@
 
           <h2 class="text-3xl font-black">
 
-            Tarifas
+            {{ 'servicioPage.tarifasTitle' | transloco }}
 
           </h2>
 
@@ -132,13 +130,13 @@
 
             <span>
 
-              {{ precio.concepto }}
+              {{ 'home.tarifas.items.' + tarifa.slug + '.tarifas.' + $index + '.concepto' | transloco }}
 
             </span>
 
             <span class="rounded-full bg-amarillo px-4 py-2 font-bold">
 
-              {{ precio.precio }}
+              {{ 'home.tarifas.items.' + tarifa.slug + '.tarifas.' + $index + '.precio' | transloco }}
 
             </span>
 
@@ -164,7 +162,7 @@
 
       <h2 class="mb-8 text-3xl font-black text-stone-900">
 
-        Este servicio no incluye
+        {{ 'servicioPage.notIncludedTitle' | transloco }}
 
       </h2>
 
@@ -174,7 +172,7 @@
 
         <div class="rounded-xl border border-red-100 bg-red-50 p-4">
 
-          {{ item }}
+          {{ 'servicioPage.items.' + tarifa.slug + '.noIncluye.' + $index | transloco }}
 
         </div>
 
@@ -198,7 +196,7 @@
 
       <h2 class="mb-4 text-2xl font-black">
 
-        Observaciones
+        {{ 'servicioPage.observacionesTitle' | transloco }}
 
       </h2>
 
@@ -206,7 +204,7 @@
 
       <p class="leading-8 text-stone-700">
 
-        • {{ obs }}
+        • {{ 'servicioPage.items.' + tarifa.slug + '.observaciones.' + $index | transloco }}
 
       </p>
 
@@ -226,20 +224,20 @@
 
       <h2 class="text-4xl font-black text-white">
 
-        ¿Quieres contratar este servicio?
+        {{ 'servicioPage.ctaTitle' | transloco }}
 
       </h2>
 
       <p class="mx-auto mt-5 max-w-3xl text-lg text-white/80">
 
-        Estaremos encantados de ayudarte con tu proyecto editorial y resolver cualquier duda antes de empezar.
+        {{ 'servicioPage.ctaDescription' | transloco }}
 
       </p>
 
       <a routerLink="/presupuesto"
         class="mt-8 inline-flex rounded-xl bg-amarillo px-8 py-4 text-lg font-bold text-stone-900 transition hover:-translate-y-1">
 
-        Solicitar presupuesto
+        {{ 'servicioPage.ctaButton' | transloco }}
 
       </a>
 

@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { serviciosJson } from '../../json/servicios';
 import { tarifasJson } from '../../json/tarifas';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-servicio-page',
-  imports: [],
+  imports: [TranslocoPipe],
   templateUrl: './servicio-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

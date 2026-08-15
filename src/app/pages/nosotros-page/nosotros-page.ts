@@ -16,7 +16,7 @@ export class NosotrosPage {
   equipo: MiembroEquipo[] = [
     {
       id: 'paloma',
-      photo: '/img/paloma.png'
+      photo: '/img/paloma.jpg'
     },
     {
       id: 'victor',

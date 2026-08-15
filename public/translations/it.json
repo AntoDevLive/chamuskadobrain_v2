@@ -463,5 +463,478 @@
         "answer": "Sì. Come studio di direzione artistica siamo aperti a nuove proposte e a offrire soluzioni personalizzate ogni volta che possiamo aiutarti."
       }
     ]
+  },
+  "aboutPage": {
+    "hero": {
+      "badge": "CHI SIAMO",
+      "title": "Non pubblichiamo libri.",
+      "titleHighlight": "Accompagniamo chi li scrive.",
+      "description": "Chamuskado Brain è nato da un'idea molto semplice: ogni grande storia merita un'opportunità. Dietro questo progetto non c'è una grande azienda né un team di decine di persone. Siamo solo noi due."
+    },
+    "story": {
+      "badge": "La nostra storia",
+      "title": "Persone creative, non una grande azienda",
+      "paragraphs": {
+        "first": "Siamo solo noi due. Persone creative che hanno deciso di unire le proprie professioni per aiutare altri autori a trasformare i loro manoscritti in libri di cui sentirsi orgogliosi.",
+        "second": "Mentre uno immagina mondi con matita, inchiostro e tavoletta grafica, l'altra affina le parole, struttura le storie e accompagna gli autori in tutto il processo editoriale. Due discipline diverse con un unico obiettivo: curare ogni opera come se fosse propria."
+      },
+      "narrative": {
+        "first": "Chamuskado Brain è nato anni fa come progetto creativo in cui convivevano illustrazione, letteratura e design. Con il tempo si è evoluto fino a diventare uno studio editoriale specializzato in autopubblicazione e servizi per autori indipendenti.",
+        "second": "Sappiamo cosa significa finire un manoscritto e non sapere quale sia il passo successivo. Ci siamo passati anche noi. Abbiamo scritto, corretto, illustrato, impaginato, progettato e pubblicato le nostre stesse opere. Abbiamo imparato dal processo, dagli errori e dall'esperienza. Ed è proprio per questo che oggi possiamo accompagnare altri scrittori con uno sguardo vicino e autentico.",
+        "third": "Non crediamo in contratti che tolgono diritti né in formule impersonali. Crediamo nelle storie, nel lavoro artigianale e nell'importanza di offrire un rapporto umano, trasparente e completamente personalizzato.",
+        "fourth": "Ogni progetto che arriva a Chamuskado Brain è unico. Non lavoriamo con modelli né soluzioni automatiche. Ascoltiamo, consigliamo e adattiamo ogni servizio alle esigenze di ciascun autore, perché sappiamo che dietro ogni libro ci sono mesi — o addirittura anni — di entusiasmo, impegno e dedizione.",
+        "fifth": "Il nostro impegno è aiutarti a far vedere la luce alla tua opera con la qualità che merita, senza mai perdere la sua essenza."
+      },
+      "closing": "Perché i libri cambiano quando passano tra le nostre mani. Ma restano sempre tuoi."
+    },
+    "team": {
+      "title": "Il nostro team",
+      "members": {
+        "paloma": {
+          "name": "Paloma Castizo",
+          "role": "Fondatrice · Direzione Editoriale",
+          "bio": "Scrittrice, editor e correttrice di bozze professionista. Specializzata nell'accompagnamento editoriale di autori indipendenti, revisione di manoscritti, relazioni di lettura e autopubblicazione. In Chamuskado Brain coordina ogni progetto e accompagna gli autori dalla prima bozza fino alla pubblicazione della loro opera.",
+          "quote": "Credo che una buona editing non consista nel cambiare la voce di un autore, ma nell'aiutarlo affinché la sua storia arrivi al lettore esattamente come merita."
+        },
+        "victor": {
+          "name": "Víctor Tourbillon",
+          "role": "Fondatore · Direzione Artistica",
+          "bio": "Artista e illustratore specializzato in disegno tradizionale e tecniche digitali. Responsabile dell'identità visiva di Chamuskado Brain, sviluppa copertine, illustrazioni e progetti grafici personalizzati per dare vita a ogni storia.",
+          "quote": "Ogni illustrazione è una porta d'accesso a una storia. Il mio compito è far sì che il lettore voglia aprirla."
+        }
+      }
+    },
+    "philosophy": {
+      "badge": "La nostra filosofia",
+      "title": "Libri fatti con calma",
+      "paragraph": "Crediamo nei libri fatti con calma, nell'illustrazione creata a mano prima di diventare digitale e nelle correzioni che rispettano la voce dell'autore. Nel design che trasmette l'essenza di una storia, e anche nell'accompagnare ogni scrittore con lo stesso entusiasmo con cui affrontiamo i nostri stessi progetti.",
+      "closing": "Benvenuto nel nostro piccolo cervello chamuskado."
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "badge": "CONTATTI",
+      "title": "Raccontaci il tuo progetto e prepareremo un preventivo personalizzato.",
+      "description": "Ogni libro è diverso. Compila il modulo e studieremo il tuo caso per offrirti la soluzione editoriale più adatta alla tua opera."
+    },
+    "info": {
+      "title": "Parliamo del tuo libro.",
+      "description": "Compila il modulo con quante più informazioni possibili. Più dettagli conosceremo sulla tua opera, più preciso sarà il preventivo che potremo offrirti.",
+      "items": {
+        "response": {
+          "title": "Risposta rapida",
+          "description": "Rispondiamo di solito entro 24-48 ore."
+        },
+        "budget": {
+          "title": "Preventivo personalizzato",
+          "description": "Adattato alle reali esigenze della tua opera."
+        },
+        "commitment": {
+          "title": "Senza impegno",
+          "description": "Risolveremo i tuoi dubbi prima di iniziare."
+        }
+      }
+    },
+    "form": {
+      "name": {
+        "label": "Nome *"
+      },
+      "email": {
+        "label": "E-mail *"
+      },
+      "service": {
+        "label": "Servizio richiesto",
+        "placeholder": "Seleziona un'opzione",
+        "options": {
+          "correction": "Correzione",
+          "layout": "Impaginazione",
+          "cover": "Copertina",
+          "publication": "Pubblicazione",
+          "multiple": "Più servizi"
+        }
+      },
+      "genre": {
+        "label": "Genere letterario",
+        "placeholder": "Thriller, fantasy..."
+      },
+      "words": {
+        "label": "Numero approssimativo di parole",
+        "placeholder": "Es. 85000"
+      },
+      "message": {
+        "label": "Messaggio *",
+        "placeholder": "Raccontaci a che punto si trova la tua opera..."
+      },
+      "success": "La tua richiesta è stata inviata correttamente. Ti risponderemo presto.",
+      "error": "Si è verificato un errore durante l'invio del modulo. Riprova.",
+      "submit": "INVIA RICHIESTA",
+      "sending": "INVIO IN CORSO..."
+    },
+    "validation": {
+      "required": "Questo campo è obbligatorio.",
+      "email": "Inserisci un'e-mail valida.",
+      "minlength": "Deve contenere almeno {{requiredLength}} caratteri.",
+      "maxlength": "Non può superare {{requiredLength}} caratteri.",
+      "minWords": "Deve superare le 1.000 parole.",
+      "maxWords": "Il numero sembra troppo elevato."
+    }
+  },
+  "budgetPage": {
+    "hero": {
+      "badge": "PREVENTIVO",
+      "title": "Richiedi il tuo preventivo e scopri quanto costa dare vita al tuo libro.",
+      "description": "Raccontaci i dettagli del tuo manoscritto. Più informazioni ci fornirai, più preciso sarà il preventivo che riceverai."
+    },
+    "info": {
+      "title": "Un preventivo su misura per te.",
+      "description": "Allega il tuo manoscritto e indicaci i tuoi tempi. Analizzeremo il tuo progetto e ti invieremo un preventivo dettagliato e senza sorprese.",
+      "manuscript": {
+        "title": "Analisi del manoscritto",
+        "description": "Esaminiamo la tua opera prima di darti delle cifre."
+      },
+      "budget": {
+        "title": "Preventivo dettagliato",
+        "description": "Suddiviso per servizio, senza costi nascosti."
+      },
+      "confidentiality": {
+        "title": "Riservatezza totale",
+        "description": "Il tuo manoscritto è al sicuro con noi."
+      }
+    },
+    "form": {
+      "success": "La tua richiesta è stata inviata correttamente. Ti invieremo presto il preventivo.",
+      "error": "Si è verificato un errore durante l'invio della richiesta. Riprova.",
+      "name": {
+        "label": "Nome *"
+      },
+      "email": {
+        "label": "E-mail *"
+      },
+      "service": {
+        "label": "Servizio richiesto *",
+        "placeholder": "Seleziona un'opzione",
+        "options": {
+          "correction": "Correzione",
+          "layout": "Impaginazione",
+          "cover": "Copertina",
+          "publication": "Pubblicazione",
+          "multiple": "Più servizi"
+        }
+      },
+      "words": {
+        "label": "Numero di parole *",
+        "placeholder": "Es. 85000"
+      },
+      "pages": {
+        "label": "Numero di pagine *",
+        "placeholder": "Es. 320"
+      },
+      "publicationDate": {
+        "label": "Data di pubblicazione approssimativa *"
+      },
+      "comments": {
+        "label": "Commenti aggiuntivi",
+        "placeholder": "Qualsiasi dettaglio in più che vuoi condividere..."
+      },
+      "manuscript": {
+        "label": "Allega manoscritto *",
+        "dropzone": "Trascina qui il tuo manoscritto o fai clic per selezionarlo",
+        "formats": "PDF, DOC, DOCX o ODT — max. 15MB",
+        "remove": "Rimuovi"
+      },
+      "submit": {
+        "sending": "INVIO IN CORSO...",
+        "default": "VOGLIO IL MIO PREVENTIVO"
+      },
+      "errors": {
+        "required": "Questo campo è obbligatorio.",
+        "whitespace": "Questo campo non può contenere solo spazi.",
+        "email": "Inserisci un'e-mail valida.",
+        "minlength": "Deve contenere almeno {{requiredLength}} caratteri.",
+        "maxlength": "Non può superare {{requiredLength}} caratteri.",
+        "wordsMin": "Deve superare le 1.000 parole.",
+        "wordsMax": "Il numero sembra troppo elevato.",
+        "pagesMin": "Deve superare le 10 pagine.",
+        "pagesMax": "Il numero sembra troppo elevato.",
+        "pastDate": "Seleziona una data successiva a oggi.",
+        "fileRequired": "Allega il tuo manoscritto per continuare.",
+        "fileFormat": "Formato non supportato. Usa: {{formats}}.",
+        "fileSize": "Il file supera la dimensione massima di {{maxSize}}MB."
+      }
+    }
+  },
+  "obrasPage": {
+    "hero": {
+      "badge": "OPERE PUBBLICATE",
+      "title": "Storie e mondi che ti trascinano",
+      "titleHighlight": "fino all'ultima pagina.",
+      "description": "Scopri le nostre illustrazioni, impaginazioni, booktrailer e thriller psicologici carichi di mistero, tensione e personaggi che rimarranno con te molto dopo aver finito la lettura.",
+      "ctaAmazon": "Vedi l'autrice su Amazon"
+    },
+    "sectionTitle": "Opere pubblicate",
+    "availableAmazon": "Disponibile su Amazon",
+    "viewAmazon": "Vedi su Amazon",
+    "booktrailer": "▶ Booktrailer",
+    "showMore": "Mostra di più",
+    "showLess": "Mostra meno",
+    "fullInfoTitle": "Informazioni complete",
+    "panels": {
+      "editorial": "📖 Informazioni editoriali",
+      "specs": "📚 Specifiche",
+      "amazon": "🏆 Amazon"
+    },
+    "labels": {
+      "editorial": "Casa editrice",
+      "publicationDate": "Data di pubblicazione",
+      "language": "Lingua",
+      "pages": "Pagine",
+      "isbn10": "ISBN-10",
+      "isbn13": "ISBN-13",
+      "recommendedAge": "Età consigliata",
+      "weight": "Peso",
+      "dimensions": "Dimensioni",
+      "amazonRanking": "Classifica Amazon",
+      "category": "Categoria",
+      "blackFiction": "Narrativa noir",
+      "psychologicalThrillers": "Thriller psicologici",
+      "mysteries": "Gialli",
+      "rating": "Valutazione"
+    },
+    "reviewsTitle": "Cosa ne pensano i nostri lettori di {{title}}?",
+    "reviewedIn": "Recensito in {{country}} il {{date}}",
+    "format": "Formato: {{format}}",
+    "verifiedPurchase": "Acquisto verificato",
+    "readMore": "Leggi di più",
+    "readLess": "Leggi meno",
+    "items": {
+      "malababa": {
+        "title": "Malababa",
+        "synopsis": "Un prestigioso notaio e un poliziotto sono stati invitati e camminano con cautela sotto la luce delle torce nella tenuta di Doña Amelia de Blasco. Un passo incerto dopo l'altro verso l'imponente magione, senza immaginare la serata a cui stanno per assistere. Quella donna, odiata e temuta in tutta la provincia, arrogante, irrispettosa ed egoista, dichiara che quella stessa sera, durante la cena che ha preparato, svelerà chi saranno i suoi futuri eredi. Familiari, amici e servitù hanno tutti la possibilità di cambiare vita se vengono scelti. E faranno di tutto pur di riuscirci. Ma zia Amelia ha un brutto presentimento. Questo provocherà un cambiamento dell'ultimo minuto nei suoi piani? Chi merita davvero l'eredità? Che il grammofono inizi a suonare.",
+        "valoraciones": {
+          "0": {
+            "title": "Fantastico",
+            "content": "Lo consiglio al 100%.\nFin dal primo momento crea intrigo e ti cattura nella storia. Un libro fantastico."
+          },
+          "1": {
+            "title": "Molto consigliato!",
+            "content": "Libro molto consigliato, fin dal primo momento la trama ti coinvolge con colpi di scena inaspettati e un finale che non lascerà nessuno indifferente."
+          },
+          "2": {
+            "title": "Un libro che ti parla",
+            "content": "Favoloso. Un libro che ti parla, ti cattura, ti fa sentire parte della storia. Averlo tra le mani è un tesoro. Ottima edizione e ottimo lavoro sul formato.\nBrava, Paloma."
+          }
+        }
+      },
+      "cartas-a-bruno": {
+        "title": "Lettere a Bruno",
+        "synopsis": "Una fuga. Un viaggio. Un motivo dimenticato che l'ha portata fino al remoto paesino di Portrush, nel nord dell'Irlanda. Una catena di lettere misteriose e avvenimenti sinistri scuoteranno la sua realtà, costringendola a cercare una via d'uscita. Un finale già scritto. Cosa è successo alla Signorina Lain?",
+        "valoraciones": {
+          "0": {
+            "title": "Molto consigliato",
+            "content": "La protagonista della storia è Olivia, che stanca della vita di città e dello stress si trasferisce a Portrush, un piccolo paese nel nord dell'Irlanda. Lì si sistema in una casa in affitto. Dopo che l'autrice ci descrive tutto questo con un alone di mistero, Oli inizia a ricevere delle lettere anonime e poi… non racconto altro per non fare spoiler.\n\nMi è sembrato incredibile il modo dettagliato in cui l'autrice racconta ciò che Olivia prova in ogni momento, come se si fosse dentro la sua mente, provando la stessa angoscia.\n\nL'ambientazione scelta per la storia è perfetta, piena di mistero e intrigo, che ricorda quei paesi abbandonati dei film horror.\n\nLa trama è totalmente avvincente e l'ultimo capitolo risulta angosciante. L'autrice gioca costantemente con la tua mente e il finale è completamente inaspettato.\n\nQuesto thriller psicologico ve lo consiglio vivamente."
+          },
+          "1": {
+            "title": "Voglia di altri titoli!",
+            "content": "Piccola grande scoperta di un eccellente thriller psicologico, con un'atmosfera inquietante e una tensione ben costruita.\n\nOgni capitolo mantiene l'attesa su cosa possa succedere a Olivia a Portrush.\n\nLa lettura è molto piacevole e spicca la facilità narrativa di Paloma nel guidare il lettore. Anche la descrizione dell'autrice riflette perfettamente come sono le sue storie.\n\nIn attesa di altri successi da parte sua!"
+          },
+          "2": {
+            "title": "Molto consigliato",
+            "content": "Una storia di suspense che non ti lascia staccare dal libro finché non lo finisci. Coinvolge moltissimo e inoltre si legge molto velocemente. Molto consigliato!"
+          },
+          "3": {
+            "title": "Molto consigliabile.",
+            "content": "Una storia in cui nulla è come sembra e che ti coinvolge dall'inizio alla fine. Spero di leggere altri libri di questa nuova scrittrice."
+          },
+          "4": {
+            "title": "Compratelo!!!! Non esitate!!!",
+            "content": "Una storia geniale che mi ha piacevolmente sorpreso. Molto consigliato. Questa autrice, Paloma Castizo, non passerà inosservata. Vi catturerà fin dall'inizio."
+          },
+          "5": {
+            "title": "Altamente consigliato!!!",
+            "content": "Lettere a Bruno è una piccola opera d'arte: fragile, sottile e terrificante.\n\nUn romanzo dell'orrore psicologico con un'atmosfera piena di mistero. Un thriller freddo, oscuro e confuso che cattura dall'inizio alla fine. E un finale che nessuno riesce a predire.\n\nLettere a Bruno fa paura e lascia un sapore amaro, come i biscotti della signora Margeritte."
+          },
+          "6": {
+            "title": "Emozionante",
+            "content": "Un libro che ti tiene per tutta la storia a chiederti cosa succederà. Coinvolge in ogni momento, si legge molto velocemente e il finale ti lascia a bocca aperta.\n\nMi piacerebbe leggere altre storie di questa autrice. Le vedo un grande futuro come scrittrice. Complimenti, Paloma!"
+          },
+          "7": {
+            "title": "Libro molto bello",
+            "content": "Mantiene l'attenzione e il mistero fino alla fine. Mi ha lasciato a bocca aperta e mi ha anche lasciato con la voglia di più.\n\nOra che conosco il finale voglio rileggerlo per notare tutti i dettagli che prima non capivo. Una lettura scorrevole, semplice e molto coinvolgente."
+          },
+          "8": {
+            "title": "Un thriller imprescindibile",
+            "content": "È un thriller psicologico totalmente avvincente in cui nulla è come sembra.\n\nDurante le sue quasi 200 pagine non c'è un solo momento senza angoscia e persino terrore.\n\nIl finale è assolutamente inaspettato e d'impatto. Lo consiglio al 100%."
+          }
+        }
+      }
+    }
+  },
+  "servicioPage": {
+    "kicker": "Servizio editoriale",
+    "whatIsIt": "In cosa consiste?",
+    "whatIncludes": "Cosa include?",
+    "tarifasTitle": "Tariffe",
+    "notIncludedTitle": "Questo servizio non include",
+    "observacionesTitle": "Osservazioni",
+    "ctaTitle": "Vuoi richiedere questo servizio?",
+    "ctaDescription": "Saremo felici di aiutarti con il tuo progetto editoriale e rispondere a qualsiasi dubbio prima di iniziare.",
+    "ctaButton": "Richiedi un preventivo",
+    "items": {
+      "publicacion-en-amazon": {
+        "slogan": "Pubblica il tuo libro senza complicazioni. Ci occupiamo noi di TUTTO il processo tecnico.",
+        "descripcion": "Servizio completo di autopubblicazione su Amazon KDP per autori che vogliono pubblicare in modo professionale.",
+        "incluye": {
+          "0": "Preparazione del manoscritto",
+          "1": "Impaginazione per la carta",
+          "2": "Conversione e impaginazione per ebook",
+          "3": "Configurazione del progetto su Amazon KDP",
+          "4": "Caricamento e pubblicazione del libro",
+          "5": "Configurazione dell'ISBN Amazon quando necessario",
+          "6": "Revisione tecnica del progetto prima della pubblicazione",
+          "7": "Consulenza durante tutto il processo",
+          "8": "Diffusione iniziale sui social e sul sito di Chamuskado Brain"
+        },
+        "noIncluye": {
+          "0": "Correzione ortotipografica",
+          "1": "Correzione di stile",
+          "2": "Relazione di lettura",
+          "3": "Illustrazioni",
+          "4": "Campagne pubblicitarie",
+          "5": "Garanzie di vendite o posizionamento"
+        }
+      },
+      "correccion-profesional": {
+        "slogan": "La tua storia merita di essere scritta per brillare.",
+        "descripcion": "Correzione ortotipografica e di stile rispettando sempre la voce dell'autore.",
+        "incluye": {
+          "0": "Ortografia",
+          "1": "Grammatica",
+          "2": "Punteggiatura",
+          "3": "Refusi",
+          "4": "Uniformità tipografica",
+          "5": "Revisione di dialoghi e formattazione",
+          "6": "Eliminazione delle ripetizioni",
+          "7": "Miglioramento della scorrevolezza narrativa",
+          "8": "Chiarezza e leggibilità",
+          "9": "Miglioramento del ritmo",
+          "10": "Ristrutturazione di frasi complesse",
+          "11": "Conservazione della voce e della personalità dell'autore"
+        },
+        "observaciones": {
+          "0": "Preventivo gratuito e senza impegno in meno di 48 ore."
+        }
+      },
+      "informe-de-lectura": {
+        "slogan": "Scopri il vero potenziale del tuo manoscritto.",
+        "descripcion": "Analisi editoriale professionale per migliorare la qualità e la fattibilità commerciale della tua opera.",
+        "incluye": {
+          "0": "Valutazione globale del manoscritto",
+          "1": "Analisi dei personaggi",
+          "2": "Analisi della struttura narrativa",
+          "3": "Analisi del ritmo",
+          "4": "Coerenza della trama",
+          "5": "Punti di forza dell'opera",
+          "6": "Aspetti migliorabili",
+          "7": "Pubblico di riferimento",
+          "8": "Posizionamento commerciale",
+          "9": "Raccomandazioni editoriali"
+        },
+        "observaciones": {
+          "0": "Non è un beta reader né una recensione. È uno strumento professionale di analisi editoriale."
+        }
+      },
+      "ilustracion-profesional": {
+        "slogan": "Dai un'immagine alla tua immaginazione.",
+        "descripcion": "Servizio di illustrazione professionale adattato a ogni progetto.",
+        "incluye": {
+          "0": "Illustrazioni per romanzi",
+          "1": "Copertine illustrate",
+          "2": "Personaggi",
+          "3": "Ambientazioni",
+          "4": "Mappe fantasy",
+          "5": "Illustrazioni interne",
+          "6": "Libri per bambini",
+          "7": "Materiale promozionale",
+          "8": "Concept art",
+          "9": "Disegno tradizionale",
+          "10": "Illustrazione con IA personalizzata"
+        }
+      },
+      "diseno-de-portada": {
+        "slogan": "I lettori giudicano un libro dalla copertina. Fai in modo che la tua si distingua.",
+        "descripcion": "Design professionale per ebook e cartaceo, adattato ad Amazon KDP.",
+        "incluye": {
+          "0": "Design personalizzato",
+          "1": "Versione ebook",
+          "2": "Versione cartacea",
+          "3": "Dorso",
+          "4": "Retro copertina",
+          "5": "Preparazione per Amazon KDP"
+        }
+      },
+      "maquetacion-profesional": {
+        "slogan": "La differenza tra un manoscritto e un libro professionale pronto a vedere la luce.",
+        "descripcion": "Impaginazione professionale per stampa e formato digitale.",
+        "incluye": {
+          "0": "Impaginazione per la carta",
+          "1": "Impaginazione per ebook",
+          "2": "Conversione di formati",
+          "3": "Ottimizzazione per Kindle",
+          "4": "Formati personalizzati"
+        }
+      },
+      "booktrailer": {
+        "slogan": "Dai vita alla tua storia prima ancora che venga letta.",
+        "descripcion": "Video promozionale per presentare il tuo libro sui social media.",
+        "incluye": {
+          "0": "Montaggio professionale",
+          "1": "Formato orizzontale",
+          "2": "Formato verticale",
+          "3": "Musica",
+          "4": "Effetti visivi",
+          "5": "Pubblicazione sui canali di Chamuskado Brain"
+        }
+      },
+      "dossier-editorial": {
+        "slogan": "Presenta la tua opera come farebbe un professionista del settore.",
+        "descripcion": "Documento professionale per presentare la tua opera alle case editrici.",
+        "incluye": {
+          "0": "Sinossi professionale",
+          "1": "Lettera di presentazione",
+          "2": "Presentazione commerciale",
+          "3": "Posizionamento editoriale",
+          "4": "Biografia dell'autore",
+          "5": "Documento pronto per l'invio"
+        },
+        "observaciones": {
+          "0": "Non garantisce l'accettazione dell'opera da parte di una casa editrice."
+        }
+      },
+      "optimizacion-amazon-y-asesorias": {
+        "slogan": "Pubblicare è solo il primo passo.",
+        "descripcion": "Ottimizzazione delle schede Amazon KDP e consulenze personalizzate.",
+        "incluye": {
+          "0": "Audit della scheda Amazon",
+          "1": "Ottimizzazione SEO su Amazon",
+          "2": "Categorie",
+          "3": "Parole chiave",
+          "4": "Descrizione ottimizzata",
+          "5": "Strategia dei prezzi",
+          "6": "Consulenza su Amazon KDP",
+          "7": "Autopubblicazione",
+          "8": "Marketing per scrittori"
+        }
+      },
+      "marca-personal-para-autores": {
+        "slogan": "Anche il tuo nome è il tuo marchio.",
+        "descripcion": "Costruisci un'identità professionale per distinguerti come autore.",
+        "incluye": {
+          "0": "Logo personalizzato",
+          "1": "Adattamento per i social media",
+          "2": "Immagine aziendale di base",
+          "3": "Risorse per il web e la promozione"
+        }
+      }
+    }
   }
 }

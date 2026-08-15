@@ -14,12 +14,13 @@ import { BooktrailerDialog } from '../../components/ui/booktrailer-dialog/booktr
 import { obrasJson } from '../../json/obras';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { register } from 'swiper/element/bundle';
+import { TranslocoPipe } from '@jsverse/transloco';
 
 register();
 
 @Component({
   selector: 'app-obras-page',
-  imports: [MatDialogModule, SlicePipe],
+  imports: [MatDialogModule, SlicePipe, TranslocoPipe],
   templateUrl: './obras-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -51,7 +52,9 @@ export class ObrasPage {
     this.dialog.open(ObraImageDialog, {
       data: obra,
       maxWidth: '90vw',
-      maxHeight: '90vh'
+      maxHeight: '90vh',
+      panelClass: 'glass-dialog',
+      autoFocus: false,
     });
   }
 
@@ -63,6 +66,7 @@ export class ObrasPage {
       width: 'min(1000px, 94vw)',
       maxWidth: '94vw',
       panelClass: 'booktrailer-dialog',
+      backdropClass: 'booktrailer-backdrop',
       autoFocus: false
     });
   }

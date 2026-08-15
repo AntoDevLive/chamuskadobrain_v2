@@ -662,5 +662,279 @@
         "fileSize": "El archivo supera el tamaño máximo de {{maxSize}}MB."
       }
     }
+  },
+  "obrasPage": {
+    "hero": {
+      "badge": "OBRAS PUBLICADAS",
+      "title": "Historias y Mundos que te sumergen",
+      "titleHighlight": "hasta la última página.",
+      "description": "Descubre nuestras ilustraciones, maquetaciones, booktrailers y Thrillers psicológicos cargados de misterio, tensión y personajes que permanecerán contigo mucho después de terminar la lectura.",
+      "ctaAmazon": "Ver autora en Amazon"
+    },
+    "sectionTitle": "Obras publicadas",
+    "availableAmazon": "Disponible en Amazon",
+    "viewAmazon": "Ver en Amazon",
+    "booktrailer": "▶ Booktrailer",
+    "showMore": "Ver más",
+    "showLess": "Mostrar menos",
+    "fullInfoTitle": "Información completa",
+    "panels": {
+      "editorial": "📖 Información editorial",
+      "specs": "📚 Especificaciones",
+      "amazon": "🏆 Amazon"
+    },
+    "labels": {
+      "editorial": "Editorial",
+      "publicationDate": "Fecha de publicación",
+      "language": "Idioma",
+      "pages": "Páginas",
+      "isbn10": "ISBN-10",
+      "isbn13": "ISBN-13",
+      "recommendedAge": "Edad recomendada",
+      "weight": "Peso",
+      "dimensions": "Dimensiones",
+      "amazonRanking": "Ranking Amazon",
+      "category": "Categoría",
+      "blackFiction": "Ficción negra",
+      "psychologicalThrillers": "Thrillers psicológicos",
+      "mysteries": "Misterios",
+      "rating": "Valoración"
+    },
+    "reviewsTitle": "¿Qué opinan nuestros lectores sobre {{title}}?",
+    "reviewedIn": "Reseñado en {{country}} el {{date}}",
+    "format": "Formato: {{format}}",
+    "verifiedPurchase": "Compra verificada",
+    "readMore": "Leer más",
+    "readLess": "Leer menos",
+    "items": {
+      "malababa": {
+        "title": "Malababa",
+        "synopsis": "Un prestigioso notario y un policía han sido invitados y caminan bajo la lumbre cuidadosamente por la finca de Doña Amelia de Blasco. Un pie dudoso tras otro hacia la imponente mansión, sin imaginar la velada que van a presenciar. Esa mujer, odiada y temida por toda la provincia, arrogante, irrespetuosa y egoísta, declara que esa misma noche desvelará, durante la cena que ha preparado, quiénes serán sus futuros herederos. Los familiares, amigos y el servicio tienen la posibilidad de cambiar sus vidas si son los elegidos. Y harán cualquier cosa por conseguirlo. Pero la tía Amelia tiene un mal presentimiento. ¿Provocará esto algún cambio de última hora en sus planes? ¿Quién es el verdadero merecedor de la herencia? Que el gramófono empiece a sonar.",
+        "valoraciones": {
+          "0": {
+            "title": "Fantástico",
+            "content": "Lo recomiendo 100%.\nDesde el primer momento te crea intriga y te atrapa en la historia. Un libro fantástico."
+          },
+          "1": {
+            "title": "Muy recomendable!",
+            "content": "Libro muy recomendable, desde el primer momento te engancha la trama con giros inesperados y un final que no dejará indiferente a nadie."
+          },
+          "2": {
+            "title": "Un libro que te habla",
+            "content": "Fabuloso. Un libro que te habla, te atrapa, te hace ser uno más. Tenerlo entre las manos es un tesoro. Gran edición y gran trabajo por el formato.\nBravo, Paloma."
+          }
+        }
+      },
+      "cartas-a-bruno": {
+        "title": "Cartas a Bruno",
+        "synopsis": "Una huida. Un viaje. Un motivo olvidado que la ha llevado hasta el recóndito pueblecito de Portrush, al norte de Irlanda. Una cadena de misteriosas cartas y sucesos siniestros tambalearán su realidad, obligándola a buscar una escapatoria. Un final que ya estaba escrito. ¿Qué ha ocurrido con la Señorita Lain?",
+        "valoraciones": {
+          "0": {
+            "title": "Muy recomendado",
+            "content": "La protagonista de la historia es Olivia, que cansada de la vida de ciudad y el estrés se marcha a Portrush, un pueblo pequeño al norte de Irlanda. Allí se acomoda en una casa que alquila. Una vez la autora nos describe todo esto con un halo de misterio, Oli comienza a recibir unas cartas anónimas y después… no cuento nada más para no haceros spoiler.\n\nMe ha parecido increíble la manera detallada en la que la autora nos cuenta lo que Olivia va sintiendo en cada momento, como si estuvieses en la mente de ella y pasando la misma angustia.\n\nEl ambiente elegido para la historia es perfecto, lleno de misterio e intriga, recordando a esos pueblos abandonados de las películas de terror.\n\nLa trama es totalmente adictiva y el último capítulo resulta angustiante. La autora juega con tu mente constantemente y el desenlace es completamente inesperado.\n\nEste thriller psicológico os lo recomiendo totalmente."
+          },
+          "1": {
+            "title": "¡Con ganas de más títulos!",
+            "content": "Pequeño gran descubrimiento de un excelente thriller psicológico, con una atmósfera inquietante y una tensión muy bien construida.\n\nCada capítulo mantiene la expectación sobre lo que puede sucederle a Olivia en Portrush.\n\nLa lectura es muy amena y destaca la facilidad narrativa de Paloma para guiar al lector. Incluso la descripción de la autora refleja perfectamente cómo son sus historias.\n\n¡Esperando más éxitos suyos!"
+          },
+          "2": {
+            "title": "Muy recomendado",
+            "content": "Una historia de suspense que no te deja despegarte del libro hasta que lo acabas. Engancha muchísimo y además se lee súper rápido. ¡Muy recomendado!"
+          },
+          "3": {
+            "title": "Muy recomendable.",
+            "content": "Una historia donde nada es lo que parece y que te engancha de principio a fin. Espero leer más libros de esta nueva escritora."
+          },
+          "4": {
+            "title": "Compradla!!!! No dudéis!!!",
+            "content": "Una historia genial que me ha sorprendido gratamente. Súper recomendable. Esta autora, Paloma Castizo, no pasará inadvertida. Os atrapará desde el principio."
+          },
+          "5": {
+            "title": "Recomendadísima!!!",
+            "content": "Cartas a Bruno es una pequeña obra de arte: frágil, sutil y terrorífica.\n\nUna novela de terror psicológico con un ambiente lleno de misterio. Un thriller frío, oscuro y confuso que atrapa de principio a fin. Y un final que nadie es capaz de predecir.\n\nCartas a Bruno da miedo y deja un sabor amargo, como el de las galletas de la señora Margeritte."
+          },
+          "6": {
+            "title": "Emocionante",
+            "content": "Un libro que te mantiene durante toda la historia preguntándote qué va a pasar. Engancha en todo momento, se lee muy rápido y el final te deja con la boca abierta.\n\nMe encantaría leer más historias de esta autora. Le veo un gran futuro como escritora. ¡Felicidades, Paloma!"
+          },
+          "7": {
+            "title": "Muy buen libro",
+            "content": "Mantiene la atención y el misterio hasta el final. Me dejó con la boca abierta y hasta me supo a poco.\n\nAhora que conozco el desenlace quiero volver a leerlo para fijarme en todos los detalles que antes no entendía. Una lectura fluida, sencilla y muy adictiva."
+          },
+          "8": {
+            "title": "Un thriller imprescindible",
+            "content": "Es un thriller psicológico totalmente adictivo donde nada es lo que parece.\n\nDurante sus casi 200 páginas no hay un solo momento en el que no sientas angustia e incluso terror.\n\nEl final es absolutamente inesperado e impactante. Lo recomiendo al 100%."
+          }
+        }
+      }
+    }
+  },
+  "servicioPage": {
+    "kicker": "Servicio editorial",
+    "whatIsIt": "¿En qué consiste?",
+    "whatIncludes": "¿Qué incluye?",
+    "tarifasTitle": "Tarifas",
+    "notIncludedTitle": "Este servicio no incluye",
+    "observacionesTitle": "Observaciones",
+    "ctaTitle": "¿Quieres contratar este servicio?",
+    "ctaDescription": "Estaremos encantados de ayudarte con tu proyecto editorial y resolver cualquier duda antes de empezar.",
+    "ctaButton": "Solicitar presupuesto",
+    "items": {
+      "publicacion-en-amazon": {
+        "slogan": "Publica tu libro sin complicaciones. Nosotros nos encargamos de TODO el proceso técnico.",
+        "descripcion": "Servicio completo de autopublicación en Amazon KDP para autores que quieren publicar de manera profesional.",
+        "incluye": {
+          "0": "Preparación del manuscrito",
+          "1": "Maquetación para papel",
+          "2": "Conversión y maquetación para ebook",
+          "3": "Configuración del proyecto en Amazon KDP",
+          "4": "Subida y publicación del libro",
+          "5": "Configuración del ISBN de Amazon cuando proceda",
+          "6": "Revisión técnica del proyecto antes de publicar",
+          "7": "Asesoramiento durante todo el proceso",
+          "8": "Difusión inicial en redes sociales y web de Chamuskado Brain"
+        },
+        "noIncluye": {
+          "0": "Corrección ortotipográfica",
+          "1": "Corrección de estilo",
+          "2": "Informe de lectura",
+          "3": "Ilustraciones",
+          "4": "Campañas publicitarias",
+          "5": "Garantías de ventas o posicionamiento"
+        }
+      },
+      "correccion-profesional": {
+        "slogan": "Tu historia merece estar escrita para brillar.",
+        "descripcion": "Corrección ortotipográfica y de estilo respetando siempre la voz del autor.",
+        "incluye": {
+          "0": "Ortografía",
+          "1": "Gramática",
+          "2": "Puntuación",
+          "3": "Erratas",
+          "4": "Uniformidad tipográfica",
+          "5": "Revisión de diálogos y formatos",
+          "6": "Eliminación de repeticiones",
+          "7": "Mejora de la fluidez narrativa",
+          "8": "Claridad y legibilidad",
+          "9": "Mejora del ritmo",
+          "10": "Reestructuración de frases complejas",
+          "11": "Conservación de la voz y personalidad del autor"
+        },
+        "observaciones": {
+          "0": "Presupuesto gratuito y sin compromiso en menos de 48 horas."
+        }
+      },
+      "informe-de-lectura": {
+        "slogan": "Descubre el verdadero potencial de tu manuscrito.",
+        "descripcion": "Análisis editorial profesional para mejorar la calidad y viabilidad comercial de tu obra.",
+        "incluye": {
+          "0": "Valoración global del manuscrito",
+          "1": "Análisis de personajes",
+          "2": "Análisis de estructura narrativa",
+          "3": "Análisis del ritmo",
+          "4": "Coherencia argumental",
+          "5": "Fortalezas de la obra",
+          "6": "Aspectos mejorables",
+          "7": "Público objetivo",
+          "8": "Posicionamiento comercial",
+          "9": "Recomendaciones editoriales"
+        },
+        "observaciones": {
+          "0": "No es un lector beta ni una reseña. Es una herramienta profesional de análisis editorial."
+        }
+      },
+      "ilustracion-profesional": {
+        "slogan": "Dale imagen a tu imaginación.",
+        "descripcion": "Servicio de ilustración profesional adaptado a cada proyecto.",
+        "incluye": {
+          "0": "Ilustraciones para novelas",
+          "1": "Portadas ilustradas",
+          "2": "Personajes",
+          "3": "Escenarios",
+          "4": "Mapas de fantasía",
+          "5": "Ilustraciones interiores",
+          "6": "Libros infantiles",
+          "7": "Material promocional",
+          "8": "Concept art",
+          "9": "Dibujo tradicional",
+          "10": "Ilustración mediante IA personalizada"
+        }
+      },
+      "diseno-de-portada": {
+        "slogan": "Los lectores juzgan un libro por su portada. Haz que la tuya destaque.",
+        "descripcion": "Diseño profesional para ebook y papel adaptado a Amazon KDP.",
+        "incluye": {
+          "0": "Diseño personalizado",
+          "1": "Versión para ebook",
+          "2": "Versión para papel",
+          "3": "Lomo",
+          "4": "Contraportada",
+          "5": "Preparación para Amazon KDP"
+        }
+      },
+      "maquetacion-profesional": {
+        "slogan": "La diferencia entre un manuscrito y un libro profesional listo para ver la luz.",
+        "descripcion": "Maquetación profesional para impresión y formato digital.",
+        "incluye": {
+          "0": "Maquetación para papel",
+          "1": "Maquetación para ebook",
+          "2": "Conversión de formatos",
+          "3": "Optimización para Kindle",
+          "4": "Formatos personalizados"
+        }
+      },
+      "booktrailer": {
+        "slogan": "Haz que tu historia cobre vida antes de ser leída.",
+        "descripcion": "Vídeo promocional para presentar tu libro en redes sociales.",
+        "incluye": {
+          "0": "Edición profesional",
+          "1": "Formato horizontal",
+          "2": "Formato vertical",
+          "3": "Música",
+          "4": "Efectos visuales",
+          "5": "Publicación en canales de Chamuskado Brain"
+        }
+      },
+      "dossier-editorial": {
+        "slogan": "Presenta tu obra como lo haría un profesional del sector.",
+        "descripcion": "Documento profesional para presentar tu obra a editoriales.",
+        "incluye": {
+          "0": "Sinopsis profesional",
+          "1": "Carta de presentación",
+          "2": "Presentación comercial",
+          "3": "Posicionamiento editorial",
+          "4": "Biografía del autor",
+          "5": "Documento listo para enviar"
+        },
+        "observaciones": {
+          "0": "No garantiza la aceptación de la obra por parte de una editorial."
+        }
+      },
+      "optimizacion-amazon-y-asesorias": {
+        "slogan": "Publicar es solo el primer paso.",
+        "descripcion": "Optimización de fichas de Amazon KDP y asesorías personalizadas.",
+        "incluye": {
+          "0": "Auditoría de ficha Amazon",
+          "1": "Optimización SEO de Amazon",
+          "2": "Categorías",
+          "3": "Palabras clave",
+          "4": "Descripción optimizada",
+          "5": "Estrategia de precios",
+          "6": "Asesoría sobre Amazon KDP",
+          "7": "Autopublicación",
+          "8": "Marketing para escritores"
+        }
+      },
+      "marca-personal-para-autores": {
+        "slogan": "Tu nombre también es tu sello.",
+        "descripcion": "Construye una identidad profesional para destacar como autor.",
+        "incluye": {
+          "0": "Logotipo personalizado",
+          "1": "Adaptación para redes sociales",
+          "2": "Imagen corporativa básica",
+          "3": "Recursos para web y promoción"
+        }
+      }
+    }
   }
 }
